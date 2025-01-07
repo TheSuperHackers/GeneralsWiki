@@ -149,6 +149,13 @@ You can create new textures or modify existing ones by editing the `.tga` files 
   However, if you are not using such a system, it's recommended to always back up the original files before editing.
 * **DDS:** Consider using DDS files in DXT1 or DXT5 formats for textures, which can be referenced in the WND files.
 * **TGA Format:** If you choose to use the TGA format, save your images as a 32-bit uncompressed TGA file.
+* Note that texture loading in the engine is handled specially. At runtime, the engine will first attempt to
+  load the texture with the `.dds` extension (e.g., `Texture.dds`). If it doesn't find the DDS file, it will
+  then try to load the same texture with the `.tga` extension (e.g., `Texture.tga`). This process occurs regardless
+  of whether the input name is `.tga` or `.dds`. Therefore, if a reference exists for `Texture.tga` but
+  only `Texture.dds` is present, the engine will still successfully load the texture, as it prioritizes `.dds` first
+  and falls back to `.tga` if necessary.
+  
 ## See Also
 
 * [Controls](../Controls.md)
