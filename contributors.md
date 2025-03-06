@@ -1,4 +1,4 @@
-# Contributors to GeneralsGamePatch
+# Contributors to GeneralsGameCode
 Includes all git commit authors. Aliases are GitHub usernames or community nicknames.
 
 ## Development team
