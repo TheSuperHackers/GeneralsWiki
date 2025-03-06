@@ -6,7 +6,7 @@ Includes all git commit authors. Aliases are GitHub usernames or community nickn
 * Commy2
 * OmniBlade
 
-## QA
+## Quality Assurance (QA)
 TBD
 
 ## Documentation
