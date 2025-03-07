@@ -31,15 +31,19 @@
   ```
   C:\Program Files (x86)\Steam\steamapps\common\Command and Conquer Generals Zero Hour\
   ```
-- Copy the following `.BIG` files to the `Run` folder of your compiled project:
+- Copy all  `.BIG` files to the `Run` folder of your compiled project:
   ```
   EnglishZH.big
   Generals.big
   INIZH.big
   SpeechZH.big
   W3DZH.big
+
+  others
   ````
-  *(Include any other necessary files from your Steam installation.)*
+
+  Copy the `Data` folder to the `Rub` folder also
+ 
 
 ### 4. Set Up Paths Correctly
 
@@ -52,7 +56,7 @@
 ### 5. Run the Game or World Builder
 
 - After compiling, navigate to the `Run` folder.
-- Launch `generals.exe` or `worldbuilder.exe`.
+- Launch `RTSD.exe` or `worldbuilder.exe`.
 
 ## Troubleshooting
 
