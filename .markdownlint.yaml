@@ -1,0 +1,41 @@
+default: true
+
+# VitePress-specific settings
+MD033:         # Disallow inline HTML, with some exceptions
+  allowed_elements:
+    - details
+    - summary
+MD041: true    # First line should be h1
+MD046: true    # Enforce code block style
+MD025: true    # Disallow multiple h1 headers
+MD031: true    # Fenced code blocks need blank lines
+MD032: true    # Lists need blank lines
+MD040: true    # Language specification for code blocks
+MD042: true    # No empty links
+MD048:
+  style: "backtick"  # Consistent code fence style
+
+# Formatting rules
+MD013: false         # Enforce line length
+MD004:
+  style: "dash"      # Consistent list markers
+MD007:
+  indent: 2          # List indentation
+MD009: true          # No trailing spaces
+MD012:
+  maximum: 1         # Single blank line between sections
+
+# Link and reference rules
+MD051: true          # Link fragments should be valid
+MD052: true          # Reference links should exist
+MD053: true          # Enforce custom link titles
+
+# Content structure
+MD022: true          # Headers should be surrounded by blank lines
+MD024: true          # Allow same named headers in different sections
+MD029:
+  style: "ordered"   # Ordered list numbering
+
+# Table formatting
+MD055: true          # Tables should have padding
+MD056: true          # Consistent table columns
