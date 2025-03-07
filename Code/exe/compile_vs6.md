@@ -102,7 +102,7 @@ This steps you need to repeat every time after a reboot of your computer.
 
 Execute the setup build environment script. In your cmd type this.
 
-`"C:\Programm Files (x86)\Microsoft Visual Studio\VC98\Bin\VCVARS32.bat"`
+`"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\VCVARS32.bat"`
 
 **Compilation**
 
