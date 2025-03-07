@@ -35,8 +35,8 @@ Installation of tools and software that are needed for compilation.
 - **Disable Visual Studio Analyzer**
 - **Dont check "Setup Environment Variables" checkbox
 - Restart your computer
-- Install MSDN a window will pop up
-- Try to install it but it worked if it failed
+- Install MSDN a window will pop up. If it fails ignore it.
+- Add `C:\Programm Files (x86)\Microsoft Visual Studio\VC98\Bin\` to your windows PATH environment
 
 **Install Service Pack 6**
 
@@ -106,7 +106,7 @@ Execute the setup build environment script. In your cmd type this.
 
 **Compilation**
 
-`cmake -preset vc6`
+`cmake --preset vc6`
 
 `cd build\vc6`
 
