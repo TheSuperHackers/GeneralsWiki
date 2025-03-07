@@ -7,4 +7,4 @@
 #### To learn more about the specific advancements in each fork, join these Discord communities for collaboration and support:
 
 - [Community Outpost](https://discord.com/invite/WzxQDZersE)
-- [The Assembly Armada]()
+- [The Assembly Armada](https://discord.gg/UnWK2Tw)
