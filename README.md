@@ -29,7 +29,7 @@ The wiki is divided into several main sections:
     - **/GameDesign** – Contains INI files that hold game data and unit behaviors.
     - etc.
 
-2. **/Code**  
+2. **/SourceCode**  
    This section includes the actual code and all libraries and tools needed to build the game:
     - **/Builds** – Build guides for different operating systems (Windows, Linux).
     - **/Libraries** – All external dependencies required, such as DirectX, STLport, ZLib, etc.

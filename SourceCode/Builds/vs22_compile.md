@@ -1,21 +1,21 @@
-# Building and Compiling C&C Generals on VS2022
+# Building and Compiling C&C Generals on Visual Studio 2022
 
 ## Prerequisites
 
 1. **Install Visual Studio 2022**
-   - Ensure you have the necessary C++ development components installed like MFC
+   - Ensure that the necessary C++ development components, including MFC, are installed.
 
 2. **Obtain the C&C Generals Source Code**
-   - Clone or download the source code repository. [Super Hackers Generals Game Code](https://github.com/TheSuperHackers/GeneralsGameCode.git)
+   - Clone or download the source code repository: [Super Hackers Generals Game Code](https://github.com/TheSuperHackers/GeneralsGameCode.git).
 
 3. **Install C&C Generals (Steam Version)**
-   - This is required to obtain necessary asset files.
+   - The game installation is required to access the necessary asset files.
 
-## Steps to Build
+## Build Steps
 
 ### 1. Open the Project in Visual Studio 2022
 
-- Open `Code/RTS.sln` in VS2022.
+- Launch Visual Studio 2022 and open the solution file `Code/RTS.sln`.
 
 ### 2. Select and Compile the Required Projects
 
@@ -23,34 +23,35 @@
   - `RTS`
   - `WorldBuilder`
 - Right-click each project and select **Build**.
-- Ensure the build completes without errors.
+- Ensure the build process completes without errors.
 
-### 3. Copy Required Files from Steam Folder
+### 3. Copy Required Game Files from Steam
 
-- Navigate to your Steam installation directory for C&C Generals, typically:
-  ```
+- Navigate to your C&C Generals Steam installation directory, typically:
+
+  ``` bash
   C:\Program Files (x86)\Steam\steamapps\common\Command and Conquer Generals Zero Hour\
   ```
-- Copy all  `.BIG` files to the `Run` folder of your compiled project:
-  ```
+
+- Copy all necessary `.BIG` files into the `Run` folder of your compiled project:
+
+  ``` bash
   EnglishZH.big
   Generals.big
   INIZH.big
   SpeechZH.big
   W3DZH.big
+  (Other required files)
+  ```
 
-  others
-  ````
+- Copy the entire `Data` folder to the `Run` folder as well.
 
-  Copy the `Data` folder to the `Rub` folder also
- 
+### 4. Configure Paths Correctly
 
-### 4. Set Up Paths Correctly
-
-- Ensure that the `Run` folder within your build directory contains the necessary game assets.
-- If required, configure the **working directory** in Visual Studio:
+- Ensure that the `Run` folder within your build directory contains all required game assets.
+- If necessary, configure the **working directory** in Visual Studio:
   1. Right-click on the `RTS` project.
-  2. Go to **Properties** → **Debugging**.
+  2. Navigate to **Properties** → **Debugging**.
   3. Set `Working Directory` to your `Run` folder.
 
 ### 5. Run the Game or World Builder
@@ -60,8 +61,8 @@
 
 ## Troubleshooting
 
-- **Missing DLLs?** Ensure you have the required dependencies.
-- **Game not launching?** Check that all required `.BIG` files are present.
-- **Build errors?** Verify Visual Studio settings and dependencies.
+- **Missing DLLs?** Ensure that all required dependencies are installed.
+- **Game not launching?** Verify that all necessary `.BIG` files are correctly placed.
+- **Build errors?** Check Visual Studio settings and dependencies for any issues.
 
 ### Enjoy Modding and Playing C&C Generals! 🎮
