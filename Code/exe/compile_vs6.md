@@ -36,7 +36,7 @@ Installation of tools and software that are needed for compilation.
 - **Dont check "Setup Environment Variables" checkbox
 - Restart your computer
 - Install MSDN a window will pop up. If it fails ignore it.
-- Add `C:\Programm Files (x86)\Microsoft Visual Studio\VC98\Bin\` to your windows PATH environment
+- Add `C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\` to your windows PATH environment
 
 **Install Service Pack 6**
 
