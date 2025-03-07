@@ -3,7 +3,7 @@
 ## Common game audio file formats
 
 | Game               | Audio type | Sample Rate (Hz) | Channels | Bit Depth  | Source Format                   |
-|--------------------|------------|------------------|----------|------------|---------------------------------|
+| ------------------ | ---------- | ---------------- | -------- | ---------- | ------------------------------- |
 | Generals           | Sounds     | 22050            | Mono     | 16         | Waveform Audio                  |
 | Generals Zero Hour | Sounds     | 22050            | Mono     | 16         | Waveform Audio                  |
 | Generals           | Speech     | 22050            | Mono     | 16         | Waveform Audio                  |
