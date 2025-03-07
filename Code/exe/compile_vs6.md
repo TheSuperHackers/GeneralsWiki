@@ -79,7 +79,7 @@ Open `cmd.exe` and navigate to the cloned source code.
 
 `cd CnC_Generals_Zero_Hour`
 
-Copy the files from Directx 8 contained in the folder `Lib` and `Include` to the `Dependencies\DX8SDK`. Just the file contents of `Lib` and `Include` into the `DX8SDK` folder. 
+Copy all files from the `lib` and `include` folders inside the `DirectX 8` directory and place them directly into `Dependencies\DX8SDK` —do not keep them inside lib or include. Only the file contents should be in DX8SDK, not the `lib` and `include` folders themselves.
 
 It should look like this
 
