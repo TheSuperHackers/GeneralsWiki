@@ -37,7 +37,7 @@
 
 ### 3. Copy Required Game Files from Steam
 
-- Navigate to your C&C Generals Steam installation directory, typically:
+- Navigate to your C&C Generals installation directory, for example if using Steam:
 
   ``` text
   C:\Program Files (x86)\Steam\steamapps\common\Command and Conquer Generals Zero Hour\
