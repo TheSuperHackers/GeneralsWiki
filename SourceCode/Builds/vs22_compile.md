@@ -2,14 +2,18 @@
 
 ## Prerequisites
 
-1. **Install Visual Studio 2022**
+- **Install Visual Studio 2022**
    - Ensure that the necessary C++ development components, including MFC, are installed.
 
-2. **Obtain the C&C Generals Source Code**
+- **Obtain the C&C Generals Source Code**
    - Clone or download the source code repository: [Super Hackers Generals Game Code](https://github.com/TheSuperHackers/GeneralsGameCode.git).
 
-3. **Install C&C Generals (Steam Version)**
+- **Install C&C Generals (Steam Version)**
    - The game installation is required to access the necessary asset files.
+
+- **Download the necessary SDKs as needed**
+  - 3ds max sdk: [3ds-max sdk](https://aps.autodesk.com/developer/overview/3ds-max#3dsmax-sdk) and install it.
+    - Copy the contents of the installed sdk ( normally in `C:\Program Files\Autodesk\3ds Max 2025 SDK\maxsdk` ) under the folder `/Code/Libraries/max4sdk`
 
 ## Build Steps
 
