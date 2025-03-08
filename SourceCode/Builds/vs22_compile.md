@@ -17,9 +17,9 @@
   3ds max sdk: [3ds-max sdk](https://archive.org/details/maxsdk-4.2.0.85).  
   Download and extract the contents of the zip file to the folder  
   `/Code/Libraries/max4sdk`
-  Don't forget to add into the build projects
-  ( so far `\toolchain\max2w3d`  and `\toolchain\pluglib`)
-  the paths to include and lib folders.
+  
+  In projects `\toolchain\max2w3d`  and `\toolchain\pluglib`) setup the include and lib folder
+  entries to have the `/Code/Libraries/max4sdk`Include and Lib folders.
 
 > [!NOTE]
 > To add a include or lib folder source, right click on project entry,
