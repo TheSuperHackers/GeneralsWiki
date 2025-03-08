@@ -17,24 +17,24 @@ The following section list the default values and available textures for each ta
 
 ### STATICTEXTDATA
 
-* `CENTERED`: A boolean value that defines if the text should be centered inside the static text control. `0` is not
+- `CENTERED`: A boolean value that defines if the text should be centered inside the static text control. `0` is not
   centered, `1` is centered.
 
 ### ENABLEDDRAWDATA, DISABLEDDRAWDATA, HILITEDRAWDATA
 
-* Usually, `NoImage` is used for all parts, but here are some textures that can be used:
-    * `StaticTextEnabled`
-    * `StaticTextDisabled`
-    * `StaticTextHilite`
+- Usually, `NoImage` is used for all parts, but here are some textures that can be used:
+  - `StaticTextEnabled`
+  - `StaticTextDisabled`
+  - `StaticTextHilite`
 
 ## When to Use StaticText
 
 The StaticText control is ideal for displaying:
 
-* Titles and headers
-* Labels for other UI elements
-* Informational text
-* Any text that doesn't require user interaction.
+- Titles and headers
+- Labels for other UI elements
+- Informational text
+- Any text that doesn't require user interaction.
 
 ## Example
 
@@ -98,7 +98,7 @@ END
 
 ## See also
 
-* [Default control](user.md)
-* [Texturing](../texturing.md)
+- [Default control](user.md)
+- [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)

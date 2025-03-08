@@ -5,8 +5,9 @@ It can serve as a container or group for other controls, as well as a tool for d
 lines by defining their position. Other controls also use the tags defined for the **USER** control,
 in addition to their own specific tags.
 
-## Purposes of the Control:
-1. **Container/Group**:  
+## Purposes of the Control
+
+1. **Container/Group**:
    The **USER** control can act as a container, holding and organizing other controls.
    This allows for efficient layout and management of multiple elements on the screen.
 
@@ -14,7 +15,7 @@ in addition to their own specific tags.
    It can also be used to draw rectangular shapes or lines by specifying the position and dimensions,
    making it useful for creating visual boundaries or shapes within the UI.
 
-### Opening and Closing a Control:
+### Opening and Closing a Control
 
 Each control is opened with the keyword `WINDOW` and closed with the keyword `END`.
 
@@ -22,7 +23,8 @@ For the **USER** control, when it serves as a container (group), it can contain 
 Each child control is preceded by the keyword `CHILD`, and after all the children have been defined,
 the keyword `ENDALLCHILDREN` should be used to close the group of children and return to the main control.
 
-#### Example with Children:
+#### Example with Children
+
 ```nasm
 WINDOW
   WINDOWTYPE = USER ; parent
@@ -45,10 +47,10 @@ WINDOW
 END
 ```
 
-## Available Tags:
+## Available Tags
+
 The following tags are available for the **USER** control:
 <small>Click on the links to view available values and options for the tag.</small>
-
 
 | Tag                                                           | Description                                                                                                  |
 |---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
@@ -72,7 +74,6 @@ The following tags are available for the **USER** control:
 <small>Note: All tags are case-sensitive.</small>
 
 <small>Note: The order of the tags is crucial for proper rendering of the control and must be followed as specified.</small>
-
 
 ## Example
 
@@ -130,7 +131,8 @@ END
 ```
 
 ## See Also
-* [Callbacks](../callbacks.md)
-* [Texturing](../texturing.md)
+
+- [Callbacks](../callbacks.md)
+- [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)

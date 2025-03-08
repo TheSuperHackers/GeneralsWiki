@@ -1,8 +1,9 @@
 # 3DSMAX
 
 After installing Autodesk 3ds Max, install following scripts:
-* [3DSMAX7 BFME2 W3D Scripts](https://github.com/TheSuperHackers/GeneralsTools/blob/main/Tools/w3d/3dsmax7_bfme2_mod_sdk.zip)
-* [3DSMAX W3D Importer](https://github.com/TheSuperHackers/GeneralsTools/blob/main/Tools/w3d/coolfile_w3d_importer.zip)
+
+- [3DSMAX7 BFME2 W3D Scripts](https://github.com/TheSuperHackers/GeneralsTools/blob/main/Tools/w3d/3dsmax7_bfme2_mod_sdk.zip)
+- [3DSMAX W3D Importer](https://github.com/TheSuperHackers/GeneralsTools/blob/main/Tools/w3d/coolfile_w3d_importer.zip)
 
 ## Configure W3D Importer
 
@@ -30,10 +31,10 @@ To Export W3D File, select **File > Export** and choose the W3D file format in t
 
 ![3dsmax8_export_w3d.png](images/3dsmax8_export_w3d.png)
 
-
 ## Rescale W3D Animation
 
-To rescale a W3D animation, import the W3D file, click on the **Time Configuration** button at the bottom, hit **Re-scale Time** button and then specify the new Frame Length.
+To rescale a W3D animation, import the W3D file, click on the **Time Configuration** button at the bottom, hit
+**Re-scale Time** button and then specify the new Frame Length.
 
 Note: 30 frames correspond the 1 game second.
 

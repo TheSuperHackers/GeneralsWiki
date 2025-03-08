@@ -4,7 +4,7 @@ Welcome to **GeneralsWiki**, a technical wiki dedicated to documenting the inter
 Conquer: Generals** and **Zero Hour**. Here, you will find documentation about the code, tools, game assets, libraries,
 and various technical components involved in the development of the game.
 
-### Purpose of the Wiki
+## Purpose of the Wiki
 
 This wiki is designed to serve as a central resource for anyone interested in the development of the game, the process
 of its creation, and the technological dependencies involved. Whether you're a developer, researcher, or simply curious,

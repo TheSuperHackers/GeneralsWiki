@@ -15,7 +15,7 @@ WND does not allow for comments, but most elements can have custom names that he
 
 Avoid resizing window element to 0 size. It can crash the game on runtime:
  `SCREENRECT = UPPERLEFT: 0 0, BOTTOMRIGHT: 0 0`
- 
+
 Hide window elements by setting the following STATUS flags:
  `STATUS = ENABLED+HIDDEN+SEE_THRU+NOINPUT+NOFOCUS`
   
@@ -26,7 +26,8 @@ Window elements with `WINDOWTYPE = SCROLLLISTBOX` cannot render large text rows 
  Avoid using long texts and/or large fonts. Standard HeaderTemplate.ini configuration
  displayed at 1920x1080 Resolution is almost as high as it can go without breaking.
 
-Window transitions styles can be added to `Data\INI\WindowTransitions.ini` file. Styles are
+Window transitions styles can be added to `Data\INI\WindowTransitions.ini` file. Styles are:
+
 | Keyword               | Description                                         |
 |-----------------------|-----------------------------------------------------|
 | FLASH                 | Fine White Flash                                    |
@@ -41,10 +42,9 @@ Window transitions styles can be added to `Data\INI\WindowTransitions.ini` file.
 | MAINMENUMEDIUMSCALEUP |                                                     |
 | REVERSESOUND          | used in borders, acts like FULLFADE                 |
 
-
 ## Window element attributes
 
-```
+```text
 WINDOWTYPE
   +USER
   +PUSHBUTTON
@@ -59,19 +59,19 @@ WINDOWTYPE
   +VERTSLIDER
 ```
 
-```
+```text
 SCREENRECT
   UPPERLEFT: X Y,
   BOTTOMRIGHT: X Y,
   CREATIONRESOLUTION: X Y
 ```
 
-```
+```text
 NAME = 
   "WindowName.wnd:ElementName"
 ```
 
-```
+```text
 STATUS =
   +ENABLED
   +HIDDEN
@@ -89,7 +89,7 @@ STATUS =
   +TABSTOP
 ```
 
-```
+```text
 STYLE =
   +USER
   +MOUSETRACK
@@ -105,27 +105,27 @@ STYLE =
   +VERTSLIDER
 ```
 
-```
+```text
 SYSTEMCALLBACK =
   "[None]"
   "PassMessagesToParentSystem"
   ...
 ```
   
-```
+```text
 INPUTCALLBACK =
   "[None]"
   "GameWinBlockInput"
   ...
 ```
   
-```
+```text
 TOOLTIPCALLBACK =
   "[None]"
   ...
 ```
   
-```
+```text
 DRAWCALLBACK =
   "[None]"
   "W3DNoDraw"
@@ -134,14 +134,14 @@ DRAWCALLBACK =
   ...
 ```
   
-```
+```text
 FONT =
   NAME: "Font"
   SIZE: 0..n
   BOLD: 0..1
 ```
   
-```
+```text
 HEADERTEMPLATE =
   "[None]"
   "Title"
@@ -164,20 +164,20 @@ HEADERTEMPLATE =
   See Data\Language\HeaderTemplate.ini
 ```
 
-```
+```text
 TOOLTIPDELAY =
   -1
   0..n
 ```
 
-```
+```text
 TEXT =
   "CATEGORY:StringName"
   ...
   See Data\Language\generals.csf
 ```
 
-```
+```text
 TEXTCOLOR =
   ENABLED: R G B A,
   ENABLEDBORDER: R G B A,

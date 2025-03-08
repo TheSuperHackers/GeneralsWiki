@@ -49,13 +49,13 @@ MappedImage TextureName
 End
 ```
 
-* `TextureName`:  The unique name used to reference the texture within the game's WND files.
-* `Texture`: The name of the .tga file where the texture is stored.
-* `TextureWidth`: The width of the .tga texture file in pixels.
-* `TextureHeight`: The height of the .tga texture file in pixels.
-* `Coords`: The coordinates of the texture within the .tga file.  `Left`, `Top`, `Right` and `Bottom` define the
+- `TextureName`:  The unique name used to reference the texture within the game's WND files.
+- `Texture`: The name of the .tga file where the texture is stored.
+- `TextureWidth`: The width of the .tga texture file in pixels.
+- `TextureHeight`: The height of the .tga texture file in pixels.
+- `Coords`: The coordinates of the texture within the .tga file.  `Left`, `Top`, `Right` and `Bottom` define the
   position of the top-left and bottom-right corners of the texture, in pixels.
-* `Status`: Usually `NONE`.
+- `Status`: Usually `NONE`.
 
 #### Example
 
@@ -71,10 +71,10 @@ End
 
 In this example:
 
-* The texture name is `Buttons-Disabled-Left`.
-* The texture is located in the file `SCSmShellUserInterface512_001.tga`.
-* The dimensions of the image is 512x512.
-* The texture's coordinates are `Left:358`, `Top:275`, `Right:403`, `Bottom:315`.
+- The texture name is `Buttons-Disabled-Left`.
+- The texture is located in the file `SCSmShellUserInterface512_001.tga`.
+- The dimensions of the image is 512x512.
+- The texture's coordinates are `Left:358`, `Top:275`, `Right:403`, `Bottom:315`.
 
 ## Using Textures in WND Files
 
@@ -92,7 +92,8 @@ you must still include the `NoImage` entry in the correct slot.
 
 **Example:**
 
-<smal>Note that colors whose alpha value is 0 are not actually applied.</small>
+<small>Note that colors whose alpha value is 0 are not actually applied.</small>
+
 ```nasm
 ENABLEDDRAWDATA = IMAGE: LoadingBar_R, COLOR: 255 0 0 0, BORDERCOLOR: 255 128 128 0,
                   IMAGE: LoadingBar_L, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0,
@@ -123,33 +124,33 @@ You can create new textures or modify existing ones by editing the `.tga` files 
 ### Step-by-Step Guide
 
 1. **Edit the `.tga` File:**
-    * Open the TGA file (`SCSmShellUserInterface512_001.tga`) with an image editor that supports TGA files (e.g.,
+    - Open the TGA file (`SCSmShellUserInterface512_001.tga`) with an image editor that supports TGA files (e.g.,
       Photoshop, GIMP).
-    * Add or modify the textures as needed.
-    * Make sure the new textures do not overlap with existing ones.
-    * **Note:** While TGA has been the traditional format, for Patch 1.04p development, support for formats
+    - Add or modify the textures as needed.
+    - Make sure the new textures do not overlap with existing ones.
+    - **Note:** While TGA has been the traditional format, for Patch 1.04p development, support for formats
       like PSD or TIFF has been added. These formats allow saving layers and greatly simplify editing.
 2. **Update the Mapping INI File:**
-    * Open the corresponding INI file (`SCSmShellUserInterface512.ini`).
-    * For each new texture, create a new `MappedImage` entry, as shown above, using a unique `TextureName`,
+    - Open the corresponding INI file (`SCSmShellUserInterface512.ini`).
+    - For each new texture, create a new `MappedImage` entry, as shown above, using a unique `TextureName`,
       the correct filename, `TextureWidth`, `TextureHeight` and the precise coordinates
       (`Coords`) of the new texture within the edited TGA file.
-    * If you modified an existing texture, update its `Coords` values accordingly.
-    * **Note:** It is also possible to use DDS files in DXT1 or DXT5 formats and reference them in the WND file.
+    - If you modified an existing texture, update its `Coords` values accordingly.
+    - **Note:** It is also possible to use DDS files in DXT1 or DXT5 formats and reference them in the WND file.
 
 3. **Test Your Changes:**
-    * Save both the edited TGA and INI files.
-    * Launch the game and check that the changes to the UI are applied correctly.
+    - Save both the edited TGA and INI files.
+    - Launch the game and check that the changes to the UI are applied correctly.
 
 ### Important Notes
 
-* **Coordinate Precision:** Be accurate when recording the texture coordinates in the INI file.
-* **Texture Overlap:** Avoid having textures that overlap in the TGA file.
-* **Backup (Optional):** If you are using Git or a similar version control system, a backup is not necessary.
+- **Coordinate Precision:** Be accurate when recording the texture coordinates in the INI file.
+- **Texture Overlap:** Avoid having textures that overlap in the TGA file.
+- **Backup (Optional):** If you are using Git or a similar version control system, a backup is not necessary.
   However, if you are not using such a system, it's recommended to always back up the original files before editing.
-* **DDS:** Consider using DDS files in DXT1 or DXT5 formats for textures, which can be referenced in the WND files.
-* **TGA Format:** If you choose to use the TGA format, save your images as a 32-bit uncompressed TGA file.
-* Note that texture loading in the engine is handled specially. At runtime, the engine will first attempt to
+- **DDS:** Consider using DDS files in DXT1 or DXT5 formats for textures, which can be referenced in the WND files.
+- **TGA Format:** If you choose to use the TGA format, save your images as a 32-bit uncompressed TGA file.
+- Note that texture loading in the engine is handled specially. At runtime, the engine will first attempt to
   load the texture with the `.dds` extension (e.g., `Texture.dds`). If it doesn't find the DDS file, it will
   then try to load the same texture with the `.tga` extension (e.g., `Texture.tga`). This process occurs regardless
   of whether the input name is `.tga` or `.dds`. Therefore, if a reference exists for `Texture.tga` but
@@ -158,7 +159,7 @@ You can create new textures or modify existing ones by editing the `.tga` files 
   
 ## See Also
 
-* [Controls](../Controls.md)
-* [User Control](../controls/user.md)
+- [Controls](../Controls.md)
+- [User Control](../controls/user.md)
 
 [Category:](../Categories.md) [General](../General.md)

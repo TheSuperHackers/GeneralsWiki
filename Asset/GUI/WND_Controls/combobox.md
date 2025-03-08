@@ -1,9 +1,12 @@
 # ComboBox Control
+
 The **ComboBox** control is used for creating a dropdown list. You can define the position, size,
-and appearance of the <b>ComboBox</b>.
+and appearance of the **ComboBox**.
 
 ## Available tags
+
 In addition to the [default control tags](user.md), the following tags are available.
+
 - The control does not have a `TEXT` tag. Unlike controls such as checkboxes, which include a text label,
 this control is self-contained and does not display or use a text label.
 
@@ -33,13 +36,14 @@ this control is self-contained and does not display or use a text label.
 | `SLIDERTHUMBHILITEDRAWDATA`              | Visual texture for the slider thumb (handle) when highlighted.               |
 
 ## Default values
+
 The following section list the default values and available textures for each tag
 <details>
   <summary>Click to expand</summary>
 
 ### COMBOBOXDATA
-### COMBOBOXDATA
-- **ISEDITABLE**: Defines whether the combobox is editable. 
+
+- **ISEDITABLE**: Defines whether the combobox is editable.
                   0 = non-editable (only dropdown selection allowed), 1 = editable (user can type in the field).
 - **MAXCHARS**: The maximum number of characters allowed in the edit field when the combobox is editable (e.g., 16).
 - **MAXDISPLAY**: The maximum number of items to display at once in the dropdown list without scrolling (e.g., 2).
@@ -49,22 +53,26 @@ The following section list the default values and available textures for each ta
                           0 = allows all characters, 1 = allows only letters and numbers.
 
 ### ENABLEDDRAWDATA, DISABLEDDRAWDATA, HILITEDRAWDATA
+
 - NoImage / NoImage / ListBoxHiliteSelectedItemLeftEnd
 - NoImage / NoImage / ListBoxHiliteSelectedItemRightEnd
 - NoImage / NoImage / ListBoxHiliteSelectedItemRepeatingCenter
 - NoImage / NoImage / ListBoxHiliteSelectedItemSmallRepeatingCenter
 
 ### COMBOBOXDROPDOWNBUTTONENABLEDDRAWDATA, COMBOBOXDROPDOWNBUTTONDISABLEDDRAWDATA, COMBOBOXDROPDOWNBUTTONHILITEDRAWDATA
+
 - VSliderDownButtonEnabled / VSliderDownButtonDisabled / VSliderDownButtonHilite
 - VSliderDownButtonHiliteSelected / NoImage / VSliderDownButtonHiliteSelected
 
 ### COMBOBOXEDITBOXENABLEDDRAWDATA, COMBOBOXEDITBOXDISABLEDDRAWDATA, COMBOBOXEDITBOXHILITEDRAWDATA
+
 - TextEntryEnabledLeftEnd / TextEntryDisabledLeftEnd / TextEntryHiliteLeftEnd
 - TextEntryEnabledRightEnd / TextEntryDisabledRightEnd / TextEntryHiliteRightEnd
 - TextEntryEnabledRepeatingCenter / TextEntryDisabledRepeatingCenter / TextEntryHiliteRepeatingCenter
 - TextEntryEnabledSmallRepeatingCenter / TextEntryDisabledSmallRepeatingCenter / TextEntryHiliteSmallRepeatingCenter
 
 ### COMBOBOXLISTBOXENABLEDDRAWDATA, COMBOBOXLISTBOXDISABLEDDRAWDATA, COMBOBOXLISTBOXHILITEDRAWDATA
+
 - BlackSquare
 - ListBoxHiliteItemLeftEnd / NoImage / ListBoxHiliteSelectedItemLeftEnd
 - ListBoxHiliteItemRightEnd / NoImage / ListBoxHiliteSelectedItemRightEnd
@@ -72,13 +80,16 @@ The following section list the default values and available textures for each ta
 - ListBoxHiliteItemSmallRepeatingCenter / NoImage / ListBoxHiliteSelectedItemSmallRepeatingCenter
 
 ### LISTBOXENABLEDDOWNBUTTONDRAWDATA, LISTBOXDISABLEDDOWNBUTTONDRAWDATA, LISTBOXHILITEDOWNBUTTONDRAWDATA
+
 - VSliderDownButtonEnabled / VSliderDownButtonDisabled / VSliderDownButtonHilite
 - VSliderDownButtonHiliteSelected / NoImage / VSliderDownButtonHiliteSelected
 
 ### LISTBOXENABLEDSLIDERDRAWDATA, LISTBOXDISABLEDSLIDERDRAWDATA, LISTBOXHILITESLIDERDRAWDATA
+
 - NoImage
 
 ### SLIDERTHUMBENABLEDDRAWDATA, SLIDERTHUMBDISABLEDDRAWDATA, SLIDERTHUMBHILITEDRAWDATA
+
 - ScrollBarThumbEnabled / ScrollBarThumbDisabled / ScrollBarThumbHilite
 - ScrollBarThumbHiliteSelected / NoImage / ScrollBarThumbHiliteSelected
 
@@ -95,6 +106,7 @@ The following section list the default values and available textures for each ta
    This may cause issues when interacting with the ComboBox.
 
 ## Example
+
 Here example from IP address ComboBox in the `OptionsMenu.wnd` file:
 <details>
   <summary>Click to expand</summary>
@@ -346,7 +358,8 @@ END
 </details>
 
 ## See also
-* [Default control](user.md)
-* [Texturing](../texturing.md)
+
+- [Default control](user.md)
+- [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)
