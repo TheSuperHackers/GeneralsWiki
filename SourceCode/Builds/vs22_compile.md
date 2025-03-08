@@ -39,13 +39,11 @@
 
 - Navigate to your C&C Generals Steam installation directory, typically:
 
-
   ``` text
   C:\Program Files (x86)\Steam\steamapps\common\Command and Conquer Generals Zero Hour\
   ```
 
 - Copy all necessary `.BIG` files into the `Run` folder of your compiled project:
-
 
   ``` text
   EnglishZH.big
