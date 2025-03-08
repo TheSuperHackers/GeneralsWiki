@@ -6,7 +6,7 @@
   - Ensure that the necessary C++ development components, including MFC, are installed.
 
 - **Obtain the C&C Generals Source Code**
-  - Clone or download the source code repository: [Super Hackers Generals Game Code](https://github.com/TheSuperHackers/GeneralsGameCode.git).
+  - Clone or download the source code repository: [Super Hackers Generals Game Code]( https://github.com/jmarshall2323/CnC_Generals_Zero_Hour.git).
 
 - **Install C&C Generals (Steam Version)**
   - The game installation is required to access the necessary asset files.
