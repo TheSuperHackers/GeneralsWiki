@@ -8,9 +8,9 @@
 
 - **Obtain the C&C Generals Source Code**  
   Clone or download the source code repository:  
-  [Super Hackers Generals Game Code](https://github.com/jmarshall2323/CnC_Generals_Zero_Hour.git).
+  [jmarshall2323 VS2022 Fork](https://github.com/jmarshall2323/CnC_Generals_Zero_Hour.git).
 
-- **Install C&C Generals (Steam Version)**  
+- **Install C&C Generals (Steam Version recommeded but EA version also works)**  
   The game installation is required to access the necessary asset files.
 
 - **Download the necessary SDKs as needed**  
