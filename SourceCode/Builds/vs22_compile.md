@@ -12,7 +12,7 @@
   - The game installation is required to access the necessary asset files.
 
 - **Download the necessary SDKs as needed**
-  - 3ds max sdk: [3ds-max sdk](https://aps.autodesk.com/developer/overview/3ds-max#3dsmax-sdk) and install it.
+  - 3ds max sdk: [3ds-max sdk](https://archive.org/details/maxsdk-4.2.0.85) and install it.
     Copy the contents of the installed sdk ( normally in `C:\Program Files\Autodesk\3ds Max 2025 SDK\maxsdk` ) 
     and paste it under the folder `/Code/Libraries/max4sdk`
 
