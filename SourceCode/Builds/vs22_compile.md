@@ -12,8 +12,8 @@
   - The game installation is required to access the necessary asset files.
 
 - **Download the necessary SDKs as needed**
-  - 3ds max sdk: [3ds-max sdk](https://archive.org/details/maxsdk-4.2.0.85) and install it.
-    Extract the contents of the zip file to the folder `/Code/Libraries/max4sdk`
+  - 3ds max sdk: [3ds-max sdk](https://archive.org/details/maxsdk-4.2.0.85).
+    Download and extract the contents of the zip file to the folder `/Code/Libraries/max4sdk`
 
 ## Build Steps
 
