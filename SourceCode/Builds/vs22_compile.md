@@ -77,7 +77,6 @@
 - After compiling, navigate to the `Run` folder.
 - Launch `RTSD.exe` or `worldbuilder.exe`.
 
-
 ## Troubleshooting
 
 - **Missing DLLs?** Ensure that all required dependencies are installed.
