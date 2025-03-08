@@ -17,6 +17,8 @@
   3ds max sdk: [3ds-max sdk](https://archive.org/details/maxsdk-4.2.0.85).  
   Download and extract the contents of the zip file to the folder  
   `/Code/Libraries/max4sdk`
+  Don't forget to add into the projects ( so far `\toolchain\max2w3d` 
+  and `\toolchain\pluglib`) the include folders and lib paths.
 
 ## Build Steps
 
