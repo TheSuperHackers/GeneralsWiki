@@ -21,6 +21,13 @@
   ( so far `\toolchain\max2w3d`  and `\toolchain\pluglib`)
   the paths to include and lib folders.
 
+  > [!NOTE]
+  > To add a include or lib folder source, right click on project entry,
+  > select `Properties` and go to the VC++ Directories Tab.
+  > There, add the path for the include folder in the sdk in the Includes Folder
+  > (ie `<base_git_folder>\Code\Libraries\max4sdk\Include`) and the same for the
+  > Libraries entry (`<base_git_folder>\Code\Libraries\max4sdk\Lib`)
+
 ## Build Steps
 
 ### 1. Open the Project in Visual Studio 2022
@@ -69,6 +76,7 @@
 
 - After compiling, navigate to the `Run` folder.
 - Launch `RTSD.exe` or `worldbuilder.exe`.
+
 
 ## Troubleshooting
 
