@@ -19,36 +19,36 @@ The following section list the default values and available textures for each ta
 
 ### TEXTENTRYDATA
 
-* `MAXLEN`: An integer that defines the maximum length of the input text. (e.g. `64`)
-* `SECRETTEXT`: A Boolean value that defines if input text should be hidden.
+- `MAXLEN`: An integer that defines the maximum length of the input text. (e.g. `64`)
+- `SECRETTEXT`: A Boolean value that defines if input text should be hidden.
                 (`0` = normal, `1` = hidden, displayed as asterisks).
-* `NUMERICALONLY`: A Boolean value that defines if the entry field allows only numbers.
+- `NUMERICALONLY`: A Boolean value that defines if the entry field allows only numbers.
                    (`0` = allows all characters, `1` = only numbers).
-* `ALPHANUMERICALONLY`: A Boolean value that defines if the entry field allows only letters and numbers.
+- `ALPHANUMERICALONLY`: A Boolean value that defines if the entry field allows only letters and numbers.
                         (`0` = allows all characters, `1` = only letters and numbers).
-* `ASCIIONLY`: A Boolean value that defines if the entry field allows only ASCII characters.
+- `ASCIIONLY`: A Boolean value that defines if the entry field allows only ASCII characters.
                (`0` = allows non-ASCII, `1` = only ASCII).
 
 ### ENABLEDDRAWDATA
 
-* `TextEntryEnabledLeftEnd`
-* `TextEntryEnabledRightEnd`
-* `TextEntryEnabledRepeatingCenter`
-* `TextEntryEnabledSmallRepeatingCenter`
+- `TextEntryEnabledLeftEnd`
+- `TextEntryEnabledRightEnd`
+- `TextEntryEnabledRepeatingCenter`
+- `TextEntryEnabledSmallRepeatingCenter`
 
 ### DISABLEDDRAWDATA
 
-* `TextEntryDisabledLeftEnd`
-* `TextEntryDisabledRightEnd`
-* `TextEntryDisabledRepeatingCenter`
-* `TextEntryDisabledSmallRepeatingCenter`
+- `TextEntryDisabledLeftEnd`
+- `TextEntryDisabledRightEnd`
+- `TextEntryDisabledRepeatingCenter`
+- `TextEntryDisabledSmallRepeatingCenter`
 
 ### HILITEDRAWDATA
 
-* `TextEntryHiliteLeftEnd`
-* `TextEntryHiliteRightEnd`
-* `TextEntryHiliteRepeatingCenter`
-* `TextEntryHiliteSmallRepeatingCenter`
+- `TextEntryHiliteLeftEnd`
+- `TextEntryHiliteRightEnd`
+- `TextEntryHiliteRepeatingCenter`
+- `TextEntryHiliteSmallRepeatingCenter`
 
 </details>
 
@@ -114,11 +114,12 @@ WINDOW
                   ASCIIONLY: 1;
 END
 ```
+
 </details>
 
 ## See also
 
-* [Default control](user.md)
-* [Texturing](../texturing.md)
+- [Default control](user.md)
+- [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)

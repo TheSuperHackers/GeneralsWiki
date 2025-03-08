@@ -9,6 +9,7 @@ MD033:               # Disallow inline HTML, with some exceptions
   allowed_elements:
     - details
     - summary
+    - br
 MD041: true          # First line should be h1
 MD046: true          # Enforce code block style
 MD025: true          # Disallow multiple h1 headers

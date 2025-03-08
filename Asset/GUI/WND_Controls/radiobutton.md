@@ -20,29 +20,29 @@ The following section list the default values and available textures for each ta
 
 ### RADIOBUTTONDATA
 
-* **GROUP**: An integer that defines the radio button group. Radio buttons with the same group ID act together - only
+- **GROUP**: An integer that defines the radio button group. Radio buttons with the same group ID act together - only
   one can be selected at a time within the group.
 
 ### ENABLEDDRAWDATA
 
-* `RadioButtonEnabledLeft`
-* `RadioButtonEnabledMiddle`
-* `RadioButtonEnabledRight`
+- `RadioButtonEnabledLeft`
+- `RadioButtonEnabledMiddle`
+- `RadioButtonEnabledRight`
 
 ### DISABLEDDRAWDATA
 
-* `RadioButtonDisabledLeft`
-* `RadioButtonDisabledMiddle`
-* `RadioButtonDisabledRight`
+- `RadioButtonDisabledLeft`
+- `RadioButtonDisabledMiddle`
+- `RadioButtonDisabledRight`
 
 ### HILITEDRAWDATA
 
-* `RadioButtonEnabledLeft`
-* `RadioButtonEnabledMiddle`
-* `RadioButtonEnabledRight`
-* `RadioButtonHilightedLeft`
-* `RadioButtonHilightedMiddle`
-* `RadioButtonHilightedRight`
+- `RadioButtonEnabledLeft`
+- `RadioButtonEnabledMiddle`
+- `RadioButtonEnabledRight`
+- `RadioButtonHilightedLeft`
+- `RadioButtonHilightedMiddle`
+- `RadioButtonHilightedRight`
 
 </details>
 
@@ -51,8 +51,8 @@ The following section list the default values and available textures for each ta
 Radio buttons usually work in groups, where only one button can be selected at a time. This behavior is controlled by
 the `RADIOBUTTONDATA` tag, specifically by the `GROUP` parameter.
 
-* All radio buttons within the same window that share the same group ID are considered as a single logical group.
-* Selecting one radio button in a group will deselect all other buttons in that group.
+- All radio buttons within the same window that share the same group ID are considered as a single logical group.
+- Selecting one radio button in a group will deselect all other buttons in that group.
 
 ## Example
 
@@ -111,8 +111,8 @@ END
 
 ## See also
 
-* [Default control](user.md)
-* [Texturing](../texturing.md)
-* [Statuses](../statuses.md)
+- [Default control](user.md)
+- [Texturing](../texturing.md)
+- [Statuses](../statuses.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)
