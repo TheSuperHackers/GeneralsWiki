@@ -1,18 +1,21 @@
 default: true
 
 # VitePress-specific settings
-MD013: true    # Enforce line length
-MD033:         # Disallow inline HTML, with some exceptions
+MD013:               # Enforce line length
+  code_blocks: false
+  tables: false
+  line_length: 120
+MD033:               # Disallow inline HTML, with some exceptions
   allowed_elements:
     - details
     - summary
-MD041: true    # First line should be h1
-MD046: true    # Enforce code block style
-MD025: true    # Disallow multiple h1 headers
-MD031: true    # Fenced code blocks need blank lines
-MD032: true    # Lists need blank lines
-MD040: true    # Language specification for code blocks
-MD042: true    # No empty links
+MD041: true          # First line should be h1
+MD046: true          # Enforce code block style
+MD025: true          # Disallow multiple h1 headers
+MD031: true          # Fenced code blocks need blank lines
+MD032: true          # Lists need blank lines
+MD040: true          # Language specification for code blocks
+MD042: true          # No empty links
 MD048:
   style: "backtick"  # Consistent code fence style
 
@@ -39,7 +42,3 @@ MD029:
 # Table formatting
 MD055: true          # Tables should have padding
 MD056: true          # Consistent table columns
-
-# Exclude markdown files starting with an underscore
-exclude:
-  - _*.md            # Exclude files starting with an underscore (e.g. _sidebar.md)
