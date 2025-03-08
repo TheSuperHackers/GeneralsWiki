@@ -47,7 +47,7 @@
 5. Under **CMake options**, add the following generate settings:
 
    ```text
-   -G "NMake Makefiles"
+      -G "NMake Makefiles"
    ```
    
    Be careful not to set `Preset`, as it will override the generator settings.
