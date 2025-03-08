@@ -50,7 +50,7 @@ END
 ## Available Tags
 
 The following tags are available for the **USER** control:
-<small>Click on the links to view available values and options for the tag.</small>
+> Click on the links to view available values and options for the tag.
 
 | Tag                                                           | Description                                                                                                  |
 |---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
@@ -69,17 +69,19 @@ The following tags are available for the **USER** control:
 | `TOOLTIPDELAY`                                                | Delay `0...n` time for the tooltip to appear, `-1` for disable.                                              |
 | `TEXT` (Optional)                                             | The text displayed in the control. see [Text Properties](../text_properties.md).                             |
 | `TEXTCOLOR`                                                   | Color settings for text in different states. see [Text Properties](../text_properties.md).                   |
-| `ENABLEDDRAWDATA`,<br>`DISABLEDDRAWDATA`,<br>`HILITEDRAWDATA` | Visual texture for the control in different states. see [Texturing](../texturing.md).                        |
+| `ENABLEDDRAWDATA`, `DISABLEDDRAWDATA`, `HILITEDRAWDATA`       | Visual texture for the control in different states. see [Texturing](../texturing.md).                        |
 
-<small>Note: All tags are case-sensitive.</small>
-
-<small>Note: The order of the tags is crucial for proper rendering of the control and must be followed as specified.</small>
+---
+> Note: All tags are case-sensitive.
+>
+> Note: The order of the tags is crucial for proper rendering of the control and must be followed as specified.
+---
 
 ## Example
 
 Here’s a sample code defining a **USER** control:
 
-<small>Note: Each texture contain 9 elements</small>
+> Note: Each texture contain 9 elements
 
 ```nasm
 WINDOW
@@ -132,7 +134,7 @@ END
 
 ## See Also
 
-* [Callbacks](../callbacks.md)
+- [Callbacks](../callbacks.md)
 - [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)

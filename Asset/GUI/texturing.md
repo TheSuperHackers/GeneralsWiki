@@ -92,7 +92,9 @@ you must still include the `NoImage` entry in the correct slot.
 
 **Example:**
 
-<smal>Note that colors whose alpha value is 0 are not actually applied.</small>
+---
+> Note that colors whose alpha value is 0 are not actually applied.
+---
 
 ```nasm
 ENABLEDDRAWDATA = IMAGE: LoadingBar_R, COLOR: 255 0 0 0, BORDERCOLOR: 255 128 128 0,

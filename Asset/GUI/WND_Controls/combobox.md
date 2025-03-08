@@ -1,7 +1,7 @@
 # ComboBox Control
 
 The **ComboBox** control is used for creating a dropdown list. You can define the position, size,
-and appearance of the <b>ComboBox</b>.
+and appearance of the **ComboBox**.
 
 ## Available tags
 
@@ -40,8 +40,6 @@ this control is self-contained and does not display or use a text label.
 The following section list the default values and available textures for each tag
 <details>
   <summary>Click to expand</summary>
-
-### COMBOBOXDATA
 
 ### COMBOBOXDATA
 
@@ -361,7 +359,7 @@ END
 
 ## See also
 
-* [Default control](user.md)
+- [Default control](user.md)
 - [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)

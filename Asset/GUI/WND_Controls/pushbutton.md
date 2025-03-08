@@ -99,7 +99,7 @@ END
 
 ## See also
 
-* [Default control](user.md)
+- [Default control](user.md)
 - [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)

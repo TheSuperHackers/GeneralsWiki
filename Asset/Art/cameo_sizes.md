@@ -2,7 +2,7 @@
 
 ## Description
 
-These are the default sizes of the unit portraits and it's button 
+These are the default sizes of the unit portraits and it's button
 images that are you used in the game; If you want to have more crisp
 button image and unit portrait visuals, just double the resolution listed below.
 
