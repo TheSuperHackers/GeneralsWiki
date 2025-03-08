@@ -13,8 +13,7 @@
 
 - **Download the necessary SDKs as needed**
   - 3ds max sdk: [3ds-max sdk](https://archive.org/details/maxsdk-4.2.0.85) and install it.
-    Copy the contents of the installed sdk ( normally in `C:\Program Files\Autodesk\3ds Max 2025 SDK\maxsdk` ) 
-    and paste it under the folder `/Code/Libraries/max4sdk`
+    Extract the contents of the zip file to the folder `/Code/Libraries/max4sdk`
 
 ## Build Steps
 
