@@ -2,14 +2,31 @@
 
 ## Prerequisites
 
-1. **Install Visual Studio 2022**
-   - Ensure that the necessary C++ development components, including MFC, are installed.
+- **Install Visual Studio 2022**  
+  Ensure that the necessary C++ development components, including MFC, are
+  installed.
 
-2. **Obtain the C&C Generals Source Code**
-   - Clone or download the source code repository: [Super Hackers Generals Game Code](https://github.com/TheSuperHackers/GeneralsGameCode.git).
+- **Obtain the C&C Generals Source Code**  
+  Clone or download the source code repository:  
+  [jmarshall2323 VS2022 Fork](https://github.com/jmarshall2323/CnC_Generals_Zero_Hour.git).
 
-3. **Install C&C Generals (Steam Version)**
-   - The game installation is required to access the necessary asset files.
+- **Install C&C Generals**  
+  The game installation is required to access the necessary asset files.
+
+- **Download the necessary SDKs as needed**  
+  3ds max sdk: [3ds-max sdk](https://archive.org/details/maxsdk-4.2.0.85).  
+  Download and extract the contents of the zip file to the folder  
+  `/Code/Libraries/max4sdk`
+  
+  In projects `\toolchain\max2w3d`  and `\toolchain\pluglib` setup the include and lib folder
+  entries to have the `/Code/Libraries/max4sdk`Include and Lib folders.
+
+> [!NOTE]
+> To add a include or lib folder source, right click on project entry,
+> select `Properties` and go to the VC++ Directories Tab.
+> There, add the path for the include folder in the sdk in the Includes Folder
+> (ie `<base_git_folder>\Code\Libraries\max4sdk\Include`) and the same for the
+> Libraries entry (`<base_git_folder>\Code\Libraries\max4sdk\Lib`)
 
 ## Build Steps
 
@@ -25,9 +42,9 @@
 - Right-click each project and select **Build**.
 - Ensure the build process completes without errors.
 
-### 3. Copy Required Game Files from Steam
+### 3. Copy Required Game Assets
 
-- Navigate to your C&C Generals Steam installation directory, typically:
+- Navigate to your C&C Generals installation directory, for example if using Steam:
 
   ``` text
   C:\Program Files (x86)\Steam\steamapps\common\Command and Conquer Generals Zero Hour\
@@ -48,7 +65,8 @@
 
 ### 4. Configure Paths Correctly
 
-- Ensure that the `Run` folder within your build directory contains all required game assets.
+- Ensure that the `Run` folder within your build directory contains all required
+  game assets.
 - If necessary, configure the **working directory** in Visual Studio:
   1. Right-click on the `RTS` project.
   2. Navigate to **Properties** → **Debugging**.
@@ -62,7 +80,8 @@
 ## Troubleshooting
 
 - **Missing DLLs?** Ensure that all required dependencies are installed.
-- **Game not launching?** Verify that all necessary `.BIG` files are correctly placed.
+- **Game not launching?** Verify that all necessary `.BIG` files are correctly
+  placed.
 - **Build errors?** Check Visual Studio settings and dependencies for any issues.
 
 ### Enjoy Modding and Playing C&C Generals! 🎮
