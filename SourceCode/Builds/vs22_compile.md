@@ -2,18 +2,21 @@
 
 ## Prerequisites
 
-- **Install Visual Studio 2022**
-  - Ensure that the necessary C++ development components, including MFC, are installed.
+- **Install Visual Studio 2022**  
+  Ensure that the necessary C++ development components, including MFC, are
+  installed.
 
-- **Obtain the C&C Generals Source Code**
-  - Clone or download the source code repository: [Super Hackers Generals Game Code]( https://github.com/jmarshall2323/CnC_Generals_Zero_Hour.git).
+- **Obtain the C&C Generals Source Code**  
+  Clone or download the source code repository:  
+  [Super Hackers Generals Game Code](https://github.com/jmarshall2323/CnC_Generals_Zero_Hour.git).
 
-- **Install C&C Generals (Steam Version)**
-  - The game installation is required to access the necessary asset files.
+- **Install C&C Generals (Steam Version)**  
+  The game installation is required to access the necessary asset files.
 
-- **Download the necessary SDKs as needed**
-  - 3ds max sdk: [3ds-max sdk](https://archive.org/details/maxsdk-4.2.0.85).
-    Download and extract the contents of the zip file to the folder `/Code/Libraries/max4sdk`
+- **Download the necessary SDKs as needed**  
+  3ds max sdk: [3ds-max sdk](https://archive.org/details/maxsdk-4.2.0.85).  
+  Download and extract the contents of the zip file to the folder  
+  `/Code/Libraries/max4sdk`
 
 ## Build Steps
 
@@ -33,13 +36,13 @@
 
 - Navigate to your C&C Generals Steam installation directory, typically:
 
-  ``` bash
+  ```bash
   C:\Program Files (x86)\Steam\steamapps\common\Command and Conquer Generals Zero Hour\
   ```
 
 - Copy all necessary `.BIG` files into the `Run` folder of your compiled project:
 
-  ``` bash
+  ```bash
   EnglishZH.big
   Generals.big
   INIZH.big
@@ -52,7 +55,8 @@
 
 ### 4. Configure Paths Correctly
 
-- Ensure that the `Run` folder within your build directory contains all required game assets.
+- Ensure that the `Run` folder within your build directory contains all required
+  game assets.
 - If necessary, configure the **working directory** in Visual Studio:
   1. Right-click on the `RTS` project.
   2. Navigate to **Properties** → **Debugging**.
@@ -66,7 +70,8 @@
 ## Troubleshooting
 
 - **Missing DLLs?** Ensure that all required dependencies are installed.
-- **Game not launching?** Verify that all necessary `.BIG` files are correctly placed.
+- **Game not launching?** Verify that all necessary `.BIG` files are correctly
+  placed.
 - **Build errors?** Check Visual Studio settings and dependencies for any issues.
 
 ### Enjoy Modding and Playing C&C Generals! 🎮
