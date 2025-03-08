@@ -15,18 +15,18 @@ The following section lists the default values and available textures for each t
 
 ### ENABLEDDRAWDATA
 
-* `Active-Unchecked`
-* `Active-Checked`
+- `Active-Unchecked`
+- `Active-Checked`
 
 ### DISABLEDDRAWDATA
 
-* `Disabled-Unchecked`
-* `Disabled-Checked`
+- `Disabled-Unchecked`
+- `Disabled-Checked`
 
 ### HILITEDRAWDATA
 
-* `Active-HiLighted`
-* `Active-Checked`
+- `Active-HiLighted`
+- `Active-Checked`
 
 ## Example
 
@@ -90,8 +90,8 @@ Here's an example from the `OptionsMenu.wnd` file:
 
 ## See also
 
-* [Default control](user.md)
-* [Texturing](../texturing.md)
-* [Statuses](../statuses.md)
+- [Default control](user.md)
+- [Texturing](../texturing.md)
+- [Statuses](../statuses.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)

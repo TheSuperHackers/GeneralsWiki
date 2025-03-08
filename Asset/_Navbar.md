@@ -1,3 +1,4 @@
+<!-- markdownlint-disable -->
 # Navbar for Generals Asset
 
 ## Asset
@@ -8,7 +9,7 @@
     - TGA
     - DDS
 - Audio & Video
-  - WAV 
+  - WAV
   - BIK
 - Game Design
   - INI
@@ -40,3 +41,4 @@
 ## Tools
   - FinalBIG
   - Generals Mode Builder
+<!-- markdownlint-restore -->
