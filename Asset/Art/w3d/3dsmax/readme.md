@@ -1,8 +1,9 @@
 # 3DSMAX
 
 After installing Autodesk 3ds Max, install following scripts:
-* [3DSMAX7 BFME2 W3D Scripts](https://github.com/TheSuperHackers/GeneralsTools/blob/main/Tools/w3d/3dsmax7_bfme2_mod_sdk.zip)
-* [3DSMAX W3D Importer](https://github.com/TheSuperHackers/GeneralsTools/blob/main/Tools/w3d/coolfile_w3d_importer.zip)
+
+- [3DSMAX7 BFME2 W3D Scripts](https://github.com/TheSuperHackers/GeneralsTools/blob/main/Tools/w3d/3dsmax7_bfme2_mod_sdk.zip)
+- [3DSMAX W3D Importer](https://github.com/TheSuperHackers/GeneralsTools/blob/main/Tools/w3d/coolfile_w3d_importer.zip)
 
 ## Configure W3D Importer
 
@@ -29,7 +30,6 @@ Note: the W3D Importer does not necessarily produce perfect imports. Vertices co
 To Export W3D File, select **File > Export** and choose the W3D file format in the Save Dialog.
 
 ![3dsmax8_export_w3d.png](images/3dsmax8_export_w3d.png)
-
 
 ## Rescale W3D Animation
 

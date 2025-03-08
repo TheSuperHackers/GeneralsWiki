@@ -1,10 +1,14 @@
+
+# Links
+
 [Scripting Overview](https://opensage.readthedocs.io/systems/scripting/index.html)
 
 [Map Scripting](http://www.cnclabs.com/forums/cnc_postst16829_Tutorials-By-AdrianeMapMaker.aspx)
+
 1. How To Do An Ai That will Create Units In Mission
 2. How My Ai Build Their Own Upgrade's In Mission
 3. How My Ai Garrison Far Positioned Buildings In Skirmish
-4. How My Ai Build Their Own Buildings In Mission 
+4. How My Ai Build Their Own Buildings In Mission
 5. How to Make a Ending For Your Mission
 
 [Scripting Spamming with Ease](https://youtu.be/UcBUGb81vKM)

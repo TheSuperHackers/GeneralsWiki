@@ -15,7 +15,7 @@ WND does not allow for comments, but most elements can have custom names that he
 
 Avoid resizing window element to 0 size. It can crash the game on runtime:
  `SCREENRECT = UPPERLEFT: 0 0, BOTTOMRIGHT: 0 0`
- 
+
 Hide window elements by setting the following STATUS flags:
  `STATUS = ENABLED+HIDDEN+SEE_THRU+NOINPUT+NOFOCUS`
   
@@ -27,6 +27,7 @@ Window elements with `WINDOWTYPE = SCROLLLISTBOX` cannot render large text rows 
  displayed at 1920x1080 Resolution is almost as high as it can go without breaking.
 
 Window transitions styles can be added to `Data\INI\WindowTransitions.ini` file. Styles are
+
 | Keyword               | Description                                         |
 |-----------------------|-----------------------------------------------------|
 | FLASH                 | Fine White Flash                                    |
@@ -41,10 +42,9 @@ Window transitions styles can be added to `Data\INI\WindowTransitions.ini` file.
 | MAINMENUMEDIUMSCALEUP |                                                     |
 | REVERSESOUND          | used in borders, acts like FULLFADE                 |
 
-
 ## Window element attributes
 
-```
+``` txt
 WINDOWTYPE
   +USER
   +PUSHBUTTON
@@ -59,19 +59,19 @@ WINDOWTYPE
   +VERTSLIDER
 ```
 
-```
+``` txt
 SCREENRECT
   UPPERLEFT: X Y,
   BOTTOMRIGHT: X Y,
   CREATIONRESOLUTION: X Y
 ```
 
-```
+``` txt
 NAME = 
   "WindowName.wnd:ElementName"
 ```
 
-```
+``` txt
 STATUS =
   +ENABLED
   +HIDDEN
@@ -89,7 +89,7 @@ STATUS =
   +TABSTOP
 ```
 
-```
+``` txt
 STYLE =
   +USER
   +MOUSETRACK
@@ -105,27 +105,27 @@ STYLE =
   +VERTSLIDER
 ```
 
-```
+``` txt
 SYSTEMCALLBACK =
   "[None]"
   "PassMessagesToParentSystem"
   ...
 ```
   
-```
+``` txt
 INPUTCALLBACK =
   "[None]"
   "GameWinBlockInput"
   ...
 ```
   
-```
+``` txt
 TOOLTIPCALLBACK =
   "[None]"
   ...
 ```
   
-```
+``` txt
 DRAWCALLBACK =
   "[None]"
   "W3DNoDraw"
@@ -134,14 +134,14 @@ DRAWCALLBACK =
   ...
 ```
   
-```
+``` txt
 FONT =
   NAME: "Font"
   SIZE: 0..n
   BOLD: 0..1
 ```
   
-```
+``` txt
 HEADERTEMPLATE =
   "[None]"
   "Title"
@@ -164,20 +164,20 @@ HEADERTEMPLATE =
   See Data\Language\HeaderTemplate.ini
 ```
 
-```
+``` txt
 TOOLTIPDELAY =
   -1
   0..n
 ```
 
-```
+``` txt
 TEXT =
   "CATEGORY:StringName"
   ...
   See Data\Language\generals.csf
 ```
 
-```
+``` txt
 TEXTCOLOR =
   ENABLED: R G B A,
   ENABLEDBORDER: R G B A,

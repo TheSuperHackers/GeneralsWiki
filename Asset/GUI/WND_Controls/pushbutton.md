@@ -5,25 +5,30 @@ You can define the position, size, and appearance of the button,
 as well as how it behaves in different states (enabled, disabled, highlighted).
 
 ## Available Tags
+
 The PushButton control does not include any unique tags beyond the [default control tags](/user.md).
 It uses the same general set of tags applicable to all controls.
 
 ## Default values and usage
+
 The following section list the default values and available textures for each tag
 <details>
   <summary>Click to expand</summary>
 
 ### ENABLEDDRAWDATA
+
 - Buttons-Left
 - Buttons-Middle
 - Buttons-Right
 
 ### DISABLEDDRAWDATA
+
 - Buttons-Disabled-Left
 - Buttons-Disabled-Middle
 - Buttons-Disabled-Right
 
 ### HILITEDRAWDATA
+
 - Buttons-HiLite-Left
 - Buttons-HiLite-Middle
 - Buttons-HiLite-Right
@@ -34,6 +39,7 @@ The following section list the default values and available textures for each ta
 </details>
 
 ## Example
+
 Here example from Accept button in `OptionsMenu.wnd` file:
 <details>
   <summary>Click to expand</summary>
@@ -88,10 +94,12 @@ WINDOW
                      IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
 END
 ```
+
 </details>
 
 ## See also
+
 * [Default control](user.md)
-* [Texturing](../texturing.md)
+- [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)

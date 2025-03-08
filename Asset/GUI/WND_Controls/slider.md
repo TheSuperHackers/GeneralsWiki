@@ -19,37 +19,36 @@ In addition to the [default control tags](/user.md), the Slider control has the 
 
 The following section list the default values and available textures for each tag
 
-
 ### SLIDERDATA
 
-* `MINVALUE`: The minimum value for the slider (e.g., 10).
-* `MAXVALUE`: The maximum value for the slider (e.g., 145).
+- `MINVALUE`: The minimum value for the slider (e.g., 10).
+- `MAXVALUE`: The maximum value for the slider (e.g., 145).
 
 ### ENABLEDDRAWDATA, DISABLEDDRAWDATA, HILITEDRAWDATA (Track)
 
-* `hilightedbox` / `dehilightedbox` / `NoImage`
-* `linebox`/ `arrow` / `NoImage`
+- `hilightedbox` / `dehilightedbox` / `NoImage`
+- `linebox`/ `arrow` / `NoImage`
 
 ### SLIDERTHUMBENABLEDDRAWDATA, SLIDERTHUMBDISABLEDDRAWDATA, SLIDERTHUMBHILITEDRAWDATA
 
-* `NoImage` /  `NoImage` /  `arrow`
-* `WindowResizeEnabled` / `WindowResizeDisabled` / `WindowResizeHilite`
-* `WindowResizePushed` /  `NoImage` / `WindowResizePushed`
+- `NoImage` /  `NoImage` /  `arrow`
+- `WindowResizeEnabled` / `WindowResizeDisabled` / `WindowResizeHilite`
+- `WindowResizePushed` /  `NoImage` / `WindowResizePushed`
 
 ## How it Works
 
 The `Slider` control consists of the following parts:
 
-* **Track:** The track represents the line or area that the thumb moves on.
-* **Thumb:** The thumb is the interactive handle that the user drags to select a value.
+- **Track:** The track represents the line or area that the thumb moves on.
+- **Thumb:** The thumb is the interactive handle that the user drags to select a value.
 
 The game automatically updates the visual position of the thumb based on the selected value.
 
 ## Slider Types
 
-* **Horizontal Slider (`HORZSLIDER`):** The slider moves horizontally.
+- **Horizontal Slider (`HORZSLIDER`):** The slider moves horizontally.
 
-* **Vertical Slider (`VERTSLIDER`):** The slider moves vertically.
+- **Vertical Slider (`VERTSLIDER`):** The slider moves vertically.
 
 ## Examples
 
@@ -219,12 +218,13 @@ WINDOW
                               IMAGE: NoImage, COLOR: 255 255 255 0, BORDERCOLOR: 255 255 255 0;
 END
 ```
+
 </details>
 
 ## See also
 
-* [Default control](user.md)
-* [Texturing](../texturing.md)
-* [Statuses](../statuses.md)
+- [Default control](user.md)
+- [Texturing](../texturing.md)
+- [Statuses](../statuses.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)

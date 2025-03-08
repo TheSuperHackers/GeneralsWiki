@@ -1,12 +1,15 @@
+# WorldBuilder Links
+
 [WorldBuilder Tutorials](https://www.youtube.com/watch?v=MvjIL5ARZBk&list=PLY4PfZWEnYtVad853LHjILA1Z5nB5hlim)
-* Creating a map Base Frame
-* Enable/Disable Waves
-* How to correctly renaming a official map
-* Designing a beach
-* How to create a Water fall
-* Getting rid of Auto Save
-* Howto add waves in coastline
-* Worldbuilder - Getting Started
+
+- Creating a map Base Frame
+- Enable/Disable Waves
+- How to correctly renaming a official map
+- Designing a beach
+- How to create a Water fall
+- Getting rid of Auto Save
+- Howto add waves in coastline
+- Worldbuilder - Getting Started
 
 [How to make realistic tunnel](https://www.moddb.com/mods/command-conquer-generals-version-20/tutorials/creating-a-realistic-tunnel-with-worldbuilder1)
 

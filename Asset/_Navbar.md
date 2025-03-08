@@ -1,6 +1,7 @@
 # Navbar for Generals Asset
 
 ## Asset
+
 - Art
   - Models
     - W3D
@@ -8,7 +9,7 @@
     - TGA
     - DDS
 - Audio & Video
-  - WAV 
+  - WAV
   - BIK
 - Game Design
   - INI
@@ -38,5 +39,6 @@
   - GUI Editor
 
 ## Tools
-  - FinalBIG
-  - Generals Mode Builder
+
+- FinalBIG
+- Generals Mode Builder

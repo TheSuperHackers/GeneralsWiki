@@ -1,4 +1,4 @@
-### Full list of command-line arguments that the game accepts:
+# Full list of command-line arguments that the game accepts
 
 - `-updateImages`
 - `-jumpToFrame`
