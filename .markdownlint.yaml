@@ -1,6 +1,7 @@
 default: true
 
 # VitePress-specific settings
+MD013: true    # Enforce line length
 MD033:         # Disallow inline HTML, with some exceptions
   allowed_elements:
     - details
@@ -16,7 +17,6 @@ MD048:
   style: "backtick"  # Consistent code fence style
 
 # Formatting rules
-MD013: false         # Enforce line length
 MD004:
   style: "dash"      # Consistent list markers
 MD007:
@@ -39,3 +39,7 @@ MD029:
 # Table formatting
 MD055: true          # Tables should have padding
 MD056: true          # Consistent table columns
+
+# Exclude markdown files starting with an underscore
+exclude:
+  - _*.md            # Exclude files starting with an underscore (e.g. _sidebar.md)
