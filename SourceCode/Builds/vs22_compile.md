@@ -18,7 +18,7 @@
   Download and extract the contents of the zip file to the folder  
   `/Code/Libraries/max4sdk`
   
-  In projects `\toolchain\max2w3d`  and `\toolchain\pluglib`) setup the include and lib folder
+  In projects `\toolchain\max2w3d`  and `\toolchain\pluglib` setup the include and lib folder
   entries to have the `/Code/Libraries/max4sdk`Include and Lib folders.
 
 > [!NOTE]
