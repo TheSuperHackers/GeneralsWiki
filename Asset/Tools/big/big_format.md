@@ -32,7 +32,9 @@ Source
 <https://github.com/TheAssemblyArmada/Thyme/wiki/BIG-File-Format>
 
 BIG files are an archive format used in many games published by Electronic Arts.
-The supported features vary between games, with some using compression or encryption, but for SAGE, the files are trivially concatenated together and wrapped with a header containing a series of index entries that located a given file within the archive.
+The supported features vary between games, with some using compression or encryption, but for SAGE,
+the files are trivially concatenated together and wrapped with a header containing a series of index entries
+that located a given file within the archive.
 
 ### Header
 
