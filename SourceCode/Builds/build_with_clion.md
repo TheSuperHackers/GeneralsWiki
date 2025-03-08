@@ -49,6 +49,7 @@
    ```text
    -G "NMake Makefiles"
    ```
+   
    Be careful not to set `Preset`, as it will override the generator settings.
 6. Add the build directory path under **CMake Build Directory**:
 
