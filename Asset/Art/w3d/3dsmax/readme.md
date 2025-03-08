@@ -21,7 +21,8 @@ To import W3D File, select **File > Import W3D**.
 
 To unload it, select **File > Reset**.
 
-Note: the W3D Importer does not necessarily produce perfect imports. Vertices counts may differ between the original W3D mesh and the imported W3D mesh. If the mesh looks ok, you can use it however.
+Note: the W3D Importer does not necessarily produce perfect imports. Vertices counts may differ between the original W3D
+mesh and the imported W3D mesh. If the mesh looks ok, you can use it however.
 
 ![3dsmax8_import_w3d.png](images/3dsmax8_import_w3d.png)
 
