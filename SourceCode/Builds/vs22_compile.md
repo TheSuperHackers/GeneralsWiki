@@ -35,7 +35,7 @@
 - Right-click each project and select **Build**.
 - Ensure the build process completes without errors.
 
-### 3. Copy Required Game Files from Steam
+### 3. Copy Required Game Assets
 
 - Navigate to your C&C Generals installation directory, for example if using Steam:
 
