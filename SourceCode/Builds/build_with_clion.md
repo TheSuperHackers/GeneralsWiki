@@ -6,7 +6,7 @@
 2. **Microsoft Visual C++ 6.0 (VC6)** installed (assuming it’s installed in the
    default directory).
 3. **CMake** installed and configured.
-4. **Source code** of the project from TheSuperHackers repository.
+4. **Source code** of the project cloned from the TheSuperHackers repository.
 
 ## Step 1: Setting Up the Toolchain in CLion
 
@@ -49,7 +49,7 @@
    ```text
    -G "NMake Makefiles"
    ```
-
+   Be careful not to set `Preset`, as it will override the generator settings.
 6. Add the build directory path under **CMake Build Directory**:
 
    ```text
@@ -59,9 +59,9 @@
 ## Step 3: Compiling and Running the Project
 
 1. Now, click the **Build** button in CLion.
-2. CLion will begin the build process using the VC6 (x86) toolchain.
-3. After the build is completed successfully, you can run the game from within
-   CLion or execute the generated EXE file.
+2. CLion will start the build process using the VC6 (x86) toolchain.
+3. Once the build is successfully completed, a **zerohour.exe** file will be generated.
+4. You need to copy the **zerohour.exe** file to the appropriate game directory in order to run the game.
 
 ---
 
@@ -73,3 +73,4 @@
   properly.
 - You can add Release and Debug profiles in CLion to build the project in
   different configurations.
+- Admin rights might be required to run VC6 tools, so make sure to run CLion as an administrator.
