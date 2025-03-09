@@ -14,6 +14,7 @@
 - Game Design
   - INI
     - [INI Files](GameDesign/ini)
+      - [ZeroSyntax VSCode Extension](GameDesign/ini/ini-linter.md)
   - SCB
     - [SCB Links](GameDesign/scb/links.md)
 - Maps
