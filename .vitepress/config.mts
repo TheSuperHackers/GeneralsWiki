@@ -1,10 +1,21 @@
-import { defineConfig } from "vitepress";
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid({
   title: "GeneralsWiki",
   description: "Generals Community Wiki",
   lastUpdated: true,
+
+  // MermaidConfig
+  mermaid: {
+    // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
+  },
+  // optionally set additional config for plugin itself with MermaidPluginConfig
+  mermaidPlugin: {
+    class: "mermaid my-class", // set additional css classes for parent container
+  },
+
+  // Theme Config
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/assets/icon.webp",
@@ -90,7 +101,10 @@ export default defineConfig({
         'Want to contribute to this Wiki? <a href="https://github.com/TheSuperHackers/GeneralsWiki.git">Fork it and send a pull request.</a>',
     },
 
-    socialLinks: [{ icon: "github", link: "https://github.com/TheSuperHackers/GeneralsWiki" }],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/TheSuperHackers/GeneralsWiki" },
+      { icon: "discord", link: "https://www.community-outpost.com/discord" },
+    ],
   },
   head: [["link", { rel: "icon", href: "/assets/favicon.ico" }]],
 });
