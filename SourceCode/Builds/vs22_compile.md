@@ -18,19 +18,7 @@
   Download and extract the contents of the zip file to the folder  
   `/Code/Libraries/max4sdk`
   
-
-
-Similarly, go to the pluglib project in \toolchain\pluglib and update the paths.
-
-> [!NOTE]
-> To add a include or lib folder source, right click on project entry,
-> select `Properties` and go to the VC++ Directories Tab.
-> There, add the path for the include folder in the sdk in the Includes Folder
-> (ie `<base_git_folder>\Code\Libraries\max4sdk\Include`) and the same for the
-> Libraries entry (`<base_git_folder>\Code\Libraries\max4sdk\Lib`)
-
 ## Build Steps
-
 
 ### 1. Copy Required Game Assets
 
