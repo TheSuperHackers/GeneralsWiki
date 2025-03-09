@@ -25,7 +25,7 @@
 - Navigate to your C&C Generals installation directory, for example if using Steam:
 
   ``` text
-  C:\Program Files (x86)\Steam\steamapps\common\Command and Conquer Generals Zero Hour\
+  C:\Program Files (x86)\Steam\steamapps\common\Command and Conquer Generals
   ```
 
 - Copy all necessary `.BIG` files into the `Run` folder of your compiled project:
