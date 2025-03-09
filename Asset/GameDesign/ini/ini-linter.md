@@ -1,4 +1,4 @@
-# Linting for INI files
+# ZeroSyntax VSCode Extension
 
 Working with INI files can be a bit of a pain, because of the custom syntax defined by the developers. If a single line contains a syntax error, the entire game can crash. Because of this, an extension for Visual Studio Code was created by @ViTeXFTW to help with linting INI files. This extension is called ZeroSyntax.
 
