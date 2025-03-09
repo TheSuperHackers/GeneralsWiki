@@ -14,16 +14,16 @@ The following section list the default values and available textures for each ta
 
 ### ENABLEDDRAWDATA
 
-* `LoadingBar_L`
-* `LoadingBar_R`
-* `LoadingBar_C`
-* `LoadingBar_DePowered`
-* `LoadingBar_Progress`
-* `NoImage`
+- `LoadingBar_L`
+- `LoadingBar_R`
+- `LoadingBar_C`
+- `LoadingBar_DePowered`
+- `LoadingBar_Progress`
+- `NoImage`
 
 ### DISABLEDDRAWDATA, HILITEDRAWDATA
 
-* `NoImage` (Usually `NoImage` is used for all parts)
+- `NoImage` (Usually `NoImage` is used for all parts)
 
 ## Example
 
@@ -85,8 +85,7 @@ END
 
 ## See also
 
-* [Default control](user.md)
-* [Texturing](../texturing.md)
+- [Default control](user.md)
+- [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)
-

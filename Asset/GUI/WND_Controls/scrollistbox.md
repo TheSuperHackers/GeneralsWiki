@@ -31,15 +31,15 @@ The following section list the default values and available textures for each ta
 
 ### LISTBOXDATA
 
-* `LENGTH`: The maximum number of items that can be displayed on the listbox (e.g., 100).
-* `AUTOSCROLL`: Defines if the listbox should scroll automatically to the selected item `0` = disabled, `1` = enabled.
-* `AUTOPURGE`: Defines if the listbox should remove items that are not visible `0` = disabled, `1` = enabled.
-* `SCROLLBAR`: Defines if the scrollbar should be visible `0` = disabled, `1` = enabled.
-* `MULTISELECT`: Defines if the listbox should allow multiple items to be selected `0` = disabled, `1` = enabled.
-* `COLUMNS`: The number of columns in the listbox. (e.g. 4).
-* `COLUMNSWIDTH`: The width of each column in pixels. (e.g.
-  `COLUMNSWIDTH: 30, COLUMNSWIDTH: 20, COLUMNSWIDTH: 25, COLUMNSWIDTH: 25` for a four columns listbox)
-* `FORCESELECT`: If you set it to 1, the first item will always be selected.
+- `LENGTH`: The maximum number of items that can be displayed on the listbox (e.g., 100).
+- `AUTOSCROLL`: Defines if the listbox should scroll automatically to the selected item `0` = disabled, `1` = enabled.
+- `AUTOPURGE`: Defines if the listbox should remove items that are not visible `0` = disabled, `1` = enabled.
+- `SCROLLBAR`: Defines if the scrollbar should be visible `0` = disabled, `1` = enabled.
+- `MULTISELECT`: Defines if the listbox should allow multiple items to be selected `0` = disabled, `1` = enabled.
+- `COLUMNS`: The number of columns in the listbox. (e.g. 4).
+- `COLUMNSWIDTH`: The width of each column in pixels. (e.g. `COLUMNSWIDTH: 30, COLUMNSWIDTH: 20, COLUMNSWIDTH: 25,
+  COLUMNSWIDTH: 25` for a four columns listbox)
+- `FORCESELECT`: If you set it to 1, the first item will always be selected.
 
 ### ENABLEDDRAWDATA, DISABLEDDRAWDATA, HILITEDRAWDATA
 
@@ -82,9 +82,9 @@ The ScrollListBox control uses multiple textures to create the visual effect of 
 
 ## Important Notes
 
-* **Column Widths:** When using multiple columns, the sum of the `COLUMNSWIDTH` values must not exceed the width of the
+- **Column Widths:** When using multiple columns, the sum of the `COLUMNSWIDTH` values must not exceed the width of the
   `SCREENRECT`.
-* **`DRAWDATA`**: Each `DRAWDATA` tag consists of a sequence of **exactly 9 entries**, each defining how a specific part
+- **`DRAWDATA`**: Each `DRAWDATA` tag consists of a sequence of **exactly 9 entries**, each defining how a specific part
   of the control's texture should be rendered. The order and position of the textures within `DRAWDATA` is critical and
   must be defined correctly according to each state of the listbox.
 
@@ -94,7 +94,6 @@ Here's an example from the `ReplayMenu.wnd` file:
 
 <details>
   <summary>Click to expand</summary>
-
 
 ```nasm
 WINDOW
@@ -267,4 +266,3 @@ END
 </details>
 
 ## See also
-
