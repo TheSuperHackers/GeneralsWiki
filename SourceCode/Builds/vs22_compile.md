@@ -18,8 +18,9 @@
   Download and extract the contents of the zip file to the folder  
   `/Code/Libraries/max4sdk`
   
-  In projects `\toolchain\max2w3d`  and `\toolchain\pluglib` setup the include and lib folder
-  entries to have the `/Code/Libraries/max4sdk`Include and Lib folders.
+
+
+Similarly, go to the pluglib project in \toolchain\pluglib and update the paths.
 
 > [!NOTE]
 > To add a include or lib folder source, right click on project entry,
@@ -30,19 +31,8 @@
 
 ## Build Steps
 
-### 1. Open the Project in Visual Studio 2022
 
-- Launch Visual Studio 2022 and open the solution file `Code/RTS.sln`.
-
-### 2. Select and Compile the Required Projects
-
-- In the **Solution Explorer**, locate the following projects:
-  - `RTS`
-  - `WorldBuilder`
-- Right-click each project and select **Build**.
-- Ensure the build process completes without errors.
-
-### 3. Copy Required Game Assets
+### 1. Copy Required Game Assets
 
 - Navigate to your C&C Generals installation directory, for example if using Steam:
 
@@ -63,14 +53,32 @@
 
 - Copy the entire `Data` folder to the `Run` folder as well.
 
-### 4. Configure Paths Correctly
+### 2. Open the Project in Visual Studio 2022
 
-- Ensure that the `Run` folder within your build directory contains all required
-  game assets.
-- If necessary, configure the **working directory** in Visual Studio:
-  1. Right-click on the `RTS` project.
-  2. Navigate to **Properties** → **Debugging**.
-  3. Set `Working Directory` to your `Run` folder.
+- Launch Visual Studio 2022 and open the solution file `Code/RTS.sln`.
+
+### 3. Set up Paths correctly
+
+- Load the RTS.sln Solution file in Visual Studio.
+- Navigate to the max2w3d project folder in \toolchain\max2w3d
+- Right-click on the project and select Properties.
+- In the VC++ Directories tab, update the Additional Include Directories to the SDK Includes
+  Folder (ie <base_git_folder>\Code\Libraries\max4sdk\Include)
+- And the same tab, update the Additional Library Directories to the
+  SDK Libraries Folder (ie <base_git_folder>\Code\Libraries\max4sdk\Lib
+- Navigate to **Properties** → **Debugging**.
+- Set `Working Directory` to your `Run` folder.
+
+>[!NOTE]
+>Ensure that the `Run` folder within your build directory contains all required game assets.
+
+### 4. Select and Compile the Required Projects
+
+- In the **Solution Explorer**, locate the following projects:
+  - `RTS`
+  - `WorldBuilder`
+- Right-click each project and select **Build**.
+- Ensure the build process completes without errors.
 
 ### 5. Run the Game or World Builder
 
