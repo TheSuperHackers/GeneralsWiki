@@ -7,6 +7,8 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: "/assets/icon.webp",
+
     nav: [
       { text: "Home", link: "/" },
       { text: "Compile", link: "/SourceCode/Builds/vs22_compile.md" },
