@@ -47,6 +47,7 @@
 
 ### 3. Set up Paths correctly
 
+- Add to your PATH environment variable the following folder: `<base_git_folder>\Code\Tools\NVASM`
 - Load the RTS.sln Solution file in Visual Studio.
 - Navigate to the max2w3d project folder in \toolchain\max2w3d
 - Right-click on the project and select Properties.
