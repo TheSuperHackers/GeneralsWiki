@@ -58,7 +58,7 @@ Clone the code from WIP OmniBlade -> TheSuperHackers
 
 `git clone https://github.com/OmniBlade/CnC_Generals_Zero_Hour.git`
 
-`cd CnC_Generals_Zero_Hour.git`
+`cd CnC_Generals_Zero_Hour`
 
 `git switch blade/cmake-build`
 
@@ -80,30 +80,30 @@ Execute the setup build environment script. In your cmd type this.
 PATH
 
 ```shell
-C:\<VS6_INSTALL_PATH>\vb98;
-C:\<VS6_INSTALL_PATH>\vc98\bin;
-C:\<VS6_INSTALL_PATH>\vc98\lib;
-C:\<VS6_INSTALL_PATH>\vc98\include;
-C:\<VS6_INSTALL_PATH>\common\tools;
-C:\<VS6_INSTALL_PATH>\common\msdev98\bin
+C:\<VS6_INSTALL_PATH>\VC98;
+C:\<VS6_INSTALL_PATH>\VC98\Bin;
+C:\<VS6_INSTALL_PATH>\VC98\Lib;
+C:\<VS6_INSTALL_PATH>\VC98\Include;
+C:\<VS6_INSTALL_PATH>\Common\tools;
+C:\<VS6_INSTALL_PATH>\Common\MSDev98\Bin
 ```
 
 Environment Variables
 
 ```shell
-set LIB=C:\<VS6_INSTALL_PATH>\vc98\lib;^
-C:\<VS6_INSTALL_PATH>\vc98\mfc\lib;^
+set LIB=C:\<VS6_INSTALL_PATH>\VC98\Lib;^
+C:\<VS6_INSTALL_PATH>\VC98\MFC\Lib;^
 C:\<PPROJECT_FOLDER>\build\vc6
 
-set INCLUDE=C:\<VS6_INSTALL_PATH>\vc98\alt\include;^
-C:\<VS6_INSTALL_PATH>\vc98\include;^
-C:\<VS6_INSTALL_PATH>\vc98\MFC\include;^
-C:\<VS6_INSTALL_PATH>\vc98\include
+set INCLUDE=C:\<VS6_INSTALL_PATH>\VC98\ALT\Include;^
+C:\<VS6_INSTALL_PATH>\VC98\Include;^
+C:\<VS6_INSTALL_PATH>\VC98\MFC\Include;^
+C:\<VS6_INSTALL_PATH>\VC98\Include
 
-set CC=C:\<VS6_INSTALL_PATH>\vc98\bin\cl.exe
-set CXX=C:\<VS6_INSTALL_PATH>\vc98\bin\cl.exe
+set CC=C:\<VS6_INSTALL_PATH>\VC98\Bin\cl.exe
+set CXX=C:\<VS6_INSTALL_PATH>\VC98\Bin\cl.exe
 
-set MSVCDir=C:\<VS6_INSTALL_PATH>\vc98
+set MSVCDir=C:\<VS6_INSTALL_PATH>\VC98
 ```
 
 ### Compiling
