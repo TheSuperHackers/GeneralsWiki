@@ -14,9 +14,8 @@ Even if you do not know C++, you should still be able to compile the source code
 
 Download the following binary and software and have them ready in a project folder.
 
-- Visual Studio 6.0 Enterprise Edition Disc 1 [Link](https://archive.org/details/visualstudiov60enterpriseedition_199807)
-- Visual Studio v6.0 Service Pack 6 [Link](https://winworldpc.com/download/a4208baa-aaee-11eb-bc5b-0200008a0da4)
-- Source code Zero Hour [Link](https://github.com/TheSuperHackers/GeneralsGameCode)
+- Visual Studio 6.0 Portable [Link](https://github.com/itsmattkc/MSVC600)
+- Source code [Link](https://github.com/TheSuperHackers/GeneralsGameCode)
 - CMake 3.31.6 [Link](https://github.com/Kitware/CMake/releases/download/v3.31.6/cmake-3.31.6-windows-x86_64.msi)
 - Git [Link](https://git-scm.com/downloads)
 
@@ -26,19 +25,9 @@ Installation of tools and software that are needed for compilation.
 
 **Install Visual Studio 6**
 
-- Install Visual Studio 6.0 by extracting the content of the disk and copy the installation files to your project folder.
-- Follow the installation instructions from this website [Link](https://www.codeproject.com/Articles/1191047/Install-Visual-Studio-6-0-on-Windows-10)
-- **Disable ADO, RDS, and OLE DB Providers**
-- **Disable Visual Studio Analyzer**
-- **Dont check "Setup Environment Variables" checkbox
-- Restart your computer
-- Install MSDN a window will pop up. If it fails ignore it.
-- Add `C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\` to your windows PATH environment
-
-**Install Service Pack 6**
-
-- Extract the contents of the service pack.
-- Run the installer `Vs6sp6.exe`
+- Download the portable Visual Studio 6 as ZIP file from GitHub.
+- Extract the contents and put them in the default install folder.
+- Installation folder: `C:\Program Files (x86)\Microsoft Visual Studio\`
 
 **Install CMake**
 
@@ -136,7 +125,3 @@ Double click `zerohour.exe` inside the Zero Hour path.
 
 - Delete the `build` folder and try again.
 - Sometimes, CMake's **cache** gets corrupted, and you need to **start fresh**.
-
-**Can not install Visual Studio 6.0**
-
-- If you are not able to install the compiler on your system even after multiple tires you can pivot to using the portable version of vs6.
