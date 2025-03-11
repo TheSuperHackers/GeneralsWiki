@@ -7,8 +7,8 @@ and condition of the texture.
 ## Texture Naming Structure
 
 >[!TIP]
-> the `_en` and `_rn` textures invalid because 99% of textures with these suffixes do not have proper night lighting but are simply darkened versions of
-> the base texture. They only increase the brightness from `_dn` to `_en`.
+> the `_en` and `_rn` textures invalid because 99% of textures with these suffixes do not have proper night lighting but
+> are simply darkened versions of the base texture. They only increase the brightness from `_dn` to `_en`.
 
 ### Summer Textures
 
