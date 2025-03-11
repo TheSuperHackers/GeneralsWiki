@@ -13,7 +13,7 @@ compile your own code with it.
 
 ## Dockerfile
 
-On your project folder create a file named `Dockerfile` and copy the 
+On your project folder create a file named `Dockerfile` and copy the
 following content inside of it and save the file.
 
 ```docker
@@ -120,5 +120,5 @@ CMD tail -f /dev/null
 Build the game by executing `docker build -t zerohour .`
 
 After the build you can run the container and use `docker cp`
-or you could mount a volume to `/build` so you can directly 
+or you could mount a volume to `/build` so you can directly
 compile your own code and copy the binary off.
