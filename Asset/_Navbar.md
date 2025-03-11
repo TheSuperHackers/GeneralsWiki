@@ -6,8 +6,7 @@
   - Models
     - W3D
   - Textures
-    - TGA
-    - DDS
+    - [Texture Guidelines](Art/dds/texture_guidelines.md)
 - Audio & Video
   - WAV
   - BIK
