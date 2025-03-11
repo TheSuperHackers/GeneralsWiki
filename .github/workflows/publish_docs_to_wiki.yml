@@ -25,9 +25,8 @@ jobs:
           mkdir tmp_wiki
           cd tmp_wiki
           git init
-          git config user.name ${{ secrets.WIKI_USER_NAME }}
-          git config user.email ${{ secrets.WIKI_USER_EMAIL }}
-          git pull https://${{ secrets.WIKI_ACTION_TOKEN }}@github.com/TheSuperHackers/GeneralsGamePatch.wiki.git
+          git remote add origin https://${{ secrets.WIKI_ACTION_TOKEN }}@github.com/TheSuperHackers/GeneralsGamePatch.wiki.git
+          git pull origin master
 
       - name: Push wiki
         run: |
@@ -35,7 +34,7 @@ jobs:
           cd tmp_wiki
           git add .
           git commit -m "Update Wiki content"
-          git push -f --set-upstream https://${{ secrets.WIKI_ACTION_TOKEN }}@github.com/TheSuperHackers/GeneralsGamePatch.wiki.git master
+          git push origin master
 
   publish_sourcecode_to_wiki:
     name: Publish SourceCode to Wiki
@@ -53,9 +52,8 @@ jobs:
           mkdir tmp_wiki
           cd tmp_wiki
           git init
-          git config user.name ${{ secrets.WIKI_USER_NAME }}
-          git config user.email ${{ secrets.WIKI_USER_EMAIL }}
-          git pull https://${{ secrets.WIKI_ACTION_TOKEN }}@github.com/TheSuperHackers/GeneralsGameCode.wiki.git
+          git remote add origin https://${{ secrets.WIKI_ACTION_TOKEN }}@github.com/TheSuperHackers/GeneralsGameCode.wiki.git
+          git pull origin master
 
       - name: Push wiki
         run: |
@@ -63,4 +61,4 @@ jobs:
           cd tmp_wiki
           git add .
           git commit -m "Update Wiki content"
-          git push -f --set-upstream https://${{ secrets.WIKI_ACTION_TOKEN }}@github.com/TheSuperHackers/GeneralsGameCode.wiki.git master
+          git push origin master
