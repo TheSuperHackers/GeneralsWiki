@@ -4,10 +4,10 @@
 ## Asset
 - Art
   - Models
-    - W3D
+    - [3DS Max](Art/w3d/3dsmax/readme.md)
   - Textures
-    - TGA
-    - DDS
+    - [Cameo Sizes](Art/cameo_sizes.md)
+
 - Audio & Video
   - WAV
   - BIK
