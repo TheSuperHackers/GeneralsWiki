@@ -5,6 +5,7 @@ export default withMermaid({
   title: "GeneralsWiki",
   description: "Generals Community Wiki",
   lastUpdated: true,
+  ignoreDeadLinks: true,
 
   // MermaidConfig
   mermaid: {
