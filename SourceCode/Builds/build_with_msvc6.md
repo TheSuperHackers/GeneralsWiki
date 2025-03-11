@@ -80,7 +80,7 @@ Execute the setup build environment script. In your cmd type this.
 PATH
 
 ```shell
-C:\<VS6_INSTALL_PATH>\VC98;
+C:\<VS6_INSTALL_PATH>\VB98;
 C:\<VS6_INSTALL_PATH>\VC98\Bin;
 C:\<VS6_INSTALL_PATH>\VC98\Lib;
 C:\<VS6_INSTALL_PATH>\VC98\Include;
