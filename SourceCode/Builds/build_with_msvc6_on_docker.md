@@ -58,9 +58,13 @@ ENV WINEARCH=win64
 ENV WINEPREFIX=/build/prefix64
 RUN wineboot
 
+# Create empty TEMP folder for linking
+RUN mkdir /build/tmp
+ENV TMP="Z:\\build\\tmp"
+ENV TEMP="Z:\\build\\tmp"
+ENV TEMPDIR="Z:\\build\\tmp"
+
 # Setup Visual Studio 6 Environment variables
-ENV TMP="Z:\\tmp"
-ENV TEMP="Z:\\tmp"
 ENV VS="Z:\\build\\tools\\vs6"
 ENV MSVCDir="$VS\\vc98"
 ENV WINEPATH="C:\\windows\\system32;\
@@ -107,11 +111,10 @@ RUN wine /build/tools/cmake/bin/cmake.exe \
 WORKDIR /build/cnc/build/vc6
 
 # Compile
-RUN wine /build/tools/vs6/VC98/Bin/NMAKE.exe
+RUN wine cmd /c "set TMP=Z:\build\tmp& set TEMP=Z:\build\tmp& Z:\build\tools\vs6\VC98\Bin\NMAKE.exe"
 
 # Keep the container alive
 CMD tail -f /dev/null
-
 ```
 
 Build the game by executing `docker build -t zerohour .`
