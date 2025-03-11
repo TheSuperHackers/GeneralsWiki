@@ -21,6 +21,7 @@
   - [Map](GameDesign/ini/map.md)
   - [World Builder Links](Maps/worldbuilder/links.md)
 - Localization
+  - [Localization Contribution](Localization/localization_contribution.md)
   - [LOCA - Unit Quotes](Localization/unit_quotes.txt)
 
 - GUI
