@@ -1,0 +1,35 @@
+name: Publish Asset to Wiki
+# Credit: https://nimblehq.co/blog/create-github-wiki-pull-request
+on:
+  push:
+    paths:
+      - 'Asset/**'
+    branches:
+      - main
+
+jobs:
+  publish_asset_to_wiki:
+    name: Publish Asset to Wiki
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Pull wiki
+        run: |
+          mkdir tmp_wiki
+          cd tmp_wiki
+          git init
+          git remote add origin https://${{ secrets.WIKI_ACTION_TOKEN }}@github.com/TheSuperHackers/GeneralsGamePatch.wiki.git
+          git pull origin master
+
+      - name: Push wiki
+        run: |
+          rsync -av --delete .github/wiki/Asset/ tmp_wiki/ --exclude .git
+          cd tmp_wiki
+          git add .
+          git commit -m "Update Wiki content"
+          git push origin master
