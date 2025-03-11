@@ -12,6 +12,7 @@ jobs:
     name: Publish SourceCode to Wiki
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    if: github.repository == 'TheSuperHackers/GeneralsWiki'
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
@@ -28,7 +29,7 @@ jobs:
 
       - name: Push wiki
         run: |
-          rsync -av --delete .github/wiki/SourceCode/ tmp_wiki/ --exclude .git
+          rsync -av --delete SourceCode/ tmp_wiki/ --exclude .git
           cd tmp_wiki
           git add .
           git commit -m "Update Wiki content"
