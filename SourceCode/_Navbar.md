@@ -33,6 +33,7 @@
 
 ## Tools
 
+- [AssetCull](Tools/CNCTools/assetcull.md)
 - [Command Line Arguments](Tools/switchers_arguments.md)
 - [NVASM](Tools/NVASM)
 - [SafeDiskLauncher](Tools/SafeDiskLauncher)
