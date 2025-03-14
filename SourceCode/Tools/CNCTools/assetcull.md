@@ -6,7 +6,7 @@ The **AssetCull** tool is a program that removes duplicate files from a source d
 If an identical file is found in both directories, it is deleted from the source directory, and a batch file (Batch
 file) is generated containing the deletion commands, allowing you to easily remove the duplicate files later.
 
-This tool is part of a suite of utilities that come with the source code for **C&C Generals & Zero Hour**.
+This tool is part of a suite of utilities that come with the source code for **C&C Generals Zero Hour**.
 
 ---
 
