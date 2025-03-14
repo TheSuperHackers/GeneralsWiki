@@ -12,7 +12,7 @@ jobs:
     name: Publish Asset to Wiki
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    if: github.repository == 'TheSuperHackers/GeneralsWiki'
+    if: github.repository == 'DevGeniusCode/GeneralsWiki'
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
           mkdir tmp_wiki
           cd tmp_wiki
           git init
-          git remote add origin https://${{ secrets.WIKI_ACTION_TOKEN }}@github.com/TheSuperHackers/GeneralsGamePatch.wiki.git
+          git remote add origin https://${{ secrets.WIKI_ACTION_TOKEN }}@github.com/DevGeniusCode/GeneralsGamePatch.wiki.git
           git pull origin master
 
       - name: Push wiki
