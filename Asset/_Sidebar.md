@@ -1,6 +1,6 @@
 <!-- markdownlint-disable -->
 
-## [Home](home.md)
+## [Home](Home.md)
 
 ---
 ## [Patch](Patch/patch.md)
