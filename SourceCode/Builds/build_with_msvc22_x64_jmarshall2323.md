@@ -1,5 +1,9 @@
 # Building and Compiling C&C Generals on Visual Studio 2022
 
+> [!WARNING]  
+> This build guide refers to a fork that is not from TheSuperHackers.  It may include additional modifications, software,
+ and changes compared to the official TheSuperHackers version, and is included here for documentation purposes only.
+
 ## Prerequisites
 
 - **Install Visual Studio 2022**  
@@ -54,7 +58,7 @@
 - In the VC++ Directories tab, update the Additional Include Directories to the SDK Includes
   Folder (ie <base_git_folder>\Code\Libraries\max4sdk\Include)
 - And the same tab, update the Additional Library Directories to the
-  SDK Libraries Folder (ie <base_git_folder>\Code\Libraries\max4sdk\Lib
+  SDK Libraries Folder (ie <base_git_folder>\Code\Libraries\max4sdk\Lib)
 - Navigate to **Properties** → **Debugging**.
 - Set `Working Directory` to your `Run` folder.
 
