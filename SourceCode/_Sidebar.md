@@ -1,5 +1,15 @@
 <!-- markdownlint-disable -->
-# Source Code
+
+## [Home](Home.md)
+
+- [How to Get Involved](how_to_involved.md)
+- [How to Contribution](contribution.md)
+- [License](license.md)
+- [Credits](credits.md)
+- [Changelog](changelog.md)
+- [FAQ](faq.md)
+- [Known Issues](known_issues.md)
+- [Contact & Community](contact_community.md)
 
 ## Builds
 
@@ -34,7 +44,6 @@
 ## Tools
 
 - [Command Line Arguments](Tools/switchers_arguments.md)
-- [NVASM](Tools/NVASM)
 - [SafeDiskLauncher](Tools/SafeDiskLauncher)
 - [CRCDiff](Tools/CRCDiff)
 <!-- markdownlint-restore -->
