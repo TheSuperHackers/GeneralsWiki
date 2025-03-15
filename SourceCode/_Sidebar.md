@@ -18,6 +18,7 @@
   - [Using pure Visual Studio 6 (x86) (Windows)](Builds/build_with_ea_msvc6.md)
   - [Using Cmake & Visual Studio 6 (x86) (Windows)](Builds/build_with_msvc6.md)
     - [CLion & VC6 Toolchain](Builds/build_with_clion_vc6_toolchain.md)
+    - [Docker & VC6](Builds/build_with_msvc6_on_docker.md)
 
 - **Visual Studio 2022 Guides**:
   - [Using Cmake (x86) (Windows)](Builds/build_with_msvc22.md)
