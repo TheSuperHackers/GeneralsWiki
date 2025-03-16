@@ -54,9 +54,9 @@ Installation of tools and software that are needed for compilation.
 
 > **_NOTE:_**  The source code you clone is from the WIP from OmniBlade.
 
-Clone the code from WIP OmniBlade -> TheSuperHackers
+Clone the code from TheSuperHackers
 
-`git clone https://github.com/OmniBlade/CnC_Generals_Zero_Hour.git`
+`git clone https://github.com/TheSuperHackers/GeneralsGameCode.git`
 
 `cd CnC_Generals_Zero_Hour`
 

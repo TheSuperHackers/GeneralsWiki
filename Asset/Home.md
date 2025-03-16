@@ -1,6 +1,6 @@
 # Welcome to the *Generals: Zero Hour - Asset Patch* Wiki
 
-> [![WARNING]]
+> [!WARNING]
 > This wiki is a work in progress and not yet complete. Contributions are welcome!
 
 ## **Overview**
@@ -13,15 +13,15 @@ goal of this project is to provide a higher quality and more polished experience
 ## **Getting Started**
 
 To get started with the project, you can submit issues or pull requests (PRs). Additionally, you can install the current
-asset patch using **GeneralsModBuilder** (see the [installation guide](Patch/Installation_Instructions.md)),
+asset patch using **GeneralsModBuilder** (see the [installation guide](Installation_Instructions)),
 which allows you to install the patch directly into your game directory and try it out.
 
 ## **Quick Links**
 
-- [How to Get Involved](Patch/how_to_involved.md)
-- [Installation Instructions](Patch/Installation_Instructions.md)
-- [List of Improvements and Fixes](Patch/List_of_Improvements.md)
-- [FAQ](Patch/FAQ.md)
+- [How to Get Involved](how_to_involved)
+- [Installation Instructions](Installation_Instructions)
+- [List of Improvements and Fixes](List_of_Improvements)
+- [FAQ](FAQ)
 
 ## **Types of Assets, Usage, and Configuration Instructions**
 
@@ -35,12 +35,12 @@ This project focuses on various types of assets within *Generals: Zero Hour*. Th
   and gameplay.
 
 For a detailed list of asset types and guidelines on how to contribute or fix them, refer to
-the [How to Get Involved](Patch/how_to_involved.md) page.
+the [How to Get Involved](how_to_involved) page.
 
 For detailed information on how to use and configure the different types of assets in the game, such as the behavior of
-various GUI elements, control mechanics, and more, see the relevant section in the wiki navigation, such as [WND](GUI/wnd_reference.md),
+various GUI elements, control mechanics, and more, see the relevant section in the wiki navigation, such as [WND](wnd_reference),
 
 ## **Contact and Community**
 
-For any questions or issues, please refer to the [Contact and Community Page](Patch/contact_community.md) for contact details
+For any questions or issues, please refer to the [Contact and Community Page](contact_community) for contact details
 and additional assistance.

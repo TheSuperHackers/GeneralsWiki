@@ -1,14 +1,14 @@
 # Build Command & Conquer Zero Hour on Docker with VC6
 
 Docker is a popular platform to standertize environments.
-In this case docker is used to to gather all the dependency's
+In this case docker is used to gather all the dependency's
 and compile a **zerohour.exe** windows executable that you
 can now run directly on windows or on wine.
 
 ## Prerequisites
 
 You need to know how to execute docker commands and a basic understanding
-how docker works and how to customize the the dockerfile if you want to
+how docker works and how to customize the dockerfile if you want to
 compile your own code with it.
 
 ## Dockerfile
@@ -83,7 +83,7 @@ ENV CXX="$VS\\vc98\\bin\\CL.exe"
 
 # Clone the source code
 ENV GIT_VERSION_STRING="2.49.0"
-RUN git clone https://github.com/OmniBlade/CnC_Generals_Zero_Hour.git
+RUN git clone https://github.com/TheSuperHackers/GeneralsGameCode.git
 RUN mv /build/CnC_Generals_Zero_Hour /build/cnc
 
 WORKDIR /build/cnc

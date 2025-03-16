@@ -5,7 +5,7 @@ and appearance of the **ComboBox**.
 
 ## Available tags
 
-In addition to the [default control tags](user.md), the following tags are available.
+In addition to the [default control tags](wnd_controls_user), the following tags are available.
 
 - The control does not have a `TEXT` tag. Unlike controls such as checkboxes, which include a text label,
 this control is self-contained and does not display or use a text label.
@@ -361,7 +361,7 @@ END
 
 ## See also
 
-- [Default control](user.md)
+- [Default control](wnd_controls_user)
 - [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)

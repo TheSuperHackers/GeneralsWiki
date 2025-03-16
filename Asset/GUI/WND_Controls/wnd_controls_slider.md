@@ -222,7 +222,7 @@ END
 
 ## See also
 
-- [Default control](user.md)
+- [Default control](wnd_controls_user)
 - [Texturing](../texturing.md)
 - [Statuses](../statuses.md)
 

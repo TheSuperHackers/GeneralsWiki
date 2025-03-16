@@ -1,6 +1,6 @@
 # Welcome to the *Generals: Zero Hour - Source Code* Wiki
 
-> [![WARNING]]
+> [!WARNING]
 > This wiki is a work in progress and not yet complete. Contributions are welcome!
 
 ## **Overview**
@@ -16,20 +16,20 @@ modifying, or extending the game’s core functionality, you're in the right pla
 To get started with the project, you will need a basic understanding of the source code and how to build it. If you're
 new to the project, here’s how you can contribute:
 
-- Check out the [**Build Guides**](Build_Guides.md) for instructions on how to compile the game code on
+- Check out the [**Build Guides**](Build_Guides) for instructions on how to compile the game code on
   different platforms.
-- Learn about the project's **dependencies** and **libraries** in the [Dependencies](Dependencies.md) section.
-- Look through the **community forks** and other variations of the project in the [Forks](Forks.md) section.
+- Learn about the project's **dependencies** and **libraries** in the [Dependencies](Dependencies) section.
+- Look through the **community forks** and other variations of the project in the [Forks](Forks) section.
 - If you're an experienced developer, you can start contributing by reviewing and submitting **pull requests** or
   opening **issues**.
 
 ## **Quick Links**
 
-- [Build Guides for Different Platforms](Build_Guides.md)
-- [Dependencies and Libraries](Dependencies.md)
-- [Community Forks](Forks.md)
-- [Tools for Developers](Tools.md)
-- [FAQ](FAQ.md)
+- [Build Guides for Different Platforms](Build_Guides)
+- [Dependencies and Libraries](Dependencies)
+- [Community Forks](Forks)
+- [Tools for Developers](Tools)
+- [FAQ](FAQ)
 
 ## **Building the Game Code**
 
@@ -59,7 +59,7 @@ assist you:
 - **Debugging Tools**: Recommended tools for debugging and troubleshooting.
 - **Version Control**: Using Git for managing changes, commits, and collaboration.
 
-Check out the [**Tools for Developers**](Tools.md) page for more information.
+Check out the [**Tools for Developers**](Tools) page for more information.
 
 ## **Community and Forks**
 
@@ -67,10 +67,10 @@ The **Generals: Zero Hour Game Code** project has several community-driven forks
 experimental features or enhancements, and it’s a great place to explore different approaches to the game code. You can
 also contribute to these forks or integrate them into the main codebase.
 
-For a list of active forks, visit the [**Community Forks**](Forks.md) page.
+For a list of active forks, visit the [**Community Forks**](forks) page.
 
 ## **Contact and Community**
 
-For any questions, discussions, or to get involved in the community, check out the [**Contact and Community Page
-**](contact_community.md). Join our forums, Discord channels, or GitHub discussions to communicate with other
+For any questions, discussions, or to get involved in the community, check out the **[Contact and Community Page
+](contact_community)**. Join our forums, Discord channels, or GitHub discussions to communicate with other
 contributors and developers.

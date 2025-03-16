@@ -119,7 +119,7 @@ END
 
 ## See also
 
-- [Default control](user.md)
+- [Default control](wnd_controls_user)
 - [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)
