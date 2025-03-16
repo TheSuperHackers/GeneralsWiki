@@ -27,7 +27,7 @@ new to the project, here’s how you can contribute:
 
 - [Build Guides for Different Platforms](Build_Guides)
 - [Dependencies and Libraries](Dependencies)
-- [Community Forks](Forks)
+- [Community Forks](forks)
 - [Tools for Developers](Tools)
 - [FAQ](FAQ)
 
