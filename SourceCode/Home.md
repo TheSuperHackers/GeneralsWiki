@@ -71,6 +71,6 @@ For a list of active forks, visit the [**Community Forks**](forks) page.
 
 ## **Contact and Community**
 
-For any questions, discussions, or to get involved in the community, check out the **[Contact and Community Page
-](contact_community)**. Join our forums, Discord channels, or GitHub discussions to communicate with other
+For any questions, discussions, or to get involved in the community, check out the **[Contact and Community Page](contact_community)**.
+Join our forums, Discord channels, or GitHub discussions to communicate with other
 contributors and developers.
