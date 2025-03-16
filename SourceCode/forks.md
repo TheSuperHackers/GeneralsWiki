@@ -7,7 +7,7 @@ ongoing efforts to bring new features, bug fixes, and cross-platform support to 
 
 ## 1. Windows
 
-- [VS6 (x86)](https://github.com/TheSuperHackers/GeneralsGameCode/tree/main) @xezon
+- [pure VS6 (x86)](https://github.com/droidix/CnC_Generals_Zero_Hour) @droidix
 - [VS22 with CMake (x86) Generals Only](https://github.com/jmarshall2323/CnC_Generals_Zero_Hour) @icecoldduke
 - [VS6 with CMake (x86)](https://github.com/OmniBlade/CnC_Generals_Zero_Hour/tree/main) @OmniBlade
 - [VS22 with CMake (x64)](https://github.com/Igoorx/GeneralsGameCode/tree/x64) @disarray
