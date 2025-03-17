@@ -1,5 +1,5 @@
 # Contributors to GeneralsGameCode
-Includes all git commit authors. Aliases are GitHub usernames or community nicknames.
+Includes an as complete list of all git commit authors as possible. This is only a partial list, and we apologize to anyone whose name has been inadvertently omitted. Please feel free to bring any missing names to our attention through the "Issues" section. Aliases are GitHub usernames or community nicknames.
 
 ## Development team
 * Xezon
