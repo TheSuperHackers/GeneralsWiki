@@ -12,7 +12,7 @@
 - [Known Issues](known_issues)
 - [Contact & Community](contact_community)
 
-## Builds
+## [Builds](build_guides)
 - [Build Configuration Overview](build_configuration)
 ### **TheSuperHackers Official Guides**:
 - **Visual Studio 6 Guides**:
