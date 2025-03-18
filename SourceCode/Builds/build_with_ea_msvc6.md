@@ -5,7 +5,7 @@ expansion pack *Zero Hour*. The repository includes the source code and supports
 games ([C&C Generals](https://steamcommunity.com/workshop/browse/?appid=2229870)
 and [C&C Generals - Zero Hour](https://steamcommunity.com/workshop/browse/?appid=2732960)).
 
-[![WARNING]]: This build guide is based on the original EA build instructions and has not been verified.
+[!WARNING]: This build guide is based on the original EA build instructions and has not been verified.
 
 ## Dependencies
 
