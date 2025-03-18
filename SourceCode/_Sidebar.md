@@ -13,7 +13,7 @@
 - [Contact & Community](contact_community)
 
 ## Builds
-
+- [Build Configuration Overview](build_configuration)
 ### **TheSuperHackers Official Guides**:
 - **Visual Studio 6 Guides**:
   - [Using pure Visual Studio 6 (x86) (Windows)](build_with_ea_msvc6)
