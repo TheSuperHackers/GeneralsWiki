@@ -10,19 +10,18 @@ For build using solutions and more advanced build configurations, see below.
 
 - Ensure that the necessary C++ development components, **including MFC**, are installed.
 
->[!WARNING]
+>[!NOTE]
 > You must have the MFC components installed to compile the source code.
 <!-- markdownlint-disable-next-line -->
-2. **Obtain the Source Code (Step 1)**
+2. **Obtain the Source Code**
     - Clone or download the source code
       repository: [TheSuperHackers - GeneralsGameCode](https://github.com/TheSuperHackers/GeneralsGameCode.git).
 
 ## Steps
 
-### 1. Clone and prepare the project
+### 1. prepare the project
 
-- Clone the repository to your local machine.
-- Open the folder in Visual Studio 2022.
+- Open the cloned folder in Visual Studio 2022.
 - Wait for Visual Studio to generate the necessary cmake files.
 
 ### 2. Build the Project
@@ -38,8 +37,8 @@ For build using solutions and more advanced build configurations, see below.
 page.
 
 - Select the target you want to build:
-- `generalsv.exe` to build the base Generals.
-- `generalszh.exe` to build Zero Hour.
+  - `generalsv.exe` to build the base Generals.
+  - `generalszh.exe` to build Zero Hour.
 
 - Build the project by clicking on the `Build` menu and selecting `Build`.
 - The compiled executable will be placed in the `build/<win32 build type>/<game name (Generals/GeneralsMD)>/<build configuration>`
@@ -49,7 +48,7 @@ page.
 
 ## Additional Steps
 
-### Build through Cmake target view
+### Build through CMake target view
 
 - In the Solution Explorer, click on 'switch view' and select 'CMake Targets View'.
 - Expand the 'Genzh' project and right-click on the target you want to build.
