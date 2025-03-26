@@ -1,13 +1,13 @@
 # **CMake Command Line Usage Guide**
 
-This guide provides an overview of how to configure and build **Generals** and its expansion *Zero Hour* using **CMake**
+This guide provides an overview of how to configure and build **Generals** and its expansion **Zero Hour** using **CMake**
 via the command line. It covers the various options and flags defined in the CMake files that control the build process,
 allowing you to choose different components of the game and tools to build.
 
 For more details on using **Visual Studio 2022**, **Visual Studio 6**, or **CLion**, please refer to the respective
 guides.
 
-> **Note:**  
+> [!NOTE]
 > CMake retains previous configurations. If you encounter any issues or strange behavior, it is recommended to delete
 > the `build` directory and start fresh to ensure the build process uses the latest settings.
 
@@ -100,7 +100,7 @@ mode, use:
 cmake --build build/win32
 ```
 
-> **Note:**  
+> [!NOTE]
 > Replace the folder preset name as needed.
 
 The build process will place the compiled executable files in the appropriate directories based on the configuration,
@@ -116,11 +116,11 @@ To install the built project, use:
 cmake --install build/win32
 ```
 
-> **Note:**  
+> [!NOTE] 
 > Replace the folder preset name as needed. This installs the executable project in the specified paths (see next
 > section).
 <!-- markdownlint-disable-line -->
-> **Important:**  
+> [!IMPORTANT]
 > In the `win32` preset, use also `--config Release` to install the release executable, because the default installation
 > path looks in the debug folder.
 
@@ -128,7 +128,7 @@ cmake --install build/win32
 
 ## 5. **Define a Custom Installation Path**
 
-> **Note:**  
+> [!NOTE]
 > To define a custom installation path, it must be set during the preset configuration. The installation path cannot be
 > changed after the build is complete.
 
