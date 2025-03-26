@@ -1,62 +1,87 @@
-# Building and Compiling C&C Generals on Visual Studio 2022
+# Building and Compiling C&C Generals & Zero Hour on Visual Studio 2022
+
+This guide will walk you through the process of basic setup and compilation of the C&C Generals and Zero Hour source
+code using Visual Studio 2022.
+For build using solutions and more advanced build configurations, see below.
 
 ## Prerequisites
 
-1. **Install Visual Studio 2022**
-    - Ensure that the necessary C++ development components, including MFC, are installed.
+1. **Visual Studio 2022**
 
-2. **Obtain the C&C Generals Source Code**
-    - Clone or download the source code repository: [TheSuperHackers - GeneralsGameCode](https://github.com/TheSuperHackers/GeneralsGameCode.git).
+- Ensure that the necessary C++ development components, **including MFC**, are installed.
 
-3. **Install C&C Generals (Steam Version)**
-    - The game installation is required to access the necessary asset files.
+>[!WARNING]
+> You must have the MFC components installed to compile the source code.
+<!-- markdownlint-disable-next-line -->
+2. **Obtain the Source Code (Step 1)**
+    - Clone or download the source code
+      repository: [TheSuperHackers - GeneralsGameCode](https://github.com/TheSuperHackers/GeneralsGameCode.git).
 
-## Build Steps
+## Steps
 
-### 1. Open the Project in Visual Studio 2022
+### 1. Clone and prepare the project
 
-- Launch Visual Studio 2022 and open the solution file `Code/RTS.sln`.
+- Clone the repository to your local machine.
+- Open the folder in Visual Studio 2022.
+- Wait for Visual Studio to generate the necessary cmake files.
 
-### 2. Select and Compile the Required Projects
+### 2. Build the Project
 
-- In the **Solution Explorer**, locate the following projects:
-  - `RTS`
-  - `WorldBuilder`
-- Right-click each project and select **Build**.
-- Ensure the build process completes without errors.
+- Select you favorite build configuration:
+- `Build Windows build` for a release build.
+- `Build Windows Debug build` for a debug build.
+- `Build Windows Internal build` for an internal build.
+- `Build Windows Profile build` for a profile build.
 
-### 3. Copy Required Game Files from Steam
+>[!TIP]
+> For more information on the different build configurations, see the [Build Configurations](build_configurations.md)
+page.
 
-- Navigate to your C&C Generals Steam installation directory, typically:
+- Select the target you want to build:
+- `generalsv.exe` to build the base Generals.
+- `generalszh.exe` to build Zero Hour.
 
-  ``` text
-  C:\Program Files (x86)\Steam\steamapps\common\Command and Conquer Generals Zero Hour\
-  ```
+- Build the project by clicking on the `Build` menu and selecting `Build`.
+- The compiled executable will be placed in the `build/<win32 build type>/<game name (Generals/GeneralsMD)>/<build configuration>`
+  folder. Example: `build/win32dgb/GeneralsMD/Debug`
+- Install the game executable in the game directory by clicking on the `Install` in `Build` menu. This will copy the
+  executable to the retail game directory.
 
-- Copy all necessary `.BIG` files into the `Run` folder of your compiled project:
+## Additional Steps
 
-  ``` text
-  EnglishZH.big
-  INIZH.big
-  SpeechZH.big
-  W3DZH.big
-  (Other required files)
-  ```
+### Build through Cmake target view
 
-- Copy the entire `Data` folder to the `Run` folder as well.
+- In the Solution Explorer, click on 'switch view' and select 'CMake Targets View'.
+- Expand the 'Genzh' project and right-click on the target you want to build.
+- Select 'Build' to compile the target.
 
-### 4. Configure Paths Correctly
+### Build using command line
 
-- Ensure that the `Run` folder within your build directory contains all required game assets.
-- If necessary, configure the **working directory** in Visual Studio:
-    1. Right-click on the `RTS` project.
-    2. Navigate to **Properties** → **Debugging**.
-    3. Set `Working Directory` to your `Run` folder.
+You need to install cmake and ninja to build the project from the command line.
 
-### 5. Run the Game or World Builder
+- In the developer command prompt, open the settings to add the x86 environment terminal.
 
-- After compiling, navigate to the `Run` folder.
-- Launch `RTSD.exe` or `worldbuilder.exe`.
+>[!Tip]
+> Alternatively, you can open the x86 Native Tools Command Prompt from the start menu, and navigate to the project
+   directory in the terminal then run the commands below.
+  
+- In the pop-up window, click on the 'Add' and set the following: (assuming default installation path)
+  - Name: `x86 Native Tools Command Prompt`
+  - Shell Location: `C:\Windows\System32\cmd.exe`
+  - Arguments: `/k "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars32.bat"`
+- Now you can open the new terminal from the terminal dropdown list.
+- Run the following commands to build the project:
+- Choose the build configuration:
+  - `cmake --workflow --preset win32` for Release build.
+  - `cmake --workflow --preset win32dgb` for Debug build.
+  - `cmake --workflow --preset win32int` for Internal build.
+  - `cmake --workflow --preset win32prof` for Profile build.
+- Install the game executable in the game directory (assuming that the build was successful):
+  - `cmake --install build/<preset name>`
+- To build a specific target:
+  - Run `cmake --build build/<preset name> --target <target name>`
+  - Example: `cmake --build build/win32 --target z_generals`
+  - Or: `cmake --build build/win32 --target g_generals`
 
 ## Troubleshooting
 
