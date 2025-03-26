@@ -64,7 +64,7 @@ This steps you need to repeat every time after a reboot of your computer.
 
 ### Option 1: Activate your VS6 Compiler Environment
 
-Execute the setup build environment script. In your cmd type this.
+Execute the setup build environment script. In your cmd type this. (assuming default installation path)
 
 `"C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\VCVARS32.bat"`
 
@@ -102,21 +102,21 @@ set CXX=C:\<VS6_INSTALL_PATH>\VC98\Bin\CL.exe
 set MSVCDir=C:\<VS6_INSTALL_PATH>\VC98
 ```
 
-### Compiling
+### Build the project
 
-`cmake --preset vc6`
+Run the following command by the type of build you want to create.
 
-`cd build\vc6`
+- `cmake --workflow --preset vc6` for a release build.
+- `cmake --workflow --preset vc6dgb` for a debug build.
+- `cmake --workflow --preset vc6int` for an internal build.
+- `cmake --workflow --preset vc6prof` for a profile build.
 
-`nmake`
+You will find a bunch of files in `build\vc6\<game name>` and a file called `generalszh.exe` or `generalsv.exe`.
 
-You will find a bunch of files in `build\vc6` and a file called `zerohour.exe`
+### Install the game executable
 
-Copy `zerohour.exe` of the build folder to your game path.
-
-## Start the game
-
-Double click `zerohour.exe` inside the Zero Hour path.
+Run `cmake --install build\<vc6 build type>`, this will copy the executable to the retail game directory, or you can
+copy it manually.
 
 ## Troubleshooting
 

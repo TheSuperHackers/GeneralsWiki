@@ -5,23 +5,23 @@
 1. **CLion** installed and configured.
 2. **Microsoft Visual C++ 6.0 (VC6)** installed (assuming it’s installed in the
    default directory).
-3. **CMake** installed and configured.
-4. **Source code** of the project cloned from the TheSuperHackers repository.
+3. **Source code** of the project cloned from the TheSuperHackers repository.
 
 ## Step 1: Setting Up the Toolchain in CLion
 
-1. Open **CLion** and go to **File** -> **Settings** -> **Build, Execution,
+1. Open the cloned folder in **CLion** and go to **File** -> **Settings** -> **Build, Execution,
    Deployment** -> **Toolchains**.
 2. Add a new **Toolchain** by clicking the **+** button.
 3. Select **System** as the Type (not Visual Studio).
-4. Next to the toolchain name, add the **environment** file by clicking the
+4. Rename the toolchain to **Visual Studio 6**
+5. Next to the toolchain name, add the **environment** file by clicking the
    **+** button and pointing to the following file:
 
    ```text
    C:\Program Files (x86)\Microsoft Visual Studio\VC98\Bin\VCVARS32.BAT
    ```
 
-5. Set the paths for the tools:
+6. Set the paths for the tools:
     - **Build Tool**: Choose the `NMAKE.EXE` file from VC6. For example:
 
       ```text
@@ -39,39 +39,31 @@
 
 ## Step 2: Configuring the CMake Profile
 
-1. Go to **File** -> **Settings** -> **Build, Execution, Deployment** -> **CMake**.
-2. In this window, select the CMake profile you want to configure (if there
-   isn’t one, create a new one).
-3. Choose the **Toolchain** you created in the previous step (VC6 Toolchain).
-4. Choose the **Generator** as `NMake Makefiles`.
-5. Under **CMake options**, add the following generate settings:
+1. In Cmake profiles, enable the profiles you want to use, like vc6, vc6dgb, vc6int, vc6prof.
 
-   ```text
-      -G "NMake Makefiles"
-   ```
+## step 3: Configuring the installation path
 
-   Be careful not to set `Preset`, as it will override the generator settings.
-6. Add the build directory path under **CMake Build Directory**:
+1. In the target application options, do the following:
 
-   ```text
-   C:\Users\User\Documents\CLion\CnC_Generals_Zero_Hour\build\vc6
-   ```
+- Set Program arguments with your favorite arguments,like `-win, -quickstart, -nologo`.
+- Set Working directory to the game directory.
+- Check the run as administrator option.
+- In 'Before launch' section, add a new 'install' step.
+- To avoid duplication build, remove the 'Build' step.
+- Save the configuration, and you are ready to build and run the project.
 
-## Step 3: Compiling and Running the Project
+## Step 4: Compiling and Running the Project
 
-1. Now, click the **Build** button in CLion.
-2. CLion will start the build process using the VC6 (x86) toolchain.
-3. Once the build is successfully completed, a **zerohour.exe** file will be generated.
-4. You need to copy the **zerohour.exe** file to the appropriate game directory in order to run the game.
+1. Now, click the **Build** button in CLion, or click **Install** in build menu.
+2. CLion will start the build/install process using the VC6 (x86) toolchain.
+3. Once the build is successfully completed, a executable file will be generated (and installed in the game directory).
 
 ---
 
 ## Notes
 
-- **Visual C++ 6.0 (VC6)** only supports C++98, so avoid using modern C++ features.
 - Working with VC6 requires some adjustments, so it’s always a good idea to check
-  that the toolchain is working
-  properly.
+  that the toolchain is working properly.
 - You can add Release and Debug profiles in CLion to build the project in
   different configurations.
-- Admin rights might be required to run VC6 tools, so make sure to run CLion as an administrator.
+- Admin rights might be required to run VC6 tools, so make sure to run CLion as an administrator if needed.
