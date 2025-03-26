@@ -4,6 +4,12 @@ This guide will walk you through the process of basic setup and compilation of t
 code using Visual Studio 2022.
 For build using solutions and more advanced build configurations, see below.
 
+- [Prerequisites](#prerequisites)
+- [Build through Visual Studio 2022](#1-prepare-the-project)
+- [Build through CMake target view](#build-through-cmake-target-view)
+- [Build using command line](#build-using-command-line)
+- [Troubleshooting](#troubleshooting)
+
 ## Prerequisites
 
 1. **Visual Studio 2022**
@@ -41,8 +47,7 @@ page.
   - `generalszh.exe` to build Zero Hour.
 
 - Build the project by clicking on the `Build` menu and selecting `Build`.
-- The compiled executable will be placed in the `build/<win32 build type>/<game name (Generals/GeneralsMD)>/<build configuration>`
-  folder. Example: `build/win32dgb/GeneralsMD/Debug`
+- The compiled executable will be placed in the build folder. Example: `build/win32dgb/GeneralsMD/Debug`
 - Install the game executable in the game directory by clicking on the `Install` in `Build` menu. This will copy the
   executable to the retail game directory.
 
@@ -60,31 +65,45 @@ You need to install [CMake](https://cmake.org/download/) and [Ninja](https://git
 to build the project from the command line.
 
 - In the developer command prompt, open the settings to add the x86 environment terminal.
-
->[!Tip]
-> Alternatively, you can open the "x86 Native Tools Command Prompt for VS 2022" from the start menu,
-> and navigate to the project directory in the terminal then run the commands below.
-  
 - In the pop-up window, click on the 'Add' and set the following: (assuming default installation path)
   - Name: `x86 Native Tools Command Prompt`
   - Shell Location: `C:\Windows\System32\cmd.exe`
   - Arguments: `/k "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars32.bat"`
 - Now you can open the new terminal from the terminal dropdown list.
-- Run the following commands to build the project:
-- Choose the build configuration:
-  - `cmake --workflow --preset win32` for Release build.
-  - `cmake --workflow --preset win32dgb` for Debug build.
-  - `cmake --workflow --preset win32int` for Internal build.
-  - `cmake --workflow --preset win32prof` for Profile build.
-- Install the game executable in the game directory (assuming that the build was successful):
-  - `cmake --install build/<preset name>`
-- To build a specific target:
+
+>[!Tip]
+> Alternatively, you can skip the terminal setup and simply open the "x86 Native Tools Command Prompt for
+> VS 2022" from the Start menu. Once opened, navigate to the project directory in the terminal and proceed
+> to run the commands below.
+  
+
+- #### 1. **Release Build**
+
+  - **Choose the build configuration:**
+    - `cmake --workflow --preset win32` for Release build.
+
+  - **Install the game executable in the game directory (assuming the build was successful):**
+    - `cmake --install build/win32 --config Release`
+
+- #### 2. **Development and Debug Builds**
+
+  - **Choose the build configuration:**
+    - `cmake --workflow --preset win32dgb` for Debug build.
+    - `cmake --workflow --preset win32int` for Internal build.
+    - `cmake --workflow --preset win32prof` for Profile build.
+
+  - **Install the game executable in the game directory (assuming the build was successful):**
+    - `cmake --install build/<preset name>`
+
+
+- **To build a specific target:**
   - Run `cmake --build build/<preset name> --target <target name>`
-  - Example: `cmake --build build/win32 --target z_generals`
-  - Or: `cmake --build build/win32 --target g_generals`
+  - Example: `cmake --build build/win32dgb --target z_generals`
+  - Or: `cmake --build build/win32int --target g_generals`
 
 ## Troubleshooting
 
 - **Missing DLLs?** Ensure that all required dependencies are installed.
 - **Game not launching?** Verify that all necessary `.BIG` files are correctly placed.
-- **Build errors?** Check Visual Studio settings and dependencies for any issues.
+- **Build errors?** Check Visual Studio settings and dependencies for any issues or delete the `build` folder and try
+  building again.
