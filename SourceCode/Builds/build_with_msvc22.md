@@ -19,18 +19,18 @@ For build using solutions and more advanced build configurations, see below.
 
 ## Steps
 
-### 1. prepare the project
+### 1. Prepare the project
 
 - Open the cloned folder in Visual Studio 2022.
-- Wait for Visual Studio to generate the necessary cmake files.
+- Wait for Visual Studio to generate the necessary CMake files.
 
 ### 2. Build the Project
 
 - Select the appropriate build configuration:
-- `Build Windows build` for a release build.
-- `Build Windows Debug build` for a debug build.
-- `Build Windows Internal build` for an internal build.
-- `Build Windows Profile build` for a profile build.
+  - `Build Windows build` for a release build.
+  - `Build Windows Debug build` for a debug build.
+  - `Build Windows Internal build` for an internal build.
+  - `Build Windows Profile build` for a profile build.
 
 >[!TIP]
 > For more information on the different build configurations, see the [Build Configurations](build_configurations.md)
@@ -56,13 +56,14 @@ page.
 
 ### Build using command line
 
-You need to install cmake and ninja to build the project from the command line.
+You need to install [CMake](https://cmake.org/download/) and [Ninja](https://github.com/ninja-build/ninja/releases)
+to build the project from the command line.
 
 - In the developer command prompt, open the settings to add the x86 environment terminal.
 
 >[!Tip]
-> Alternatively, you can open the x86 Native Tools Command Prompt from the start menu, and navigate to the project
-   directory in the terminal then run the commands below.
+> Alternatively, you can open the "x86 Native Tools Command Prompt for VS 2022" from the start menu,
+> and navigate to the project directory in the terminal then run the commands below.
   
 - In the pop-up window, click on the 'Add' and set the following: (assuming default installation path)
   - Name: `x86 Native Tools Command Prompt`
