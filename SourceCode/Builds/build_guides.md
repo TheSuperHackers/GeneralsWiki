@@ -33,6 +33,12 @@ support different optimizations, libraries, or debugging features that influence
 > The Wiki is under work in progress. The content is subject to change and may not be complete.
 > Not all build guides are available yet, but you can contribute by adding new guides or updating existing ones.
 
+## CMake Overview
+
+This [CMake Guide](cmake_guide) provides an overview of how to configure and build **Generals** and its expansion
+*Zero Hour* using **CMake** via the command line. It covers the various options and flags defined in the CMake files that
+control the build process, allowing you to choose different components of the game and tools to build.
+
 ## Official Build Guides
 
 These are the official guides provided by **TheSuperHackers** for building the project using various toolchains and
