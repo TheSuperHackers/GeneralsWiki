@@ -21,17 +21,14 @@ Sections Included:
 - **FR**: [French](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2639)
 - **ES**: [Spanish](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2538)
 - **IT**: [Italian](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2539)
-- **KO**: [Korean](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2540)
-- **ZH**: [Chinese Traditional](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2541)
 - **BP**: [Brazilian Portuguese](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2542)
 - **PL**: [Polish](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2543)
-- **RU**: [Russian](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2544)
-- **UK**: [Ukrainian](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2628)
 
 1.2.1 **Arabic & RTL Languages**: Arabic and other Right-to-Left (RTL) languages are currently compiled with an error
 when used in the game. This issue will be fixed soon. If you would like to help resolve this issue or test the upcoming
 fix, please let us know in the comment section of the
 *AR: [Arabic](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2546) localization edit*.
+More info in [Adding RTL markers in RTL localization for GameTextCompiler](https://github.com/TheSuperHackers/GeneralsGamePatch/discussions/2659).
 
 1.3 **Leave Comments on Edits**: You can reply to existing comments or review the changes yourself. To do so, click on
 the **Files changed** tab under the pull request title. If prompted, press **Load diff** to view the changes (if an
@@ -43,7 +40,7 @@ implement. This helps us process the change faster.
 
 1.5 **Non-English Localization**: If you contributed to non-English localization (e.g., Polish), please also check these
 two branches for text changes in all languages:
- **[United States English](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2535)** and **[Missing text lines](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2571)**.
+**[United States English](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2535)** and **[Missing text lines](https://github.com/TheSuperHackers/GeneralsGamePatch/pull/2571)**.
 
 ## 2. Working on Existing Languages
 
@@ -55,10 +52,13 @@ changes already commented on in the file:
 
 2.2 **Editing Tools**: I use **[Notepad++](https://notepad-plus-plus.org/downloads/)** for editing files. If you're
 using Linux or macOS, you can use similar programs that offer the same features as Notepad++.
+It is **required** to use **UTF-8** text format to avoid compatibility issues across different platforms and text
+editors. Ensure that your editor is set to save files in UTF-8 encoding to maintain proper character representation
+and prevent any potential issues with special characters.
 
 2.3 **Translation Tools**: I use
- **[Google Translate](https://translate.google.ca/?hl=en&tab=TT&sl=auto&tl=en&op=translate)** for quick translations,
-  but I recommend using your language dictionary in some cases. I personally use **[Multitran](https://www.multitran.com/)**
+**[Google Translate](https://translate.google.ca/?hl=en&tab=TT&sl=auto&tl=en&op=translate)** for quick translations,
+but I recommend using your language dictionary in some cases. I personally use **[Multitran](https://www.multitran.com/)**
 for this.
 
 2.4 **Grammar Checking**: For additional grammar checks, I use **[Free Grammar Checker](https://languagetool.org/)**.
