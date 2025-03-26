@@ -151,6 +151,12 @@ cmake -DGENZH_ZEROHOUR_INSTALL_PREFIX="/path/to/install" .
 
 ## 6. **Building Specific Targets**
 
+> [!IMPORTANT]
+> Please note that specific **targets** (such as `z_generals` or `z_worldbuilder`) will only work if the corresponding
+> game source tree is enabled through the appropriate **preset** (e.g., `DGENZH_BUILD_ZEROHOUR` or
+> `DGENZH_BUILD_ZEROHOUR_TOOLS`). Make sure the relevant game sources are included in the configuration before
+> attempting to build the **targets**.
+
 You can build specific targets by specifying them in the build command. The common targets are:
 
 > [!TIP]
