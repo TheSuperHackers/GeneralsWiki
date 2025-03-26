@@ -18,7 +18,10 @@ For build using solutions and more advanced build configurations, see below.
 - Ensure that the necessary C++ development components, **including MFC**, are installed.
 
 >[!NOTE]
-> You must have the MFC components installed to compile the source code.
+> You must have the MFC components installed to compile the source code. You can find it in Visual Studio Installer.
+>
+> ![image](https://github.com/user-attachments/assets/cdabd4d9-f291-4833-8a63-704654a43780)
+
 <!-- markdownlint-disable-next-line -->
 2. **Obtain the Source Code**
     - Clone or download the source code
@@ -39,6 +42,8 @@ For build using solutions and more advanced build configurations, see below.
   - `Build Windows Internal build` for an internal build.
   - `Build Windows Profile build` for a profile build.
 
+![image](https://github.com/user-attachments/assets/2bc0aa26-3342-4aac-ae5b-6cf91db21214)
+
 >[!TIP]
 > For more information on the different build configurations, see the [Build Configurations](build_configurations.md)
 page.
@@ -46,6 +51,8 @@ page.
 - Select the target you want to build:
   - `generalsv.exe` to build the base Generals.
   - `generalszh.exe` to build Zero Hour.
+
+![image](https://github.com/user-attachments/assets/37d59b79-77fc-4797-bbab-be385dd654da)
 
 - Build the project by clicking on the `Build` menu and selecting `Build`.
 - The compiled executable will be placed in the build folder. Example: `build/win32dgb/GeneralsMD/Debug`
@@ -59,6 +66,8 @@ page.
 - In the Solution Explorer, click on 'switch view' and select 'CMake Targets View'.
 - Expand the 'Genzh' project and right-click on the target you want to build.
 - Select 'Build' to compile the target.
+
+![image](https://github.com/user-attachments/assets/adb296b6-ae05-4a23-9aa7-2a9c56b9e8e9)
 
 ### Build using command line
 
