@@ -116,7 +116,7 @@ To install the built project, use:
 cmake --install build/win32
 ```
 
-> [!NOTE] 
+> [!NOTE]
 > Replace the folder preset name as needed. This installs the executable project in the specified paths (see next
 > section).
 <!-- markdownlint-disable-line -->
@@ -184,7 +184,7 @@ Replace the folder preset name as needed.
 
 ## 7. **Examples**
 
-1. **Build Zero Hour with Debug Configuration and Tools:**
+### **Build Zero Hour with Debug Configuration and Tools:**
 
 To build the Zero Hour code along with its tools in debug mode, use the following command:
 
@@ -199,7 +199,7 @@ cmake --build build/win32dbg
 cmake --install build/win32dbg
 ```
 <!-- markdownlint-disable-next-line -->
-2. **Build Only World Builder Tool:**
+### **Build Only World Builder Tool:**
 
 To build only the World Builder tool for Zero Hour, use the following command:
 
@@ -214,7 +214,7 @@ cmake --build build/win32
 cmake --install build/win32 --config Release
 ```
 <!-- markdownlint-disable-next-line -->
-3. **Complete Build and Installation Process for Generals with Extras and Custom Path:**
+### **Build Generals with Extras and Custom Installation Path:**
 
 To build the Generals code with additional extras, configure the build for release, and then install the executable to a
 custom directory, you can run the following commands in sequence:
