@@ -8,6 +8,7 @@ For build using solutions and more advanced build configurations, see below.
 - [Build through Visual Studio 2022](#1-prepare-the-project)
 - [Build through CMake target view](#build-through-cmake-target-view)
 - [Build using command line](#build-using-command-line)
+- [Build using solutions](#build-with-solutions)
 - [Troubleshooting](#troubleshooting)
 
 ## Prerequisites
@@ -76,7 +77,6 @@ to build the project from the command line.
 > VS 2022" from the Start menu. Once opened, navigate to the project directory in the terminal and proceed
 > to run the commands below.
   
-
 - #### 1. **Release Build**
 
   - **Choose the build configuration:**
@@ -95,11 +95,17 @@ to build the project from the command line.
   - **Install the game executable in the game directory (assuming the build was successful):**
     - `cmake --install build/<preset name>`
 
-
 - **To build a specific target:**
   - Run `cmake --build build/<preset name> --target <target name>`
   - Example: `cmake --build build/win32dgb --target z_generals`
   - Or: `cmake --build build/win32int --target g_generals`
+
+### Build with Solutions
+
+- Generate the Visual Studio solution with the appropriate preset (see above):
+- Run `cmake --preset win32 -G "Visual Studio 17 2022" -A Win32`
+- Navigate to the `build/win32` folder and open the generated solution file.
+- Build the project using the Visual Studio interface.
 
 ## Troubleshooting
 
