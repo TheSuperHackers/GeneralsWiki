@@ -26,7 +26,7 @@ For build using solutions and more advanced build configurations, see below.
 
 ### 2. Build the Project
 
-- Select you favorite build configuration:
+- Select the appropriate build configuration:
 - `Build Windows build` for a release build.
 - `Build Windows Debug build` for a debug build.
 - `Build Windows Internal build` for an internal build.
