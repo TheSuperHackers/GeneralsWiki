@@ -5,7 +5,7 @@ code using Visual Studio 2022.
 For build using solutions and more advanced build configurations, see below.
 
 - [Prerequisites](#prerequisites)
-- [Build through Visual Studio 2022](#1-prepare-the-project)
+- [Build through Visual Studio 2022](#build-through-visual-studio-2022)
 - [Build through CMake target view](#build-through-cmake-target-view)
 - [Build using command line](#build-using-command-line)
 - [Build using solutions](#build-with-solutions)
@@ -27,7 +27,9 @@ For build using solutions and more advanced build configurations, see below.
     - Clone or download the source code
       repository: [TheSuperHackers - GeneralsGameCode](https://github.com/TheSuperHackers/GeneralsGameCode.git).
 
-## Steps
+---
+
+## Build through Visual Studio 2022
 
 ### 1. Prepare the project
 
@@ -59,9 +61,9 @@ page.
 - Install the game executable in the game directory by clicking on the `Install` in `Build` menu. This will copy the
   executable to the retail game directory.
 
-## Additional Steps
+---
 
-### Build through CMake target view
+## Build through CMake target view
 
 - In the Solution Explorer, click on 'switch view' and select 'CMake Targets View'.
 - Expand the 'Genzh' project and right-click on the target you want to build.
@@ -69,7 +71,9 @@ page.
 
 ![image](https://github.com/user-attachments/assets/adb296b6-ae05-4a23-9aa7-2a9c56b9e8e9)
 
-### Build using command line
+---
+
+## Build using command line
 
 You need to install [CMake](https://cmake.org/download/) and [Ninja](https://github.com/ninja-build/ninja/releases)
 to build the project from the command line.
@@ -85,7 +89,7 @@ to build the project from the command line.
 > Alternatively, you can skip the terminal setup and simply open the "x86 Native Tools Command Prompt for
 > VS 2022" from the Start menu. Once opened, navigate to the project directory in the terminal and proceed
 > to run the commands below.
-  
+<!-- markdownlint-disable-next-line -->
 - #### 1. **Release Build**
 
   - **Choose the build configuration:**
@@ -109,12 +113,18 @@ to build the project from the command line.
   - Example: `cmake --build build/win32dgb --target z_generals`
   - Or: `cmake --build build/win32int --target g_generals`
 
-### Build with Solutions
+For more CMake options, see the [CMake Guide](cmake_guide).
+
+---
+
+## Build with Solutions
 
 - Generate the Visual Studio solution with the appropriate preset (see above):
 - Run `cmake --preset win32 -G "Visual Studio 17 2022" -A Win32`
 - Navigate to the `build/win32` folder and open the generated solution file.
 - Build the project using the Visual Studio interface.
+
+---
 
 ## Troubleshooting
 
