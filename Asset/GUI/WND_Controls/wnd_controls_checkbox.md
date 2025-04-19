@@ -90,7 +90,7 @@ Here's an example from the `OptionsMenu.wnd` file:
 
 ## See also
 
-- [Default control](wnd_controls_user)
+- [Default control](wnd_controls_user.md)
 - [Texturing](../texturing.md)
 - [Statuses](../statuses.md)
 

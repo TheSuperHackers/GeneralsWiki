@@ -99,7 +99,7 @@ END
 
 ## See also
 
-- [Default control](wnd_controls_user)
+- [Default control](wnd_controls_user.md)
 - [Texturing](../texturing.md)
 
 [Category:](../Categories.md) [Controls](../Controls.md)
