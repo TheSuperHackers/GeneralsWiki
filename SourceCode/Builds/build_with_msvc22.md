@@ -113,7 +113,7 @@ to build the project from the command line.
   - Example: `cmake --build build/win32dgb --target z_generals`
   - Or: `cmake --build build/win32int --target g_generals`
 
-For more CMake options, see the [CMake Guide](cmake_guide).
+For more CMake options, see the [CMake Guide](cmake_guide.md).
 
 ---
 

@@ -20,7 +20,7 @@ development purposes. Some common configurations include:
 
 Each configuration is designed for a different purpose, whether you're building for development, debugging, testing, or
 releasing the final product. You can find more details about the build configurations in
-the [Build Configurations](build_configuration) page.
+the [Build Configurations](build_configuration.md) page.
 
 ## Architectures and Toolchains
 
@@ -35,7 +35,7 @@ support different optimizations, libraries, or debugging features that influence
 
 ## CMake Overview
 
-This [CMake Guide](cmake_guide) provides an overview of how to configure and build **Generals** and its expansion
+This [CMake Guide](cmake_guide.md) provides an overview of how to configure and build **Generals** and its expansion
 *Zero Hour* using **CMake** via the command line. It covers the various options and flags defined in the CMake files that
 control the build process, allowing you to choose different components of the game and tools to build.
 
@@ -48,31 +48,31 @@ environments.
 
 1. **Using pure Visual Studio 6 (x86) (Windows)**
     - A guide for building the project using only Visual Studio 6 on Windows for the x86 architecture.
-      [Build with pure Visual Studio 6 (x86) (Windows)](build_with_ea_msvc6)
+      [Build with pure Visual Studio 6 (x86) (Windows)](build_with_ea_msvc6.md)
 
 2. **Using Cmake & Visual Studio 6 (x86) (Windows)**
     - A guide for building the project using CMake with Visual Studio 6 on Windows for the x86 architecture.
-      [Build with CMake & Visual Studio 6 (x86) (Windows)](build_with_msvc6)
+      [Build with CMake & Visual Studio 6 (x86) (Windows)](build_with_msvc6.md)
 
    #### Sub-guides
   
     - **CLion & VC6 Toolchain**
         - A guide for using CLion with the Visual Studio 6 (VC6) toolchain for building the project.
-         [Build with CLion & VC6 Toolchain](build_with_clion_vc6_toolchain)
+         [Build with CLion & VC6 Toolchain](build_with_clion_vc6_toolchain.md)
     - **Docker & VC6**
         - A guide for setting up Docker with the Visual Studio 6 (VC6) toolchain for building the project in a
           containerized environment.
-         [Build with Docker & VC6](build_with_msvc6_on_docker)
+         [Build with Docker & VC6](build_with_msvc6_on_docker.md)
 
 ### **Visual Studio 2022 Guides**
 
 1. **Using Cmake (x86) (Windows)**
     - A guide for building the project using CMake with Visual Studio 2022 on Windows for the x86 architecture.
-      [Build with CMake (x86) (Windows)](build_with_msvc22)
+      [Build with CMake (x86) (Windows)](build_with_msvc22.md)
 
 2. **Using Cmake (Linux)**
     - A guide for building the project using CMake with Visual Studio 2022 on Linux.
-      [Build with CMake (Linux)](build_with_msvc22_linux)
+      [Build with CMake (Linux)](build_with_msvc22_linux.md)
 
 ## Community Forks Build Guides
 
@@ -82,4 +82,4 @@ versions of the original repository and may have unique build setups.
 1. **MSVC22 (x64) Generals Only (Windows)**
     - A guide for building a custom fork of the project using MSVC 2022 (x64) for Windows, specifically tailored for
       the "Generals Only" version.
-      [Build with MSVC22 (x64) Generals Only (Windows)](build_with_msvc22_x64_jmarshall2323)
+      [Build with MSVC22 (x64) Generals Only (Windows)](build_with_msvc22_x64_jmarshall2323.md)
