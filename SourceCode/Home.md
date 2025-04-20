@@ -27,6 +27,7 @@ new to the project, here’s how you can contribute:
 
 - [Build Guides for Different Platforms](build_guides)
 - [Dependencies and Libraries](Dependencies)
+- [Replays for testing](Debug/replay_testing)
 - [Community Forks](forks)
 - [Tools for Developers](Tools)
 - [FAQ](FAQ)

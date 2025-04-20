@@ -4,6 +4,7 @@
 
 - [How to Get Involved](how_to_involved)
 - [How to Contribution](contribution)
+- [Replays for testing](Debug/replay_testing)
 - [Community forks](forks)
 - [License](license)
 - [Credits](credits)
