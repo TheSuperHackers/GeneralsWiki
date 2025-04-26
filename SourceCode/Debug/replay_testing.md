@@ -60,15 +60,15 @@ The golden replay is a multiplayer match made in _Zero Hour v1.04_ in which syst
 abilities have been used. It consists of two playthroughs to cover all the general powers. Both replays have
 been played on the customized _Tansoooo_ map.
 
-[Download both replays and the map](files/Golden-replays.zip)
+[Download both replays and the map](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Golden-replays.zip)
 
 For a successful test, the expected results on the score screen are:
 
 Golden replay 1:
-[files/golden-replay-1-results.png]
+[https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/golden-replay-1-results.png]
 
 Golden replay 2:
-[files/golden-replay-2-results.png]
+[https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/golden-replay-2-results.png]
 
 ### Zero Hour Skirmish
 
@@ -80,9 +80,10 @@ They don't need to be on the same team. Once the match is completed, save the re
 It is recommended to use version **1.04** to create your own skirmish game,
 although the latest version **1.05** is backwards compatible.
 
-If you'd prefer not to play a skirmish game, you can download [this file](files/Zerohour-skirmish.zip),
-which includes a skirmish match played on a default _Zero Hour_ map .
-The expected results are provided in the download package.
+If you'd prefer not to play a skirmish game, you can download the followin skirmish match played
+on a default _Zero Hour_ map. The expected results are provided in the download package.
+
+[Download](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Zerohour-skirmish.zip)
 
 ### Generals Multiplayer
 
@@ -92,7 +93,9 @@ For _Command & Conquer: Generals_ three replays have been selected from GameRepl
 - **Test MP replay 2**: 7 player FFA game on the map Whiteout (default _Generals_ map).
 - **Test MP replay 3**: 2 v 2 v 2 game on the map Armoured Fury (default  _Generals_ map).
 
-Download the replays, their maps and the result screens [here](Generals-mp-replays.zip).
+The replays, their maps and the result screens are available in a single download:
+
+[Download](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Generals-MP-replays.zip)
 
 ### Generals Skirmish
 
@@ -104,6 +107,7 @@ They don't need to be on the same team. Once the match is completed, save the re
 **Important Note**: Make sure to use _Generals_ **version 1.08**, as the latest version (1.09) is incompatible
 with both version 1.08 and the _SuperHackers_ version.
 
-If you'd prefer not to play a skirmish game, you can download [this file](files/Generals-skirmish.zip),
-which includes a skirmish match played on a default _Generals_ map.
-The expected results are provided in the download package.
+If you'd prefer not to play a skirmish game, you can download the followin skirmish match played
+on a default _Generals_ map. The expected results are provided in the download package.
+
+[Download](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Generals-skirmish.zip)
