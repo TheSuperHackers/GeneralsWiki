@@ -9,6 +9,7 @@ For build using solutions and more advanced build configurations, see below.
 - [Build through CMake target view](#build-through-cmake-target-view)
 - [Build using command line](#build-using-command-line)
 - [Build using solutions](#build-with-solutions)
+- [Build with VCPKG](#build-with-vcpkg)
 - [Troubleshooting](#troubleshooting)
 
 ## Prerequisites
@@ -16,6 +17,7 @@ For build using solutions and more advanced build configurations, see below.
 1. **Visual Studio 2022**
 
 - Ensure that the necessary C++ development components, **including MFC**, are installed.
+- For _vcpkg_ builds, you also must have **vcpkg** installed, which you can find under individual components.
 
 >[!NOTE]
 > You must have the MFC components installed to compile the source code. You can find it in Visual Studio Installer.
@@ -39,10 +41,14 @@ For build using solutions and more advanced build configurations, see below.
 ### 2. Build the Project
 
 - Select the appropriate build configuration:
-  - `Build Windows build` for a release build.
-  - `Build Windows Debug build` for a debug build.
-  - `Build Windows Internal build` for an internal build.
-  - `Build Windows Profile build` for a profile build.
+  - `Build Windows 32bit build` for a release build.
+  - `Build Windows 32bit Debug build` for a debug build.
+  - `Build Windows 32bit Internal build` for an internal build.
+  - `Build Windows 32bit Profile build` for a profile build.
+  - `Build Windows 32bit VCPKG build` for a release build with the VCPKG package manager.
+  - `Build Windows 32bit VCPKG Debug build` for a debug build with the VCPKG package manager.
+  - `Build Windows 32bit VCPKG Internal build` for an internal build with the VCPKG package manager.
+  - `Build Windows 32bit VCPKG Profile build` for a profile build with the VCPKG package manager.
 
 ![image](https://github.com/user-attachments/assets/2bc0aa26-3342-4aac-ae5b-6cf91db21214)
 
@@ -123,6 +129,36 @@ For more CMake options, see the [CMake Guide](cmake_guide).
 - Run `cmake --preset win32 -G "Visual Studio 17 2022" -A Win32`
 - Navigate to the `build/win32` folder and open the generated solution file.
 - Build the project using the Visual Studio interface.
+
+---
+
+## Build with VCPKG
+
+To build configurations that make use of VCPKG you must set the environment variable `VCPKG_ROOT` to the location
+where the VCPKG is found. If you have installed Visual Studio 2022 with the VCPKG component, you will most likely
+find it in one of these paths:
+
+- `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg`
+- `C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\vcpkg`
+- `C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\vcpkg`
+
+If you use the stand-alone version of VCPKG, you need to use the folder you installed it in.
+
+### Set environment variable in command prompt
+
+You can set the environment variable in the command prompt. You will have to set it again if you (re)open the prompt:
+
+- `set VCPKG_ROOT=<path_to_vcpkg>`
+
+### Set environment variable in Windows
+
+You can also permanently set the environment variable in Windows
+
+- Search for `edit the system environment variables` in Windows Search or Control Panel
+- Choose `Environment Variables`
+- Add a new user variable
+- Set the variable name to `VCPKG_ROOT`
+- Set the variable value to the VCPKG path.
 
 ---
 
