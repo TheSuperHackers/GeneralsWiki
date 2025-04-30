@@ -41,16 +41,16 @@ For build using solutions and more advanced build configurations, see below.
 ### 2. Build the Project
 
 - Select the appropriate build configuration:
-  - `Build Windows 32bit build` for a release build.
-  - `Build Windows 32bit Debug build` for a debug build.
-  - `Build Windows 32bit Internal build` for an internal build.
-  - `Build Windows 32bit Profile build` for a profile build.
-  - `Build Windows 32bit VCPKG build` for a release build with the VCPKG package manager.
-  - `Build Windows 32bit VCPKG Debug build` for a debug build with the VCPKG package manager.
-  - `Build Windows 32bit VCPKG Internal build` for an internal build with the VCPKG package manager.
-  - `Build Windows 32bit VCPKG Profile build` for a profile build with the VCPKG package manager.
+  - `Build Windows 32bit Release` for a release build.
+  - `Build Windows 32bit Debug` for a debug build.
+  - `Build Windows 32bit Internal` for an internal build.
+  - `Build Windows 32bit Profile` for a profile build.
+  - `Build Windows 32bit VCPKG Release` for a release build with the VCPKG package manager.
+  - `Build Windows 32bit VCPKG Debug` for a debug build with the VCPKG package manager.
+  - `Build Windows 32bit VCPKG Internal` for an internal build with the VCPKG package manager.
+  - `Build Windows 32bit VCPKG Profile` for a profile build with the VCPKG package manager.
 
-![image](https://github.com/user-attachments/assets/2bc0aa26-3342-4aac-ae5b-6cf91db21214)
+![Build options](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Builds/files/buildoptions.jpg)
 
 >[!TIP]
 > For more information on the different build configurations, see the [Build Configurations](build_configurations.md)
