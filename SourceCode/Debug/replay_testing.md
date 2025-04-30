@@ -65,10 +65,10 @@ been played on the customized _Tansoooo_ map.
 For a successful test, the expected results on the score screen are:
 
 Golden replay 1:
-[https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/golden-replay-1-results.png]
+![Golden replay 1](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/golden-replay-1-results.jpg)
 
 Golden replay 2:
-[https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/golden-replay-2-results.png]
+![Golden replay 2](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/golden-replay-2-results.jpg)
 
 ### Zero Hour Skirmish
 
