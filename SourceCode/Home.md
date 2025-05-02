@@ -16,7 +16,7 @@ modifying, or extending the game’s core functionality, you're in the right pla
 To get started with the project, you will need a basic understanding of the source code and how to build it. If you're
 new to the project, here’s how you can contribute:
 
-- Check out the [**Build Guides**](build_guides) for instructions on how to compile the game code on
+- Check out the [**Build Guides**](Builds\build_guides.md) for instructions on how to compile the game code on
   different platforms.
 - Learn about the project's **dependencies** and **libraries** in the [Dependencies](Dependencies) section.
 - Look through the **community forks** and other variations of the project in the [Forks](Forks) section.
