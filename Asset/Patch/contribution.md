@@ -141,7 +141,7 @@ To write a link, use the following format:
 ```
 
 Some keywords are interpreted by GitHub. Read about
-it [here](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue).
+it in the [GitHub documentation](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue).
 
 The text body continues with a description of the change in appropriate detail. This serves to educate reviewers and
 visitors to get a good understanding of the change without the need to study and understand the associated changed

@@ -9,7 +9,7 @@ This makes replays an excellent tool for testing the compatibility and accuracy 
 To perform a test using a replay, use the following steps:
 
 1. Gather previously saved replays of matches played on a known-working version of the game. These replays act as a
-benchmark for testing. A prepared set of test replays can be found [here](#how-to-verify-the-game).
+benchmark for testing. A prepared set of test replays can be found in the [verification section](#how-to-verify-the-game).
 
 2. Copy the replay file into `Documents\Command and Conquer Generals Data\Replays` for _Generals_ replays
 and `Documents\Command and Conquer Generals Zero Hour Data\Replays` for _Zero Hour_ replays.
