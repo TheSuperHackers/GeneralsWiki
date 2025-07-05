@@ -61,7 +61,7 @@ page.
 ![image](https://github.com/user-attachments/assets/37d59b79-77fc-4797-bbab-be385dd654da)
 
 - Build the project by clicking on the `Build` menu and selecting `Build`.
-- The compiled executable will be placed in the build folder. Example: `build/win32dgb/GeneralsMD/Debug`
+- The compiled executable will be placed in the build folder. Example: `build/win32-debug/GeneralsMD/Debug`
 - Install the game executable in the game directory by clicking on the `Install` in `Build` menu. This will copy the
   executable to the retail game directory.
 
@@ -105,16 +105,16 @@ to build the project from the command line.
 - #### 2. **Development and Debug Builds**
 
   - **Choose the build configuration:**
-    - `cmake --workflow --preset win32dgb` for Debug build.
-    - `cmake --workflow --preset win32prof` for Profile build.
+    - `cmake --workflow --preset win32-debug` for Debug build.
+    - `cmake --workflow --preset win32-profile` for Profile build.
 
   - **Install the game executable in the game directory (assuming the build was successful):**
     - `cmake --install build/<preset name>`
 
 - **To build a specific target:**
   - Run `cmake --build build/<preset name> --target <target name>`
-  - Example: `cmake --build build/win32dgb --target z_generals`
-  - Or: `cmake --build build/win32prof --target g_generals`
+  - Example: `cmake --build build/win32-debug --target z_generals`
+  - Or: `cmake --build build/win32-profile --target g_generals`
 
 For more CMake options, see the [CMake Guide](cmake_guide).
 
