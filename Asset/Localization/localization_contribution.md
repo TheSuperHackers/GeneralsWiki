@@ -93,9 +93,9 @@ patch.
 translations should be based on it.
 
 2.7 We are currently reorganizing the Super Patch GitHub page. If you want to submit your localization edit, please
-create a discussion [here](https://github.com/TheSuperHackers/GeneralsGamePatch/discussions). We will fix this situation
-soon, so you can post it yourself. You can check the situation and
-updates [here](https://github.com/TheSuperHackers/GeneralsGamePatch/discussions/2637).
+create a discussion on the [GeneralsGamePatch discussions page](https://github.com/TheSuperHackers/GeneralsGamePatch/discussions).
+We will fix this situation soon, so you can post it yourself. You can check the situation and
+updates on the [reorganization discussion](https://github.com/TheSuperHackers/GeneralsGamePatch/discussions/2637).
 
 From line - 59939 `DIALOGEVENT:EvaChina_AllyUnderAttackSubtitle` until line - 96720
 `DIALOGEVENT:UnitDescriptXUSA037Subtitle` you can find Voiceover text used in game Dialogues. We have 3 official game
@@ -137,9 +137,9 @@ edits.
 
 3.4 **Submitting Your Localization**: We are currently in the process of reorganizing the Super Patch GitHub page. If
 you want to submit your localization edit, please create a
-discussion [here](https://github.com/TheSuperHackers/GeneralsGamePatch/discussions). We will resolve this situation soon
-so you can post it yourself. You can check the situation and
-updates [here](https://github.com/TheSuperHackers/GeneralsGamePatch/discussions/2637).
+discussion on the [GeneralsGamePatch discussions page](https://github.com/TheSuperHackers/GeneralsGamePatch/discussions).
+We will resolve this situation soon so you can post it yourself. You can check the situation and
+updates on the [reorganization discussion](https://github.com/TheSuperHackers/GeneralsGamePatch/discussions/2637).
 
 ## 4. Testing and Verifying Changes in the Game
 
