@@ -29,14 +29,12 @@ The **preset** defines the predefined build configuration. The available presets
 
 - `win32`: Release build.
 - `win32dgb`: Debug build.
-- `win32int`: Internal build.
 - `win32prof`: Profile build.
 
 ### For Visual Studio 6
 
 - `vc6`: Release build.
 - `vc6dgb`: Debug build.
-- `vc6int`: Internal build.
 - `vc6prof`: Profile build.
 
 ### Usage

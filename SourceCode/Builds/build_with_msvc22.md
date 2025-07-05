@@ -43,11 +43,9 @@ For build using solutions and more advanced build configurations, see below.
 - Select the appropriate build configuration:
   - `Build Windows 32bit Release` for a release build.
   - `Build Windows 32bit Debug` for a debug build.
-  - `Build Windows 32bit Internal` for an internal build.
   - `Build Windows 32bit Profile` for a profile build.
   - `Build Windows 32bit VCPKG Release` for a release build with the VCPKG package manager.
   - `Build Windows 32bit VCPKG Debug` for a debug build with the VCPKG package manager.
-  - `Build Windows 32bit VCPKG Internal` for an internal build with the VCPKG package manager.
   - `Build Windows 32bit VCPKG Profile` for a profile build with the VCPKG package manager.
 
 ![Build options](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Builds/files/buildoptions.jpg)
@@ -108,7 +106,6 @@ to build the project from the command line.
 
   - **Choose the build configuration:**
     - `cmake --workflow --preset win32dgb` for Debug build.
-    - `cmake --workflow --preset win32int` for Internal build.
     - `cmake --workflow --preset win32prof` for Profile build.
 
   - **Install the game executable in the game directory (assuming the build was successful):**
@@ -117,7 +114,7 @@ to build the project from the command line.
 - **To build a specific target:**
   - Run `cmake --build build/<preset name> --target <target name>`
   - Example: `cmake --build build/win32dgb --target z_generals`
-  - Or: `cmake --build build/win32int --target g_generals`
+  - Or: `cmake --build build/win32prof --target g_generals`
 
 For more CMake options, see the [CMake Guide](cmake_guide).
 
