@@ -48,7 +48,7 @@
 
 ## Tools
 
-- [Command Line Arguments](Tools/switchers_arguments)
-- [SafeDiskLauncher](Tools/safedisklauncher)
-- [CRCDiff](Tools/crcdiff)
+- [Command Line Arguments](switchers_arguments)
+- [SafeDiskLauncher](safedisklauncher)
+- [CRCDiff](crcdiff)
 <!-- markdownlint-restore -->
