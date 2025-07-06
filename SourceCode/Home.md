@@ -18,19 +18,19 @@ new to the project, here’s how you can contribute:
 
 - Check out the [**Build Guides**](build_guides) for instructions on how to compile the game code on
   different platforms.
-- Learn about the project's **dependencies** and **libraries** in the [Dependencies](Dependencies) section.
-- Look through the **community forks** and other variations of the project in the [Forks](Forks) section.
+- Learn about the project's **dependencies** and **libraries** in the [Dependencies](dependencies) section.
+- Look through the **community forks** and other variations of the project in the [Forks](forks) section.
 - If you're an experienced developer, you can start contributing by reviewing and submitting **pull requests** or
   opening **issues**.
 
 ## **Quick Links**
 
 - [Build Guides for Different Platforms](build_guides)
-- [Dependencies and Libraries](Dependencies)
+- [Dependencies and Libraries](dependencies)
 - [Replays for testing](replay_testing)
 - [Community Forks](forks)
-- [Tools for Developers](Tools)
-- [FAQ](FAQ)
+- [Tools for Developers](tools)
+- [FAQ](faq)
 
 ## **Building the Game Code**
 
@@ -60,7 +60,7 @@ assist you:
 - **Debugging Tools**: Recommended tools for debugging and troubleshooting.
 - **Version Control**: Using Git for managing changes, commits, and collaboration.
 
-Check out the [**Tools for Developers**](Tools) page for more information.
+Check out the [**Tools for Developers**](tools) page for more information.
 
 ## **Community and Forks**
 
