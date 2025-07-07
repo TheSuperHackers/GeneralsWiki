@@ -73,7 +73,7 @@ Bad:
 > Fixed particle effect of USA Missile Defender
 
 When a text refers to a faction unit, structure, upgrade or similar, then the unit should be worded without any
-abbrevations and should be prefixed with the faction name. Valid faction names are USA, China, GLA, Boss, Civilian.
+abbreviations and should be prefixed with the faction name. Valid faction names are USA, China, GLA, Boss, Civilian.
 Subfaction names can be appended too, for example GLA Stealth.
 
 Good:
@@ -104,7 +104,7 @@ The `Patch104p` word and `@keyword` are mandatory. `author` and date can be omit
 | @feature     | Adding something new                                        |
 | @fix         | Fixing something, but is not a user facing bug              |
 | @performance | Improving performance                                       |
-| @refactor    | Moving or rewriting code, but does not change the behaviour |
+| @refactor    | Moving or rewriting code, but does not change the behavior |
 | @tweak       | Changing some values or settings                            |
 
 Block comment sample
@@ -153,6 +153,6 @@ appended. The rationale explains why the given change makes sense.
 Every change needs to be accompanied with a yaml definition file for the change log generation. It is supposed to
 contain concise information for the change. The yaml file needs to be created inside the `Patch104pZH/Design/Changes`
 folder or the appropriate subfolder. There is a template.yaml file that can be used as a base. The name of the file
-begins with the number of the Pull Request and a few words to summarize the essence of the change, seperated by
+begins with the number of the Pull Request and a few words to summarize the essence of the change, separated by
 underscores. It is possible that a new change extends an existing yaml file instead of creating a new one. In that case
 a txt file with the same naming rules can be created to refer to the actual yaml file.

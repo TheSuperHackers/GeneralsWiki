@@ -3,14 +3,13 @@
 ## [Home](Home)
 
 ---
-## [Patch](patch)
+## Patch
 - [Installation](installation)
-- [Patch Notes](patch_notes)
-- [How to Get Involved](how_to_involved)
-- [How to Contribution](contribution)
-- [Lincense](license)
+- [How to Get Involved](how_to_get_involved)
+- [How to Contribute](contribution)
+- [License](https://github.com/TheSuperHackers/GeneralsGamePatch/blob/main/LICENSE.txt)
 - [Credits](credits)
-- [Changelog](changelog)
+- [Changelog](https://github.com/TheSuperHackers/GeneralsGamePatch?tab=readme-ov-file#change-logs)
 - [FAQ](faq)
 - [Known Issues](known_issues)
 - [Contact & Community](contact_community)
@@ -29,23 +28,23 @@
     - BIK
 - Game Design
     - INI
-        - [INI Files](GameDesign/ini_files)
+        - INI Files
           - [`map.ini`](map_ini)
         - [ZeroSyntax VSCode Extension](ini-linter)
     - SCB
         - [SCB Links](scb_links)
 - Maps
-    - [Map](map_ini)
+    - [`map.ini`](map_ini)
     - [World Builder Links](worldbuilder_links)
 - Localization
     - [Localization Contribution](localization_contribution)
-    - [LOCA - Unit Quotes](unit_quotes.txt)
+    - [LOCA - Unit Quotes](https://raw.githubusercontent.com/TheSuperHackers/GeneralsWiki/refs/heads/main/Asset/Localization/unit_quotes.txt)
     - [CSF Format](csf_format)
 
 - GUI
     - [WND Reference](wnd_reference)
     - [Texturing](texturing)
-    - [WND Controls](WND_Controls)
+    -  WND Controls
         - [Default- User](wnd_controls_user)
         - [Checkbox](wnd_controls_checkbox)
         - [Combobox](wnd_controls_combobox)
@@ -61,6 +60,6 @@
 ## Tools
 
 - FinalBIG
-- Generals Mod Builder
+- [Generals Mod Builder](https://github.com/TheSuperHackers/GeneralsModBuilder)
 
 <!-- markdownlint-restore -->
