@@ -7,14 +7,11 @@ guides cover different environments, configurations, and setups for building the
 ## Build Configurations Overview
 
 Before diving into the build guides, it's important to understand the different build configurations used in the
-project. These configurations dictate how the project is built, whether for debugging, profiling, release, or internal
-development purposes. Some common configurations include:
+project. These configurations dictate how the project is built, whether for debugging, profiling or release.
 
 - **Release:** Optimized for end-users, providing a smaller, faster executable with no debugging information.
 - **Debug:** Includes debugging information, making it easier to trace and debug the code, but without optimization to
   ensure ease of debugging.
-- **Internal:** Includes debugging information and optimizations, used primarily by developers for testing and internal
-  purposes.
 - **Profile:** Used for performance profiling, with optimizations enabled and additional debugging options to collect
   profiling data.
 
