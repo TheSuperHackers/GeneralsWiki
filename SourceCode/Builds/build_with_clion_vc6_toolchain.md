@@ -54,7 +54,6 @@ compatibility with the original compiler from the game's development era. To com
 1. In the CMake profiles, enable the profiles you want to use. The available workflow presets are:
    - `vc6` - Release build
    - `vc6-debug` - Debug build
-   - `vc6-internal` - Internal build
    - `vc6-profile` - Profile build
 
    For detailed information about each build configuration and their specific purposes, see the [Build Configurations Overview](https://github.com/TheSuperHackers/GeneralsGameCode/wiki/build_configuration).

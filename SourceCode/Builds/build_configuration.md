@@ -41,25 +41,7 @@ There are four main build configurations in the project, each designed for diffe
 
 - **Use Case:** Used during development for debugging and resolving issues in the code.
 
-### 3. **Internal (O2, _INTERNAL)**
-
-- **Purpose:** The internal configuration is used for internal development purposes, offering optimization and some
-  debugging features to help developers while maintaining performance.
-- **Features:**
-  - Combines optimization (`/O2`) for performance with limited debugging options.
-  - Suitable for internal testing and development, where performance is important, but some debugging features are
-    still needed.
-
-- **Compiler Flags:**
-  - `/O2`: Optimization for speed.
-  - `/D "_INTERNAL"`: Defines the internal build configuration.
-  - `/D "NDEBUG"`: Disables debugging in the final build.
-  - `/Zi`: Generates debugging information.
-
-- **Use Case:** Used for internal builds when developers need optimized performance but still want some debugging tools
-  available.
-
-### 4. **Profile (O2, IG_DEBUG_STACKTRACE, _RELEASE, _PROFILE)**
+### 3. **Profile (O2, IG_DEBUG_STACKTRACE, _RELEASE, _PROFILE)**
 
 - **Purpose:** The profile configuration is used for performance profiling and optimization. It is designed to help
   developers analyze performance bottlenecks and gather performance data.
@@ -94,9 +76,7 @@ Below is a list of the key compiler flags used across different configurations:
 - **`/D "_DEBUG"`**: Defines the build as a debug version, enabling debugging-specific features in the code.
 - **`/D "_RELEASE"`**: Defines the build as a release version, disabling debugging features and optimizing for
   performance.
-- **`/D "_INTERNAL"`**: Marks the build as an internal version, which may include some debugging information while still
-  being optimized for performance.
-- **`/D "NDEBUG"`**: Disables debugging code, typically used in release and internal builds.
+- **`/D "NDEBUG"`**: Disables debugging code, typically used in release builds.
 
 ### Profiling Flags
 
@@ -121,7 +101,5 @@ Below is a list of the key compiler flags used across different configurations:
   is optimized for performance with no debugging overhead.
 - **Debug:** Use this configuration during development when you need to debug issues. It disables optimizations and
   includes debugging information.
-- **Internal:** Use this configuration for internal builds where you need some debugging features but still require
-  optimized performance.
 - **Profile:** Use this configuration when analyzing the performance of the game. It helps identify bottlenecks and
   areas that can be optimized further.

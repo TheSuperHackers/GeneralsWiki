@@ -28,16 +28,14 @@ The **preset** defines the predefined build configuration. The available presets
 ### For Visual Studio 2022 or Ninja
 
 - `win32`: Release build.
-- `win32dgb`: Debug build.
-- `win32int`: Internal build.
-- `win32prof`: Profile build.
+- `win32-debug`: Debug build.
+- `win32-profile`: Profile build.
 
 ### For Visual Studio 6
 
 - `vc6`: Release build.
-- `vc6dgb`: Debug build.
-- `vc6int`: Internal build.
-- `vc6prof`: Profile build.
+- `vc6-debug`: Debug build.
+- `vc6-profile`: Profile build.
 
 ### Usage
 
@@ -196,13 +194,13 @@ To build the Zero Hour code along with its tools in debug mode, use the followin
 
 ```bash
 # Step 1: Configure the build with a preset and additional options
-cmake --preset win32dgb -DGENZH_BUILD_ZEROHOUR=ON -DGENZH_BUILD_ZEROHOUR_TOOLS=ON
+cmake --preset win32-debug -DGENZH_BUILD_ZEROHOUR=ON -DGENZH_BUILD_ZEROHOUR_TOOLS=ON
 
 # Step 2: Build the project
-cmake --build build/win32dbg
+cmake --build build/win32-debug
 
 # Step 3: Install the project to the default installation path
-cmake --install build/win32dbg
+cmake --install build/win32-debug
 ```
 <!-- markdownlint-disable-next-line -->
 ### **Build Only World Builder Tool:**

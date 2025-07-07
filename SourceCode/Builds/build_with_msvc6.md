@@ -119,7 +119,6 @@ Run the following command based on the type of build you want to create:
 
 - `cmake --workflow --preset vc6` for a release build.
 - `cmake --workflow --preset vc6-debug` for a debug build.
-- `cmake --workflow --preset vc6-internal` for an internal build.
 - `cmake --workflow --preset vc6-profile` for a profile build.
 
 You will find a bunch of files in `build\vc6\<game name>` and a file called `generalszh.exe` or `generalsv.exe`.
