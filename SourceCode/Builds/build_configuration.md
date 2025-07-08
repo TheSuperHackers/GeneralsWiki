@@ -41,6 +41,17 @@ There are four main build configurations in the project, each designed for diffe
 
 - **Use Case:** Used during development for debugging and resolving issues in the code.
 
+> **⚠️ Debug Build Requirements:** To run a debug build of the game, you need to have  
+> the following two files in the game directory alongside the built executable:
+>
+> - [`MSVCRTD.DLL`](https://discord.com/channels/951133504605917224/1344671543170564176/1357087699982352426)  
+>   Microsoft Visual C++ Runtime Library (Debug)
+> - [`MSVCIRTD.DLL`](https://discord.com/channels/951133504605917224/1344671543170564176/1357087699982352426)  
+>   Microsoft Visual C++ Internationalization Runtime Library (Debug)
+>
+> These files are available from the [Community Outpost Discord server](https://discord.gg/WzxQDZersE) (links above  
+> are from the server) and may require a Discord account to download.
+
 ### 3. **Profile (O2, IG_DEBUG_STACKTRACE, _RELEASE, _PROFILE)**
 
 - **Purpose:** The profile configuration is used for performance profiling and optimization. It is designed to help

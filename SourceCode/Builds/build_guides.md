@@ -19,6 +19,17 @@ Each configuration is designed for a different purpose, whether you're building 
 releasing the final product. You can find more details about the build configurations in
 the [Build Configurations](build_configuration) page.
 
+> **⚠️ Debug Build Requirements:** To run a debug build of the game, you need to have  
+> the following two files in the game directory alongside the built executable:
+>
+> - [`MSVCRTD.DLL`](https://discord.com/channels/951133504605917224/1344671543170564176/1357087699982352426)  
+>   Microsoft Visual C++ Runtime Library (Debug)
+> - [`MSVCIRTD.DLL`](https://discord.com/channels/951133504605917224/1344671543170564176/1357087699982352426)  
+>   Microsoft Visual C++ Internationalization Runtime Library (Debug)
+>
+> These files are available from the [Community Outpost Discord server](https://discord.gg/WzxQDZersE) (links above  
+> are from the server) and may require a Discord account to download.
+
 ## Architectures and Toolchains
 
 The project supports multiple architectures and toolchains, which is why there are various build guides tailored to

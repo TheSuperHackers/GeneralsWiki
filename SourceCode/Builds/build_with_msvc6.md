@@ -17,37 +17,60 @@ Even if you do not know C++, you should still be able to compile the source code
 understanding of how C++ is compiled is necessary. This includes knowing what the **compiler** and
 **linker** do, as well as being able to interpret error messages and troubleshoot them effectively.
 
-## Prerequisites
+## Prerequisites and setting up the build environment
 
-Download the following binaries and software and have them ready in a project folder.
+Download and install the following tools and software needed for compilation.
 
-- [Visual Studio 6.0 Portable](https://github.com/itsmattkc/MSVC600)
-- [CMake 3.31.6](https://github.com/Kitware/CMake/releases/download/v3.31.6/cmake-3.31.6-windows-x86_64.msi) or [newer](https://cmake.org/download/#latest)
-- [Git](https://git-scm.com/downloads)
-
-> For simplicity, this guide will use the installers for Git and CMake and assumes the user will use the
+> **ℹ️ Setup Note:** For simplicity, this guide will use the installers for Git and CMake and assumes the user will use the
 default install folder for Visual Studio 6.0 Portable.
 
-## Installing your build environment
+### Visual Studio 6.0 Portable
 
-Installation of tools and software that are needed for compilation.
+**Download:** [Visual Studio 6.0 Portable](https://github.com/itsmattkc/MSVC600)
 
-### Install Visual Studio 6
+The original compiler used for game development.
 
-- Download the portable Visual Studio 6 as a ZIP file from GitHub.
-- Extract the common and VC98 folders from the downloaded archive to the default install folder.
+**Installation:**
+
+- Download the portable Visual Studio 6 as a ZIP file from GitHub
+- Extract the `common` and `VC98` folders from the downloaded archive to the default install folder
 - Default installation folder: `C:\Program Files (x86)\Microsoft Visual Studio\`
 
 > Alternatively, you can use the VC6 setup from Archive.org.
 
-### Install CMake
+### Git
 
-- Run the installer for CMake.
-- Enable the option to add CMake to the system path during the setup wizard.
+**Download:** [Git](https://git-scm.com/downloads)
 
-### Install Git
+Required for cloning the source code repository.
 
-- Run the Git installer.
+**Installation:**
+
+- Run the Git installer
+
+### CMake *(added to system path)*
+
+**Download:** [CMake 3.31.6](https://github.com/Kitware/CMake/releases/download/v3.31.6/cmake-3.31.6-windows-x86_64.msi)
+or [newer](https://cmake.org/download/#latest)
+
+> **Note:** Not required if using IDEs like CLion or Visual Studio 2022, as these include built-in CMake support.
+
+**Installation:**
+
+- Run the installer for CMake
+- Enable the option to add CMake to the system path during the setup wizard
+
+### Ninja *(added to system path)*
+
+**Download:** [Ninja](https://ninja-build.org/)
+
+> **Note:** Not required if using IDEs like CLion or Visual Studio 2022, as these include a bundled ninja binary.
+
+**Installation:**
+
+- Download the Ninja binary from the [Ninja releases page](https://ninja-build.org/)
+- Extract the `ninja.exe` file to a folder of your choice
+- Add the folder containing `ninja.exe` to your system's PATH environment variable
 
 ## Clone
 
@@ -117,9 +140,23 @@ set MSVCDir=C:\<VS6_INSTALL_PATH>\VC98
 
 Run the following command based on the type of build you want to create:
 
-- `cmake --workflow --preset vc6` for a release build.
-- `cmake --workflow --preset vc6-debug` for a debug build.
-- `cmake --workflow --preset vc6-profile` for a profile build.
+- For a release build:
+
+``` shell
+cmake --workflow --preset vc6
+```
+
+- For a debug build:
+
+``` shell
+cmake --workflow --preset vc6-debug
+```
+
+- For a profile build:
+
+``` shell
+cmake --workflow --preset vc6-profile
+```
 
 You will find a bunch of files in `build\vc6\<game name>` and a file called `generalszh.exe` or `generalsv.exe`.
 
@@ -127,8 +164,26 @@ For detailed information about each build configuration and their specific purpo
 
 ### Install the game executable
 
-Run ```cmake --install build\<vc6 build type>```, this will copy the executable to the retail game directory,
-or you can copy it manually.
+Run the following command to copy the executable to the retail game directory:
+
+``` shell
+cmake --install build\<vc6 build type>
+```
+
+Alternatively, you can copy it manually.
+
+### Running Debug Builds
+
+> **⚠️ Debug Build Requirements:** To run a debug build of the game, you need to copy  
+> the following two files into the game directory alongside the built executable:
+>
+> - [`MSVCRTD.DLL`](https://discord.com/channels/951133504605917224/1344671543170564176/1357087699982352426)  
+>   Microsoft Visual C++ Runtime Library (Debug)
+> - [`MSVCIRTD.DLL`](https://discord.com/channels/951133504605917224/1344671543170564176/1357087699982352426)  
+>   Microsoft Visual C++ Internationalization Runtime Library (Debug)
+>
+> These files are available from the [Community Outpost Discord server](https://discord.gg/WzxQDZersE) (links above  
+> are from the server) and may require a Discord account to download.
 
 ## Troubleshooting
 
