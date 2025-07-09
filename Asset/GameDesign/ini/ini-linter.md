@@ -12,7 +12,7 @@ The ZeroSyntax extension pack comes with 4 main features:
 This changes how VSCode displays the INI files, making it easier to read and understand the contents.
 
 2. Formatting for INI files.  
-When working with older files or when expirmenting, INI files can be come messy. This feature will clean up the file
+When working with older files or when experimenting, INI files can be come messy. This feature will clean up the file
 and make correct indentation based on the indentation settings in VSCode.
 
 3. Linting for INI files.  
@@ -25,7 +25,7 @@ development and prevent typos.
 
 ## Installation
 
-Instaltion is super easy, and can be done stright from the editor.  
+Installation is super easy, and can be done straight from the editor.  
 Use this link: [ZeroSyntax Pack](vscode:extension/vitexftw.zs-pack) or one of the following methods:  
 
 ### Visual Studio Code
@@ -43,7 +43,7 @@ Use this link: [ZeroSyntax Pack](vscode:extension/vitexftw.zs-pack) or one of th
 
 ### Visual Studio Extension
 
-**Comming Soon...**
+**Coming Soon...**
 
 > [!NOTE]  
 > You might need to reload the editor after installing the extension for it to take effect.
