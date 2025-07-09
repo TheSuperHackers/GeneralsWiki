@@ -11,5 +11,5 @@ Large Portrait - 122 X 98
 
 ## General Portrait Sizes
 
-Small Portait - 118 X 117
+Small Portrait - 118 X 117
 Large Portrait - 334 X 330
