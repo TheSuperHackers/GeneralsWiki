@@ -16,7 +16,7 @@
 **Key Combination:** Ctrl + W  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Instantly win the current game or mission.
 
 **Media:**
 
@@ -29,7 +29,7 @@
 **Key Combination:** Ctrl + =  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Adds 10000 cash to the player's current resources.
 
 **Media:**
 
@@ -42,7 +42,7 @@
 **Key Combination:** Alt + F  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles instant building for all units and structures.
 
 **Media:**
 
@@ -55,7 +55,7 @@
 **Key Combination:** Ctrl + V  
 **Useable In:** GAME
 
-**Description:**
+**Description:** grants the selected unit(s) a level of veterancy.
 
 **Media:**
 
@@ -68,7 +68,7 @@
 **Key Combination:** Shift + Ctrl + V  
 **Useable In:** GAME
 
-**Description:**
+**Description:** removes a level of veterancy from the selected unit(s).
 
 **Media:**
 
@@ -81,7 +81,7 @@
 **Key Combination:** Shift + Ctrl + P  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Gives the player 1 science purchase point.
 
 **Media:**
 
@@ -94,7 +94,7 @@
 **Key Combination:** Shift + Alt + Ctrl + K  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Instantly unlocks all sciences for the player.
 
 **Media:**
 
@@ -107,7 +107,7 @@
 **Key Combination:** Ctrl + K  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Grants the player a rank level.
 
 **Media:**
 
@@ -120,7 +120,7 @@
 **Key Combination:** Shift + Ctrl + K  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Subtracts the player's current rank level by 1.
 
 **Media:**
 
@@ -133,7 +133,7 @@
 **Key Combination:** Ctrl + S  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles whether special powers, super weapons and abilities have a delay before they can be used again.
 
 **Media:**
 
@@ -151,7 +151,7 @@
 **Key Combination:** F11  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the outline around units when they are obscured by buildings.
 
 **Media:**
 
@@ -164,7 +164,7 @@
 **Key Combination:** Ctrl + F10  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** Toggles a black and white wireframe mode.
 
 **Media:**
 
@@ -177,7 +177,7 @@
 **Key Combination:** Ctrl + F11  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** toggles a (useless?) red view mode.
 
 **Media:**
 
@@ -190,7 +190,7 @@
 **Key Combination:** Ctrl + F12  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** toggles a (useless?) green view mode.
 
 **Media:**
 
@@ -203,7 +203,7 @@
 **Key Combination:** Ctrl + F9  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** plays a (useless?) zoom animation with motion blur effects.
 
 **Media:**
 
@@ -216,7 +216,7 @@
 **Key Combination:** Ctrl + \  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles rendering of new frames. (essentially freezes the game in place)
 
 **Media:**
 
@@ -229,7 +229,8 @@
 **Key Combination:** /  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles rendering of new frames. (essentially freezes the game in place). seems to be redundant with DEMO_TOGGLE_RENDER.
+**Note:** BROKEN, the off toggle doesn't work.
 
 **Media:**
 
@@ -242,7 +243,7 @@
 **Key Combination:** Shift + J  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the rendering of shadow volumes.
 
 **Media:**
 
@@ -255,7 +256,7 @@
 **Key Combination:** ]  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the rendering of the water plane. (doesn't seem to work)
 
 **Media:**
 
@@ -268,7 +269,7 @@
 **Key Combination:** [  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the rendering of track marks on the ground.
 
 **Media:**
 
@@ -281,7 +282,7 @@
 **Key Combination:** Alt + W  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Visually cycles between different water depths.
 
 **Media:**
 
@@ -294,7 +295,7 @@
 **Key Combination:** Ctrl + E  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the visibility of the bounding box around units.
 
 **Media:**
 
@@ -307,7 +308,7 @@
 **Key Combination:** Alt + H  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the visibility of health bars above units and structures.
 
 **Media:**
 
@@ -325,7 +326,7 @@
 **Key Combination:** Shift + Ctrl + S  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles game audio on and off.
 
 **Media:**
 
@@ -338,7 +339,7 @@
 **Key Combination:** Shift + Ctrl + M  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles game music on and off.
 
 **Media:**
 
@@ -351,7 +352,7 @@
 **Key Combination:** Shift + M  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Skips to the next music track in the playlist.
 
 **Media:**
 
@@ -364,7 +365,7 @@
 **Key Combination:** Ctrl + M  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Skips to the previous music track in the playlist.
 
 **Media:**
 
@@ -377,7 +378,7 @@
 **Key Combination:** Shift + A  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** Toggles audio debugging information on and off.
 
 **Media:**
 
@@ -395,7 +396,7 @@
 **Key Combination:** Shift + Ctrl + L  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Locks the camera to the currently selected unit or structure.
 
 **Media:**
 
@@ -421,7 +422,7 @@
 **Key Combination:** Shift + Alt + Ctrl + C  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the cameras zoom limitations, allowing for unrestricted zooming in and out when disabled.
 
 **Media:**
 
@@ -434,7 +435,7 @@
 **Key Combination:** ,  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Begins adjusting the camera's pitch.
 
 **Media:**
 
@@ -447,7 +448,7 @@
 **Key Combination:** , (Release)  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Ends adjusting the camera's pitch.
 
 **Media:**
 
@@ -460,7 +461,7 @@
 **Key Combination:** .  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Begins adjusting the camera's field of view (FOV).
 
 **Media:**
 
@@ -473,7 +474,7 @@
 **Key Combination:** . (Release)  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Ends adjusting the camera's field of view (FOV).
 
 **Media:**
 
@@ -486,7 +487,7 @@
 **Key Combination:** Shift + Ctrl + D  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Cycles through different times of day.
 
 **Media:**
 
@@ -504,7 +505,7 @@
 **Key Combination:** Shift + Ctrl + Space  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Cycles through the players in the game, sequentially passing control to each one.
 
 **Media:**
 
@@ -517,7 +518,8 @@
 **Key Combination:** Ctrl + T  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Cycles through USA and China players in the game on the same team as the player,
+sequentially passing control to each one.
 
 **Media:**
 
@@ -530,7 +532,7 @@
 **Key Combination:** Ctrl + A  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles visual AI debugging information on and off.
 
 **Media:**
 
@@ -548,7 +550,7 @@
 **Key Combination:** Ctrl + Q  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** Toggles the visibility of debug information overlays.
 
 **Media:**
 
@@ -574,7 +576,7 @@
 **Key Combination:** Shift + Ctrl + Q  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** Toggles the worlds most useless graphical framerate bar on and off.
 
 **Media:**
 
@@ -587,7 +589,7 @@
 **Key Combination:** Shift + Alt + V  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the visibility of the vision debug overlay for units and structures.
 
 **Media:**
 
@@ -600,7 +602,7 @@
 **Key Combination:** Shift + Ctrl + B  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the visibility of visual projectile debug information.
 
 **Media:**
 
@@ -613,7 +615,7 @@
 **Key Combination:** Ctrl + P  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the visibility of visual particle debug information.
 
 **Media:**
 
@@ -626,7 +628,7 @@
 **Key Combination:** Ctrl + O  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the visibility of visual cash map debug information.
 
 **Media:**
 
@@ -639,7 +641,7 @@
 **Key Combination:** Shift + Ctrl + O  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the visibility of visual threat debug information.
 
 **Media:**
 
@@ -652,7 +654,7 @@
 **Key Combination:** Ctrl + D  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the visibility of the selected unit(s) or structure's debug information.
 
 **Media:**
 
@@ -670,7 +672,7 @@
 **Key Combination:** Shift + Alt + F  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the rendering of certain things in the fog of war. (Useless?)
 
 **Media:**
 
@@ -683,7 +685,7 @@
 **Key Combination:** Shift + Ctrl + R  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Shrouds all areas of the map that aren't currently visible to the player or their allies.
 
 **Media:**
 
@@ -696,7 +698,7 @@
 **Key Combination:** Ctrl + R  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Fully reveals the entire map, removing all fog of war and shroud.
 
 **Media:**
 
@@ -714,7 +716,7 @@
 **Key Combination:** Shift + Ctrl + Numpad /  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Instantly kills all enemies on the map.
 
 **Media:**
 
@@ -727,7 +729,8 @@
 **Key Combination:** Shift + Ctrl + X  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Instantly kills the currently selected unit or structure.
+Only works on units and structures belonging to the player.
 
 **Media:**
 
@@ -740,7 +743,7 @@
 **Key Combination:** Ctrl + X  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the "Hurt Me" mode, causing 10% damage every time a unit or structure is selected.
 
 **Media:**
 
@@ -753,7 +756,8 @@
 **Key Combination:** Alt + G  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the "Hand of God" mode,
+allowing the player to instantly destroy any unit or structure by selecting it.
 
 **Media:**
 
@@ -766,7 +770,7 @@
 **Key Combination:** Shift + B  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Plays a battle cry sound effect. (Useless?)
 
 **Media:**
 
@@ -784,7 +788,7 @@
 **Key Combination:** -  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Decrease the level of detail (LOD) by one level for all objects in the game.
 
 **Media:**
 
@@ -797,7 +801,7 @@
 **Key Combination:** =  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Increase the level of detail (LOD) by one level for all objects in the game.
 
 **Media:**
 
@@ -810,7 +814,7 @@
 **Key Combination:** Alt + -  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Cycles through the available LOD levels for all objects in the game.
 
 **Media:**
 
@@ -823,7 +827,7 @@
 **Key Combination:** Ctrl + J  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Increases the animation skate speed for all units and structures in the game. (Needs further information)
 
 **Media:**
 
@@ -836,7 +840,7 @@
 **Key Combination:** Shift + Ctrl + J  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Decreases the animation skate speed for all units and structures in the game. (Needs further information)
 
 **Media:**
 
@@ -854,7 +858,7 @@
 **Key Combination:** Shift + Ctrl + A  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -867,7 +871,7 @@
 **Key Combination:** Shift + F11  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -880,7 +884,7 @@
 **Key Combination:** Shift + Alt + Ctrl + N  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -893,7 +897,7 @@
 **Key Combination:** Alt + T  
 **Useable In:** GAME
 
-**Description:**
+**Description:** Toggles the visibility of in-game messages.
 
 **Media:**
 
@@ -906,7 +910,7 @@
 **Key Combination:** Ctrl + G  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -919,7 +923,7 @@
 **Key Combination:** Shift + Ctrl + G  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -932,7 +936,7 @@
 **Key Combination:** Alt + O  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -945,7 +949,7 @@
 **Key Combination:** Shift + Alt + O  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -963,7 +967,7 @@
 **Key Combination:** Shift + Ctrl + F1  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -976,7 +980,7 @@
 **Key Combination:** Shift + Ctrl + F2  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -989,7 +993,7 @@
 **Key Combination:** Shift + Ctrl + F3  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1002,7 +1006,7 @@
 **Key Combination:** Shift + Ctrl + F4  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1015,7 +1019,7 @@
 **Key Combination:** Shift + Ctrl + F5  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1028,7 +1032,7 @@
 **Key Combination:** Shift + Ctrl + F6  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1041,7 +1045,7 @@
 **Key Combination:** Shift + Ctrl + F7  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1054,7 +1058,7 @@
 **Key Combination:** Shift + Ctrl + F8  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1067,7 +1071,7 @@
 **Key Combination:** Shift + Ctrl + F9  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1080,7 +1084,7 @@
 **Key Combination:** Shift + Ctrl + Tab  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1104,7 +1108,7 @@
 **Key Combination:** Shift + Ctrl + Backspace  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** (needs further information)
 
 **Media:**
 
@@ -1127,7 +1131,7 @@
 **Key Combination:** Shift + Alt + Ctrl + Q  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1140,7 +1144,7 @@
 **Key Combination:** Shift + Alt + Ctrl + A  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1153,7 +1157,7 @@
 **Key Combination:** Shift + Alt + Ctrl + W  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (needs further information)
 
 **Media:**
 
@@ -1166,7 +1170,7 @@
 **Key Combination:** Alt + Q  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1184,7 +1188,7 @@
 **Key Combination:** Shift + Alt + Ctrl + S  
 **Useable In:** GAME
 
-**Description:**
+**Description:** (Needs further information)
 
 **Media:**
 
@@ -1202,7 +1206,7 @@
 **Key Combination:** Shift + Alt + A  
 **Useable In:** GAME SHELL
 
-**Description:**
+**Description:** Displays visual overlays regarding audio? (needs further information)
 
 **Media:**
 
