@@ -7,15 +7,28 @@ compatibility with the original compiler from the game's development era. To com
 ## Prerequisites
 
 - [Visual Studio 6.0 Portable](https://github.com/itsmattkc/MSVC600)
+  > See the [Visual Studio 6.0 Portable installation instructions](build_with_msvc6.md#visual-studio-60-portable)
+  > for setup details.
 - [CLion](https://www.jetbrains.com/clion/)
-- [Source Code](https://github.com/TheSuperHackers/GeneralsGameCode) of the project cloned from the TheSuperHackers repository
 
 > For simplicity, this guide assumes the user will be using the
 > default install folder for Visual Studio 6.0 Portable: `C:\Program Files (x86)\Microsoft Visual Studio\`
 
-## Step 1: Setting Up the Toolchain in CLion
+## Step 1: Clone and Open the Project
 
-1. Open the cloned folder in **CLion** and go to **File** → **Settings** → **Build, Execution,
+1. Clone the source code from TheSuperHackers:
+
+   ```shell
+   git clone https://github.com/TheSuperHackers/GeneralsGameCode.git
+   ```
+
+   > Alternatively, you can clone the repository directly from within CLion.
+
+2. Open the cloned folder in **CLion**.
+
+## Step 2: Setting Up the Toolchain in CLion
+
+1. In CLion, go to **File** → **Settings** → **Build, Execution,
    Deployment** → **Toolchains**.
 2. Add a new **Toolchain** by clicking the **+** button.
 3. Select **System** as the type (not Visual Studio).
@@ -49,7 +62,7 @@ compatibility with the original compiler from the game's development era. To com
 
 ![CLion VC6 Toolchain Configuration](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Builds/files/clionvc6toolchain.png)
 
-## Step 2: Configuring the CMake Profiles
+## Step 3: Configuring the CMake Profiles
 
 1. In the CMake profiles, enable the profiles you want to use. The available workflow presets are:
    - `vc6` - Release build
@@ -58,7 +71,7 @@ compatibility with the original compiler from the game's development era. To com
 
    For detailed information about each build configuration and their specific purposes, see the [Build Configurations Overview](https://github.com/TheSuperHackers/GeneralsGameCode/wiki/build_configuration).
 
-## Step 3: Configuring the Installation Path
+## Step 4: Configuring the Installation Path
 
 1. In the target application options, do the following:
 
@@ -69,12 +82,22 @@ compatibility with the original compiler from the game's development era. To com
    - To avoid duplicate builds, remove the **Build** step.
    - Save the configuration, and you are ready to build and run the project.
 
-## Step 4: Compiling and Running the Project
+## Step 5: Compiling and Running the Project
 
 1. Now, click the **Build** button in CLion, or click **Install** in the build menu.
 2. CLion will start the build/install process using the VC6 (x86) toolchain.
 3. Once the build is successfully completed, an executable file will be generated and installed in the
    game directory.
+
+## Running Debug Builds
+
+> **⚠️ Debug Build Requirements:** To run a debug build of the game, you need to have  
+> the following two files in the game directory alongside the built executable:
+>
+> - [`MSVCRTD.DLL`](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Builds/files/MSVCRTD.DLL)  
+>   Microsoft Visual C++ Runtime Library (Debug)
+> - [`MSVCIRTD.DLL`](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Builds/files/MSVCIRTD.DLL)  
+>   Microsoft Visual C++ Internationalization Runtime Library (Debug)
 
 ## Notes
 

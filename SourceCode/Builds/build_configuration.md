@@ -41,6 +41,14 @@ There are four main build configurations in the project, each designed for diffe
 
 - **Use Case:** Used during development for debugging and resolving issues in the code.
 
+> **⚠️ Debug Build Requirements:** To run a debug build of the game, you need to have  
+> the following two files in the game directory alongside the built executable:
+>
+> - [`MSVCRTD.DLL`](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Builds/files/MSVCRTD.DLL)  
+>   Microsoft Visual C++ Runtime Library (Debug)
+> - [`MSVCIRTD.DLL`](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Builds/files/MSVCIRTD.DLL)  
+>   Microsoft Visual C++ Internationalization Runtime Library (Debug)
+
 ### 3. **Profile (O2, IG_DEBUG_STACKTRACE, _RELEASE, _PROFILE)**
 
 - **Purpose:** The profile configuration is used for performance profiling and optimization. It is designed to help
