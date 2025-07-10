@@ -20,7 +20,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_WIN (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_win.mkv)
 
 ---
 
@@ -33,7 +33,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_ADDCASH (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_addcash.mkv)
 
 ---
 
@@ -46,7 +46,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_INSTANT_BUILD (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_instant_build.mkv)
 
 ---
 
@@ -59,7 +59,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_GIVE_VETERANCY (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_give_veterancy.mkv)
 
 ---
 
@@ -72,7 +72,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TAKE_VETERANCY (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_take_veterancy.mkv)
 
 ---
 
@@ -85,7 +85,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_GIVE_SCIENCEPURCHASEPOINTS (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_give_sciencepurchasepoints.mkv)
 
 ---
 
@@ -98,7 +98,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_GIVE_ALL_SCIENCES (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_give_all_sciences.mkv)
 
 ---
 
@@ -111,7 +111,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_GIVE_RANKLEVEL (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_give_ranklevel.mkv)
 
 ---
 
@@ -124,7 +124,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TAKE_RANKLEVEL (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_take_ranklevel.mkv)
 
 ---
 
@@ -137,7 +137,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_SPECIAL_POWER_DELAYS (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_special_power_delays.mkv)
 
 ---
 
@@ -155,7 +155,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_BEHIND_BUILDINGS (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_behind_buildings.mkv)
 
 ---
 
@@ -168,7 +168,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_BW_VIEW (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_bw_view.mkv)
 
 ---
 
@@ -181,7 +181,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_RED_VIEW (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_red_view.mkv)
 
 ---
 
@@ -194,7 +194,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_GREEN_VIEW (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_green_view.mkv)
 
 ---
 
@@ -207,7 +207,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_MOTION_BLUR_ZOOM (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_motion_blur_zoom.mkv)
 
 ---
 
@@ -220,7 +220,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_RENDER (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_render.mkv)
 
 ---
 
@@ -233,7 +233,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_NO_DRAW (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_no_draw.mkv)
 
 ---
 
@@ -246,7 +246,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_SHADOW_VOLUMES (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_shadow_volumes.mkv)
 
 ---
 
@@ -285,7 +285,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_FEATHER_WATER (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_feather_water.mkv)
 
 ---
 
@@ -298,7 +298,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_SHOW_EXTENTS (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_show_extents.mkv)
 
 ---
 
@@ -311,7 +311,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_SHOW_HEALTH (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_show_health.mkv)
 
 ---
 
@@ -329,7 +329,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_SOUND (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_sound.mkv)
 
 ---
 
@@ -342,7 +342,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_MUSIC (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_music.mkv)
 
 ---
 
@@ -355,7 +355,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_MUSIC_NEXT_TRACK (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_music_next_track.mkv)
 
 ---
 
@@ -368,7 +368,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_MUSIC_PREV_TRACK (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_music_prev_track.mkv)
 
 ---
 
@@ -381,7 +381,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_AUDIODEBUG (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_audiodebug.mkv)
 
 ---
 
@@ -399,7 +399,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_LOCK_CAMERA_TO_SELECTION (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_lock_camera_to_selection.mkv)
 
 ---
 
@@ -412,7 +412,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_CAMERA_DEBUG (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_camera_debug.mkv)
 
 ---
 
@@ -425,7 +425,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_ZOOM_LOCK (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_zoom_lock.mkv)
 
 ---
 
@@ -438,7 +438,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_BEGIN_ADJUST_PITCH & DEMO_END_ADJUST_PITCH (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_begin_adjust_pitch%20&%20demo_end_adjust_pitch.mkv)
 
 ---
 
@@ -451,7 +451,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_BEGIN_ADJUST_PITCH & DEMO_END_ADJUST_PITCH (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_begin_adjust_pitch%20&%20demo_end_adjust_pitch.mkv)
 
 ---
 
@@ -464,7 +464,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_BEGIN_ADJUST_FOV & DEMO_END_ADJUST_FOV (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_begin_adjust_fov%20&%20demo_end_adjust_fov.mkv)
 
 ---
 
@@ -477,7 +477,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_BEGIN_ADJUST_FOV & DEMO_END_ADJUST_FOV (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_begin_adjust_fov%20&%20demo_end_adjust_fov.mkv)
 
 ---
 
@@ -490,7 +490,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TIME_OF_DAY (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_time_of_day.mkv)
 
 ---
 
@@ -508,7 +508,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_SWITCH_TEAMS (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_switch_teams.mkv)
 
 ---
 
@@ -521,7 +521,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_SWITCH_TEAMS_CHINA_USA (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_switch_teams_china_usa.mkv)
 
 ---
 
@@ -534,7 +534,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_AI_DEBUG (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_ai_debug.mkv)
 
 ---
 
@@ -552,7 +552,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_DEBUG_STATS (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_debug_stats.mkv)
 
 ---
 
@@ -578,7 +578,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_GRAPHICALFRAMERATEBAR (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_graphicalframeratebar.mkv)
 
 ---
 
@@ -591,7 +591,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_VISIONDEBUG (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_visiondebug.mkv)
 
 ---
 
@@ -604,7 +604,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_PROJECTILEDEBUG (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_projectiledebug.mkv)
 
 ---
 
@@ -617,7 +617,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_PARTICLEDEBUG (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_particledebug.mkv)
 
 ---
 
@@ -630,7 +630,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_CASHMAPDEBUG (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_cashmapdebug.mkv)
 
 ---
 
@@ -656,7 +656,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_DEBUG_SELECTION (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_debug_selection.mkv)
 
 ---
 
@@ -674,7 +674,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_FOGOFWAR (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_fogofwar.mkv)
 
 ---
 
@@ -687,7 +687,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_ENSHROUD (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_enshroud.mkv)
 
 ---
 
@@ -700,7 +700,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_DESHROUD (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_deshroud.mkv)
 
 ---
 
@@ -718,7 +718,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_KILL_ALL_ENEMIES (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_kill_all_enemies.mkv)
 
 ---
 
@@ -731,7 +731,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_KILL_SELECTION (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_kill_selection.mkv)
 
 ---
 
@@ -744,7 +744,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_HURT_ME_MODE (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_hurt_me_mode.mkv)
 
 ---
 
@@ -757,7 +757,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_HAND_OF_GOD_MODE (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_hand_of_god_mode.mkv)
 
 ---
 
@@ -770,7 +770,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_BATTLE_CRY (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_battle_cry.mkv)
 
 ---
 
@@ -788,7 +788,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_LOD_DECREASE & DEMO_LOD_INCREASE (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_lod_decrease%20&%20demo_lod_increase.mkv)
 
 ---
 
@@ -801,7 +801,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_LOD_DECREASE & DEMO_LOD_INCREASE (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_lod_decrease%20&%20demo_lod_increase.mkv)
 
 ---
 
@@ -814,7 +814,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_CYCLE_LOD_LEVEL (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_cycle_lod_level.mkv)
 
 ---
 
@@ -827,7 +827,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_INCR_ANIM_SKATE_SPEED & DEMO_DECR_ANIM_SKATE_SPEED (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_incr_anim_skate_speed%20&%20demo_decr_anim_skate_speed.mkv)
 
 ---
 
@@ -840,7 +840,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_INCR_ANIM_SKATE_SPEED & DEMO_DECR_ANIM_SKATE_SPEED (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_incr_anim_skate_speed%20&%20demo_decr_anim_skate_speed.mkv)
 
 ---
 
@@ -897,7 +897,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_MESSAGE_TEXT (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_message_text.mkv)
 
 ---
 
@@ -1131,7 +1131,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEBUG_OBJECT_ID_PERFORMANCE (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/debug_object_id_performance.mkv)
 
 ---
 
@@ -1144,7 +1144,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEBUG_DRAWABLE_ID_PERFORMANCE (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/debug_drawable_id_performance.mkv)
 
 ---
 
@@ -1157,7 +1157,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEBUG_SLEEPY_UPDATE_PERFORMANCE (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/debug_sleepy_update_performance.mkv)
 
 ---
 
@@ -1170,7 +1170,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_PERFORM_STATISTICAL_DUMP (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_perform_statistical_dump.mkv)
 
 ---
 
@@ -1188,7 +1188,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_TOGGLE_SUPPLY_CENTER_PLACEMENT (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_toggle_supply_center_placement.mkv)
 
 ---
 
@@ -1206,7 +1206,7 @@
 
 **Media:**
 
-<!-- Add screenshots, videos, or GIFs demonstrating this command here -->
+![DEMO_SHOW_AUDIO_LOCATIONS (Video)](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/Ingame_debugs_media/demo_show_audio_locations.mkv)
 
 ---
 
