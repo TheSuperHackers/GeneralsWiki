@@ -135,8 +135,8 @@
 
 | Hotkey | Command Name | Description | Accessible In | Image |
 |--------|--------------|-------------|---------------|-------|
-| <kbd>-</kbd> | DEMO_LOD_DECREASE | Decreases the level of detail (LOD) by one level for all objects in the game | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_lod_decrease%20%26%20demo_lod_increase.png) |
-| <kbd>=</kbd> | DEMO_LOD_INCREASE | Increases the level of detail (LOD) by one level for all objects in the game | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_lod_decrease%20%26%20demo_lod_increase.png) |
+| <kbd>=</kbd> | DEMO_LOD_DECREASE | Decreases the level of detail (LOD) by one level for all objects in the game | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_lod_decrease%20%26%20demo_lod_increase.png) |
+| <kbd>-</kbd> | DEMO_LOD_INCREASE | Increases the level of detail (LOD) by one level for all objects in the game | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_lod_decrease%20%26%20demo_lod_increase.png) |
 | <kbd>Alt</kbd> + <kbd>-</kbd> | DEMO_CYCLE_LOD_LEVEL | Cycles through the available LOD levels for all objects in the game | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_cycle_lod_level.png) |
 | <kbd>Ctrl</kbd> + <kbd>J</kbd> | DEMO_INCR_ANIM_SKATE_SPEED | Increases the animation skate speed for all units and structures in the game (Needs further information) | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_incr_anim_skate_speed%20%26%20demo_decr_anim_skate_speed.png) |
 | <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>J</kbd> | DEMO_DECR_ANIM_SKATE_SPEED | Decreases the animation skate speed for all units and structures in the game (Needs further information) | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_incr_anim_skate_speed%20%26%20demo_decr_anim_skate_speed.png) |
@@ -263,7 +263,7 @@ All hotkeys in this document are displayed using keyboard key styling with `<kbd
 For adding any new commands, please add them to the appropriate table using the following format:
 
 ```markdown
-| <kbd>Modifier</kbd> + <kbd>Key</kbd> | COMMAND_NAME | Detailed description of what the command does | GAME/SHELL | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/COMMAND_NAME.png) |
+| <kbd>Modifier</kbd> + <kbd>Key</kbd> | COMMAND_NAME | Detailed description of what the command does | GAME/SHELL | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/command_name.png) |
 ```
 
 ### Table Structure
@@ -276,7 +276,7 @@ All commands should be organized in tables with the following columns:
 | **Command Name** | The exact command name | `DEMO_WIN` |
 | **Description** | Clear explanation of what the command does | `Instantly win the current game or mission` |
 | **Accessible In** | Whether the command works in the Game or Game Shell | `GAME`|
-| **Image** | Link to image showcasing the command with the same name as the command | `[Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/DEMO_WIN.png)` |
+| **Image** | Link to image showcasing the command with the same name as the command | `[Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_win.png)` |
 
 ### Hotkey Formatting Guidelines
 
@@ -299,7 +299,7 @@ Commands should be grouped into logical categories within collapsible sections:
 
 | Hotkey | Command Name | Description | Accessible In | Image |
 |--------|--------------|-------------|---------------|-------|
-| <kbd>Key</kbd> | COMMAND_NAME | Description | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/COMMAND_NAME.png) |
+| <kbd>Key</kbd> | COMMAND_NAME | Description | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/command_name.png) |
 
   </details>
 ```
@@ -313,6 +313,6 @@ When adding descriptions and media for any new commands:
 3. **Descriptions** should be clear and explain what the command actually does in-game
 4. **Accessibility**: Specify whether the command works in `GAME` (in a match/mission) or `GAME SHELL` (menus + gameplay)
 5. **Image links**: Add image links that showcase the command using the format
-   `[Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/COMMAND_NAME.png)`
+   `[Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/command_name.png)`
    where the filename matches the exact command name
 6. **Testing**: Always test commands in a debug build before documenting their effects
