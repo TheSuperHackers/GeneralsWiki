@@ -29,7 +29,7 @@
   </details>
 
   <details>
-  <summary>├─ Visual & Rendering (13)</summary>
+  <summary>├─ Visual & Rendering (14)</summary>
 
 | Hotkey | Command Name | Description | Accessible In | Image |
 |--------|--------------|-------------|---------------|-------|
@@ -46,6 +46,7 @@
 | <kbd>Alt</kbd> + <kbd>W</kbd> | DEMO_TOGGLE_FEATHER_WATER | Visually cycles between different water depths | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_toggle_feather_water.png) |
 | <kbd>Ctrl</kbd> + <kbd>E</kbd> | DEMO_SHOW_EXTENTS | Toggles the visibility of the bounding box around units | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_show_extents.png) |
 | <kbd>Alt</kbd> + <kbd>H</kbd> | DEMO_SHOW_HEALTH | Toggles the visibility of health bars above units and structures | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_show_health.png) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>D</kbd> | DEMO_TIME_OF_DAY | Cycles through different times of day | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_time_of_day.png) |
 
   </details>
 
@@ -63,7 +64,7 @@
   </details>
 
   <details>
-  <summary>├─ Camera & View (8)</summary>
+  <summary>├─ Camera & View (7)</summary>
 
 | Hotkey | Command Name | Description | Accessible In | Image |
 |--------|--------------|-------------|---------------|-------|
@@ -74,7 +75,6 @@
 | <kbd>,</kbd> (Release) | DEMO_END_ADJUST_PITCH | Ends adjusting the camera's pitch | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_begin_adjust_pitch%20%26%20demo_end_adjust_pitch.png) |
 | <kbd>.</kbd> | DEMO_BEGIN_ADJUST_FOV | Begins adjusting the camera's field of view (FOV) | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_begin_adjust_fov%20%26%20demo_end_adjust_fov.png) |
 | <kbd>.</kbd> (Release) | DEMO_END_ADJUST_FOV | Ends adjusting the camera's field of view (FOV) | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_begin_adjust_fov%20%26%20demo_end_adjust_fov.png) |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>D</kbd> | DEMO_TIME_OF_DAY | Cycles through different times of day | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_time_of_day.png) |
 
   </details>
 
