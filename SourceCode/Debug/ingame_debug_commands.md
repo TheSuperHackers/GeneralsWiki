@@ -229,8 +229,6 @@
 
 <br>
 
----
-
 ## How to Use These Commands
 
 **Key Combination Format:**
@@ -253,66 +251,3 @@ All hotkeys in this document are displayed using keyboard key styling with `<kbd
 - <kbd>Ctrl</kbd> + <kbd>W</kbd> = Hold Ctrl, press W, release both
 - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd> = Hold Shift and Alt together, press F, release all
 - <kbd>,</kbd> (Release) = Press and hold comma, then release it
-
----
-
-## Documentation Guidelines
-
-## Template for Adding Additional Commands
-
-For adding any new commands, please add them to the appropriate table using the following format:
-
-```markdown
-| <kbd>Modifier</kbd> + <kbd>Key</kbd> | COMMAND_NAME | Detailed description of what the command does | GAME/SHELL | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/command_name.png) |
-```
-
-### Table Structure
-
-All commands should be organized in tables with the following columns:
-
-| Column | Description | Example |
-|--------|-------------|---------|
-| **Hotkey** | Key combination using `<kbd>` tags | `<kbd>Ctrl</kbd> + <kbd>W</kbd>` |
-| **Command Name** | The exact command name | `DEMO_WIN` |
-| **Description** | Clear explanation of what the command does | `Instantly win the current game or mission` |
-| **Accessible In** | Whether the command works in the Game or Game Shell | `GAME`|
-| **Image** | Link to image showcasing the command with the same name as the command | `[Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/demo_win.png)` |
-
-### Hotkey Formatting Guidelines
-
-Use HTML `<kbd>` tags for all hotkeys to ensure proper keyboard key styling:
-
-- **Single keys**: `<kbd>F11</kbd>`, `<kbd>=</kbd>`, `<kbd>[</kbd>`
-- **Two keys**: `<kbd>Ctrl</kbd> + <kbd>W</kbd>`
-- **Three keys**: `<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>V</kbd>`
-- **Four keys**: `<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>K</kbd>`
-- **Special keys**: `<kbd>Numpad /</kbd>`, `<kbd>Backspace</kbd>`, `<kbd>Space</kbd>`
-- **Release commands**: `<kbd>,</kbd> (Release)`
-
-### Organizing Commands
-
-Commands should be grouped into logical categories within collapsible sections:
-
-```markdown
-  <details>
-  <summary>├─ Category Name (X)</summary>
-
-| Hotkey | Command Name | Description | Accessible In | Image |
-|--------|--------------|-------------|---------------|-------|
-| <kbd>Key</kbd> | COMMAND_NAME | Description | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/command_name.png) |
-
-  </details>
-```
-
-## Contributing New Commands
-
-When adding descriptions and media for any new commands:
-
-1. **Add to appropriate table**: Insert the new command in the correct category table
-2. **Use proper hotkey formatting**: Always use `<kbd>` tags for key combinations
-3. **Descriptions** should be clear and explain what the command actually does in-game
-4. **Accessibility**: Specify whether the command works in `GAME` (in a match/mission) or `GAME SHELL` (menus + gameplay)
-5. **Image links**: Add image links that showcase the command using the format
-   `[Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/in_gamedebugs_media/command_name.png)`
-   where the filename matches the exact command name
-6. **Testing**: Always test commands in a debug build before documenting their effects
