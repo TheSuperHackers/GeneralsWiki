@@ -5,6 +5,7 @@
 - [How to Get Involved](how_to_involved)
 - [How to Contribution](https://github.com/TheSuperHackers/GeneralsGameCode/blob/main/CONTRIBUTING.md)
 - [Replays for testing](replay_testing)
+- [In-Game Debug Commands](ingame_debug_commands)
 - [Community forks](forks)
 - [License](https://github.com/TheSuperHackers/GeneralsGameCode/blob/main/LICENSE.md)
 - [Credits](credits)
