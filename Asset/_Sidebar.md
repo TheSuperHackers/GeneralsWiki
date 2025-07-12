@@ -22,6 +22,7 @@
     - Textures
         - [Cameo Sizes](cameo_sizes)
         - [DDS files and DXT compression](dds_files_and_dxt_compression)
+        - [Texture Guidelines](Art/dds/texture\_guidelines.md)
 
 - Audio & Video
     - [Game WAV Audio files](audio)
