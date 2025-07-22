@@ -38,7 +38,7 @@
 | <kbd>Ctrl</kbd> + <kbd>F11</kbd> | DEMO_TOGGLE_RED_VIEW | Toggles a (useless?) red view mode | GAME SHELL | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_red_view.png) |
 | <kbd>Ctrl</kbd> + <kbd>F12</kbd> | DEMO_TOGGLE_GREEN_VIEW | Toggles a (useless?) green view mode | GAME SHELL | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_green_view.png) |
 | <kbd>Ctrl</kbd> + <kbd>F9</kbd> | DEMO_TOGGLE_MOTION_BLUR_ZOOM | Plays a (useless?) zoom animation with motion blur effects | GAME SHELL | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_motion_blur_zoom.png) |
-| <kbd>Ctrl</kbd> + <kbd>\</kbd> | DEMO_TOGGLE_RENDER | Toggles rendering of new frames (essentially freezes the game in place) | GAME |  |
+| <kbd>Ctrl</kbd> + <kbd>\\</kbd> | DEMO_TOGGLE_RENDER | Toggles rendering of new frames (essentially freezes the game in place) | GAME |  |
 | <kbd>/</kbd> | DEMO_TOGGLE_NO_DRAW | Toggles rendering of new frames (essentially freezes the game in place). Appears to be redundant with DEMO_TOGGLE_RENDER. **Note:** BROKEN, the off toggle does not work | GAME |  |
 | <kbd>Shift</kbd> + <kbd>J</kbd> | DEMO_TOGGLE_SHADOW_VOLUMES | Toggles the rendering of shadow volumes | GAME | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_shadow_volumes.png) |
 | <kbd>]</kbd> | DEMO_TOGGLE_WATERPLANE | Toggles the rendering of the water plane (does not seem to work) | GAME |  |
