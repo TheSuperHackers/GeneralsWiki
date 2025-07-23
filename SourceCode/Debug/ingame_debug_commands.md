@@ -25,7 +25,7 @@
 | <kbd>Ctrl</kbd> + <kbd>K</kbd> | DEMO_GIVE_RANKLEVEL | Grants the player a rank level | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_give_ranklevel.png) |
 | <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>K</kbd> | DEMO_TAKE_RANKLEVEL | Subtracts the player's current rank level by 1 | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_take_ranklevel.png) |
 | <kbd>Ctrl</kbd> + <kbd>S</kbd> | DEMO_TOGGLE_SPECIAL_POWER_DELAYS | Toggles whether special powers, super weapons and abilities have a delay before they can be used again | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_special_power_delays.png) |
-| <kbd>Alt</kbd> + <kbd>P</kbd> | DEMO_REMOVE_PREREQ | Don't require prerequisite techs to be unlocked first. | GAME | Yes | |
+| <kbd>Alt</kbd> + <kbd>P</kbd> | DEMO_REMOVE_PREREQ | Don't require prerequisite techs to be unlocked first. | GAME | Yes | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_remove_prereq.png) |
 | <kbd>Alt</kbd> + <kbd>B</kbd> | DEMO_FREE_BUILD | Build everything for free. | GAME | Yes | |
 
   </details>
