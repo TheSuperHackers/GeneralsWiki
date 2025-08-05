@@ -15,7 +15,8 @@ configured from the following locations:
 
 ## CommandMap.ini
 
-| Name         | Description                              | Default Keybinding |
-|--------------|------------------------------------------|-------------------|
-| TOGGLE_PAUSE | Toggles pause in replay playback         | <kbd>P</kbd>        |
-| STEP_FRAME   | Steps one frame in replay playback       | <kbd>O</kbd>        |
+| Name                    | Description                              | Default Keybinding |
+|-------------------------|------------------------------------------|-------------------|
+| TOGGLE_PAUSE           | Toggles pause in replay playback         | <kbd>P</kbd>        |
+| STEP_FRAME             | Steps one frame in replay playback       | <kbd>O</kbd>        |
+| SELECT_NEXT_IDLE_WORKER | Selects the next idle worker unit        | <kbd>Ctrl</kbd>+<kbd>I</kbd> |
