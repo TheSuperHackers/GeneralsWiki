@@ -84,12 +84,9 @@ ENV CXX="$VS\\vc98\\bin\\CL.exe"
 # Clone the source code
 ENV GIT_VERSION_STRING="2.49.0"
 RUN git clone https://github.com/TheSuperHackers/GeneralsGameCode.git
-RUN mv /build/CnC_Generals_Zero_Hour /build/cnc
+RUN mv /build/GeneralsGameCode /build/cnc
 
 WORKDIR /build/cnc
-
-# Switch to WIP branch
-RUN git switch blade/cmake-build
 
 # Run cmake
 RUN wine /build/tools/cmake/bin/cmake.exe \
