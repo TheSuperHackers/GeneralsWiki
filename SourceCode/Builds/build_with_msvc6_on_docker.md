@@ -17,7 +17,7 @@ On your project folder create a file named `Dockerfile` and copy the
 following content inside of it and save the file.
 
 ```docker
-FROM ubuntu:24.10
+FROM ubuntu:24.04
 
 WORKDIR /build
 
