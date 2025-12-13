@@ -53,4 +53,5 @@
 - [Command Line Arguments](switchers_arguments)
 - [SafeDiskLauncher](safedisklauncher)
 - [CRCDiff](crcdiff)
+- [Crash dumps](crashdumps)
 <!-- markdownlint-restore -->
