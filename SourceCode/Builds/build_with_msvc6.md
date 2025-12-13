@@ -21,8 +21,8 @@ understanding of how C++ is compiled is necessary. This includes knowing what th
 
 Download and install the following tools and software needed for compilation.
 
-> **ℹ️ Setup Note:** For simplicity, this guide will use the installers for Git and CMake and assumes the user will use the
-default install folder for Visual Studio 6.0 Portable.
+> **ℹ️ Setup Note:** For simplicity, this guide will use the installers for Git and CMake and assumes the
+user will use the default install folder for Visual Studio 6.0 Portable.
 
 ### Visual Studio 6.0 Portable
 
@@ -160,7 +160,8 @@ cmake --workflow --preset vc6-profile
 
 You will find a bunch of files in `build\vc6\<game name>` and a file called `generalszh.exe` or `generalsv.exe`.
 
-For detailed information about each build configuration and their specific purposes, see the [Build Configurations Overview](https://github.com/TheSuperHackers/GeneralsGameCode/wiki/build_configuration).
+For detailed information about each build configuration and their specific purposes, see the
+[Build Configurations Overview](https://github.com/TheSuperHackers/GeneralsGameCode/wiki/build_configuration).
 
 ### Install the game executable
 
