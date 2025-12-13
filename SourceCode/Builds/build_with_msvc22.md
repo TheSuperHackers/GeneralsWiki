@@ -39,7 +39,7 @@ For build using solutions and more advanced build configurations, see below.
 - Wait for Visual Studio to generate the necessary CMake files.
 
 >[!TIP]
-> If you get an error with CMake and gamespy-populate their might be an error with your git install
+> If you get an error with CMake and gamespy-populate there might be an error with your git install
 
 ### 2. Build the Project
 
