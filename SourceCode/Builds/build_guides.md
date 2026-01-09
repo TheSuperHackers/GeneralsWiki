@@ -60,7 +60,7 @@ environments.
       [Build with CMake & Visual Studio 6 (x86) (Windows)](build_with_msvc6)
 
    #### Sub-guides
-  
+
     - **CLion & VC6 Toolchain**
         - A guide for using CLion with the Visual Studio 6 (VC6) toolchain for building the project.
          [Build with CLion & VC6 Toolchain](build_with_clion_vc6_toolchain)
@@ -68,6 +68,10 @@ environments.
         - A guide for setting up Docker with the Visual Studio 6 (VC6) toolchain for building the project in a
           containerized environment.
          [Build with Docker & VC6](build_with_msvc6_on_docker)
+    - **Build on Linux**
+        - A guide for building the project on Linux using Docker with convenience scripts.
+          Includes instructions for installing built executables to an existing game.
+         [Build on Linux](build_on_linux)
 
 ### **Visual Studio 2022 Guides**
 
