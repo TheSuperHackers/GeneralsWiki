@@ -12,10 +12,10 @@ git clone https://github.com/TheSuperHackers/GeneralsGameCode.git
 cd GeneralsGameCode
 
 # Build using Docker (produces Windows executables)
-./scripts/build-linux.sh
+./scripts/docker-build.sh
 
 # Install to your game (auto-detects Wine prefix)
-./scripts/install-to-game.sh --detect
+./scripts/docker-install.sh --detect
 ```
 
 ## Prerequisites
@@ -41,31 +41,31 @@ sudo usermod -aG docker $USER
 
 ## Build Scripts
 
-### build-linux.sh
+### docker-build.sh
 
 The main build script that manages the Docker-based build process.
 
 ```bash
 # Full build (both Generals and Zero Hour)
-./scripts/build-linux.sh
+./scripts/docker-build.sh
 
 # Build Zero Hour only
-./scripts/build-linux.sh --game zh
+./scripts/docker-build.sh --game zh
 
 # Build Generals only
-./scripts/build-linux.sh --game generals
+./scripts/docker-build.sh --game generals
 
 # Build specific target
-./scripts/build-linux.sh --target generalszh
+./scripts/docker-build.sh --target generalszh
 
 # Clean build directory first
-./scripts/build-linux.sh --clean
+./scripts/docker-build.sh --clean
 
 # Force CMake reconfiguration
-./scripts/build-linux.sh --cmake
+./scripts/docker-build.sh --cmake
 
 # Enter container shell for debugging
-./scripts/build-linux.sh --interactive
+./scripts/docker-build.sh --interactive
 ```
 
 Build outputs are placed in `build/docker/`:
@@ -76,25 +76,25 @@ Build outputs are placed in `build/docker/`:
 | `build/docker/Generals/` | Generals executables |
 | `build/docker/Core/` | Shared DLLs |
 
-### install-to-game.sh
+### docker-install.sh
 
 Installs built executables to an existing game installation.
 
 ```bash
 # Auto-detect game location (checks Wine prefixes and common paths)
-./scripts/install-to-game.sh --detect
+./scripts/docker-install.sh --detect
 
 # Specify game directory manually
-./scripts/install-to-game.sh ~/.wine/drive_c/Program\ Files/EA\ Games/Command\ and\ Conquer\ Generals\ Zero\ Hour
+./scripts/docker-install.sh "$HOME/.wine/drive_c/Program Files/EA Games/Command and Conquer Generals Zero Hour"
 
 # Install Generals instead of Zero Hour
-./scripts/install-to-game.sh --game generals /path/to/game
+./scripts/docker-install.sh --game generals /path/to/game
 
 # Dry run (show what would be installed)
-./scripts/install-to-game.sh --dry-run --detect
+./scripts/docker-install.sh --dry-run --detect
 
 # Restore original files from backups
-./scripts/install-to-game.sh --restore /path/to/game
+./scripts/docker-install.sh --restore /path/to/game
 ```
 
 The script will:
@@ -109,7 +109,7 @@ After building and installing, run the game with Wine:
 
 ```bash
 # Zero Hour
-wine ~/.wine/drive_c/Program\ Files/EA\ Games/Command\ and\ Conquer\ Generals\ Zero\ Hour/Data/generalszh.exe
+wine "$HOME/.wine/drive_c/Program Files/EA Games/Command and Conquer Generals Zero Hour/Data/generalszh.exe"
 
 # Or from the build directory (requires game data files)
 wine build/docker/GeneralsMD/generalszh.exe
@@ -149,7 +149,7 @@ Build directory not found: /path/to/GeneralsGameCode/build/docker
 
 Solution: Run the build script first:
 ```bash
-./scripts/build-linux.sh
+./scripts/docker-build.sh
 ```
 
 ### Game Not Found
@@ -160,7 +160,7 @@ No game installation found
 
 Solution: Specify the game directory manually:
 ```bash
-./scripts/install-to-game.sh /path/to/your/game/installation
+./scripts/docker-install.sh /path/to/your/game/installation
 ```
 
 ### Wine Errors
