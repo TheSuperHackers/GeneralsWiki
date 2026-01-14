@@ -41,7 +41,7 @@ support different optimizations, libraries, or debugging features that influence
 ## CMake Overview
 
 This [CMake Guide](cmake_guide) provides an overview of how to configure and build **Generals** and its expansion
-*Zero Hour* using **CMake** via the command line. It covers the various options and flags defined in the CMake files that
+_Zero Hour_ using **CMake** via the command line. It covers the various options and flags defined in the CMake files that
 control the build process, allowing you to choose different components of the game and tools to build.
 
 ## Official Build Guides
@@ -52,32 +52,37 @@ environments.
 ### **Visual Studio 6 Guides**
 
 1. **Using pure Visual Studio 6 (x86) (Windows)**
-    - A guide for building the project using only Visual Studio 6 on Windows for the x86 architecture.
-      [Build with pure Visual Studio 6 (x86) (Windows)](build_with_ea_msvc6)
+
+   - A guide for building the project using only Visual Studio 6 on Windows for the x86 architecture.
+     [Build with pure Visual Studio 6 (x86) (Windows)](build_with_ea_msvc6)
 
 2. **Using Cmake & Visual Studio 6 (x86) (Windows)**
-    - A guide for building the project using CMake with Visual Studio 6 on Windows for the x86 architecture.
-      [Build with CMake & Visual Studio 6 (x86) (Windows)](build_with_msvc6)
+
+   - A guide for building the project using CMake with Visual Studio 6 on Windows for the x86 architecture.
+     [Build with CMake & Visual Studio 6 (x86) (Windows)](build_with_msvc6)
 
    #### Sub-guides
-  
-    - **CLion & VC6 Toolchain**
-        - A guide for using CLion with the Visual Studio 6 (VC6) toolchain for building the project.
-         [Build with CLion & VC6 Toolchain](build_with_clion_vc6_toolchain)
-    - **Docker & VC6**
-        - A guide for setting up Docker with the Visual Studio 6 (VC6) toolchain for building the project in a
-          containerized environment.
-         [Build with Docker & VC6](build_with_msvc6_on_docker)
+
+   - **CLion & VC6 Toolchain**
+     - A guide for using CLion with the Visual Studio 6 (VC6) toolchain for building the project.
+       [Build with CLion & VC6 Toolchain](build_with_clion_vc6_toolchain)
+   - **Docker & VC6**
+     - A guide for setting up Docker with the Visual Studio 6 (VC6) toolchain for building the project in a
+       containerized environment.
+       Recommended entrypoint in the main repo: `./scripts/docker-build.sh`.
+       This builds Windows `.exe` files (typically run on Linux via Wine), not native Linux binaries.
+       [Build with Docker & VC6](build_with_msvc6_on_docker)
 
 ### **Visual Studio 2022 Guides**
 
 1. **Using Cmake (x86) (Windows)**
-    - A guide for building the project using CMake with Visual Studio 2022 on Windows for the x86 architecture.
-      [Build with CMake (x86) (Windows)](build_with_msvc22)
+
+   - A guide for building the project using CMake with Visual Studio 2022 on Windows for the x86 architecture.
+     [Build with CMake (x86) (Windows)](build_with_msvc22)
 
 2. **Using Cmake (Linux)**
-    - A guide for building the project using CMake with Visual Studio 2022 on Linux.
-      [Build with CMake (Linux)](build_with_msvc22_linux)
+   - A guide for building the project using CMake with Visual Studio 2022 on Linux.
+     [Build with CMake (Linux)](build_with_msvc22_linux)
 
 ## Community Forks Build Guides
 
@@ -85,6 +90,6 @@ These are the guides provided for community-supported forks of **TheSuperHackers
 versions of the original repository and may have unique build setups.
 
 1. **MSVC22 (x64) Generals Only (Windows)**
-    - A guide for building a custom fork of the project using MSVC 2022 (x64) for Windows, specifically tailored for
-      the "Generals Only" version.
-      [Build with MSVC22 (x64) Generals Only (Windows)](build_with_msvc22_x64_jmarshall2323)
+   - A guide for building a custom fork of the project using MSVC 2022 (x64) for Windows, specifically tailored for
+     the "Generals Only" version.
+     [Build with MSVC22 (x64) Generals Only (Windows)](build_with_msvc22_x64_jmarshall2323)
