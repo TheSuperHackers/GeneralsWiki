@@ -85,7 +85,7 @@ Installs built executables to an existing game installation.
 ./scripts/docker-install.sh --detect
 
 # Specify game directory manually
-./scripts/docker-install.sh "$HOME/.wine/drive_c/Program Files/EA Games/Command and Conquer Generals Zero Hour"
+./scripts/docker-install.sh /path/to/game
 
 # Install Generals instead of Zero Hour
 ./scripts/docker-install.sh --game generals /path/to/game
@@ -108,8 +108,8 @@ The script will:
 After building and installing, run the game with Wine:
 
 ```bash
-# Zero Hour
-wine "$HOME/.wine/drive_c/Program Files/EA Games/Command and Conquer Generals Zero Hour/Data/generalszh.exe"
+# Zero Hour (path depends on your installation)
+wine /path/to/game/generalszh.exe
 
 # Or from the build directory (requires game data files)
 wine build/docker/GeneralsMD/generalszh.exe
