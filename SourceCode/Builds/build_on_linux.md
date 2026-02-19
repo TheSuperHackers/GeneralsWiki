@@ -1,6 +1,7 @@
 # Build Command & Conquer Generals on Linux
 
-This guide covers building Generals and Zero Hour on Linux using Docker. The build produces Windows executables that can run natively on Windows or under Wine on Linux.
+This guide covers building Generals and Zero Hour on Linux using Docker. The build produces Windows
+executables that can run natively on Windows or under Wine on Linux.
 
 ## Quick Start
 
@@ -70,11 +71,11 @@ The main build script that manages the Docker-based build process.
 
 Build outputs are placed in `build/docker/`:
 
-| Directory | Contents |
-|-----------|----------|
-| `build/docker/GeneralsMD/` | Zero Hour executables |
-| `build/docker/Generals/` | Generals executables |
-| `build/docker/Core/` | Shared DLLs |
+| Directory                   | Contents               |
+| --------------------------- | ---------------------- |
+| `build/docker/GeneralsMD/`  | Zero Hour executables  |
+| `build/docker/Generals/`    | Generals executables   |
+| `build/docker/Core/`        | Shared DLLs            |
 
 ### docker-install.sh
 
@@ -98,6 +99,7 @@ Installs built executables to an existing game installation.
 ```
 
 The script will:
+
 1. Backup your original executables (`.exe.backup`)
 2. Copy newly built executables
 3. Copy new DLLs (DebugWindow.dll, ParticleEditor.dll)
@@ -131,11 +133,12 @@ winecfg
 
 ### Docker Permission Denied
 
-```
+```text
 Got permission denied while trying to connect to the Docker daemon
 ```
 
 Solution: Add your user to the docker group and re-login:
+
 ```bash
 sudo usermod -aG docker $USER
 # Then logout and login again
@@ -143,22 +146,24 @@ sudo usermod -aG docker $USER
 
 ### Build Directory Not Found
 
-```
+```text
 Build directory not found: /path/to/GeneralsGameCode/build/docker
 ```
 
 Solution: Run the build script first:
+
 ```bash
 ./scripts/docker-build.sh
 ```
 
 ### Game Not Found
 
-```
+```text
 No game installation found
 ```
 
 Solution: Specify the game directory manually:
+
 ```bash
 ./scripts/docker-install.sh /path/to/your/game/installation
 ```
