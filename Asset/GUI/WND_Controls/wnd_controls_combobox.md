@@ -105,6 +105,10 @@ The following section list the default values and available textures for each ta
    If the ComboBox is inside a window container and the list extends beyond the window's boundaries,
    it is not possible to click on items that are outside of the visible area of the container.
    This may cause issues when interacting with the ComboBox.
+3. **Dropdown Menu Z-Order (Overlap issues):**
+   The SAGE engine renders UI elements based on their order in the `.wnd` file hierarchy. Elements defined lower down in the file are drawn on top of elements defined earlier. 
+   Because the ComboBox features a dropdown list that extends downwards, it must be rendered *over* any other UI elements that are physically located below it on the screen.
+   To ensure the dropdown menu is not hidden     behind other elements, the `COMBOBOX` must be placed **below** those underlying elements in the `.wnd` file's code hierarchy.
 
 ## Example
 
