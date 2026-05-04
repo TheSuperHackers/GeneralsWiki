@@ -8,12 +8,15 @@ configured from the following locations:
 
 ## Options.ini
 
-| Name                   | Description                                                                                    | Accepted Values            | Default Value                 |
-| ---------------------- | ---------------------------------------------------------------------------------------------- | -------------------------- | ----------------------------- |
-| MoneyTransactionVolume | Controls the volume of money deposit and withdraw audio events. Set to 0 to mute these sounds. | 0-100                      | 100 (Generals), 0 (Zero Hour) |
-| SystemTimeFontSize     | Controls the font size for system time display. Set to 0 to disable the system time display.   | 0+                         | 8                             |
-| GameTimeFontSize       | Controls the font size for game time display. Set to 0 to disable the game time display.       | 0+                         | 8                             |
-| CursorCaptureMode      | Controls when the game window captures the mouse cursor.                                       | None, InGame, Always, Auto | Auto                          |
+| Name                   | Description                                                                                               | Accepted Values                               | Default Value                 |
+| ---------------------- |---------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ----------------------------- |
+| MoneyTransactionVolume | Controls the volume of money deposit and withdraw audio events. Set to 0 to mute these sounds.            | 0-100                                         | 100 (Generals), 0 (Zero Hour) |
+| SystemTimeFontSize     | Controls the font size for system time display. Set to 0 to disable the system time display.              | 0+                                            | 8                             |
+| GameTimeFontSize       | Controls the font size for game time display. Set to 0 to disable the game time display.                  | 0+                                            | 8                             |
+| CursorCaptureMode      | Controls when the game window captures the mouse cursor.                                                  | None, InGame, Always, Auto                    | Auto                          |
+| AnisotropyLevel        | The anisotropy level only comes into play when Anisotropic filtering is set. 2 is also the minimum value. | 2, 4, 8, 16                                   | 2                             |
+| AntiAliasing           | Level of anti aliasing. Value correspondents to the MSAA Level. 0 disables MSAA.                          | 0, 2, 4, 8                                    | 0                             |
+| TextureFilter          | Texture filtering mode.                                                                                   | None, Point, Bilinear, Trilinear, Anisotropic | None                          |
 
 ## CommandMap.ini
 
