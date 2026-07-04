@@ -16,6 +16,13 @@ The game runs through Wine-CrossOver via Heroic Launcher, no native macOS build 
 brew install steamcmd
 ```
 
+Then clear the macOS Gatekeeper quarantine from the install, otherwise steamcmd will fail to load its
+own libraries on first run (see Step 2):
+
+```bash
+xattr -dr com.apple.quarantine /opt/homebrew/Caskroom/steamcmd/*/MacOS
+```
+
 ## Step 2: Download the game files
 
 Run this command. Replace `YOUR_USERNAME` with your Steam username.
@@ -25,6 +32,19 @@ steamcmd +@sSteamCmdForcePlatformType windows +login YOUR_USERNAME +app_update 2
 ```
 
 The `+@sSteamCmdForcePlatformType windows` flag forces Steam to download the Windows version of the game.
+
+On the first run, steamcmd self-updates and re-downloads its libraries, so macOS may quarantine them again
+even though you cleared it in Step 1. If that happens you'll see one or both of these:
+
+- A popup saying **"Breakpad.framework" was not opened** with **Move to Trash** / **Done** buttons.
+  Click **Done** - do NOT click Move to Trash.
+- steamcmd quits with `Failed to load steamconsole.dylib ... library load disallowed by system policy`.
+
+Just clear the quarantine again and re-run the steamcmd command above:
+
+```bash
+xattr -dr com.apple.quarantine /opt/homebrew/Caskroom/steamcmd/*/MacOS
+```
 
 Steam Guard will ask you to confirm on your phone. The download is about 3 GB.
 
@@ -40,8 +60,9 @@ Files end up in:
 - Download the latest `weekly-*-generalszh` build.
 
 Extract the files directly into the game folder from Step 2.
+If it asks to replace any existing files, check **Apply to All** and choose **Replace**.
 The patch ships its own executable (`generalszh.exe`) rather than replacing the original `generals.exe`,
-so it won't overwrite the base game.
+so your base game stays intact.
 
 ## Step 4: Install Wine-CrossOver in Heroic
 
@@ -56,11 +77,16 @@ Version 23.7.1-1 was used when this was written.
     - **Name**: Generals Zero Hour (or whatever you want)
     - **Platform**: Windows
     - **Executable**: browse to `generalszh.exe` in the game folder
-4. Make sure **Wine-CrossOver** is selected as the Wine version (not GPTK) you may need to do this step later.
 
 Heroic creates the Wine prefix automatically. No need to configure it manually.
 
-## Step 6: Launch and play
+## Step 6: Set the Wine version
+
+Click the menu icon (three lines) below your Generals Zero Hour game.
+On the **Wine Settings** tab, select **Wine-CrossOver** (not GPTK).
+You do not need to change any other settings.
+
+## Step 7: Launch and play
 
 Hit play. No Winetricks dependencies are needed, it runs out of the box with Wine-CrossOver.
 
@@ -68,16 +94,24 @@ Set your resolution in the game's graphics options. 1900x1200 works on a 14" Mac
 
 ## Known issues
 
-### Mouse gets stuck on first launch
+### Mouse gets stuck after changing resolution
 
 The mouse cursor can get trapped or stop responding after the game launches.
-Pressing **Cmd+Tab** to switch away from the game and then back a few times fixed it.
-It's not clear whether this happens every launch or just the first time.
-
-If Cmd+Tab doesn't fix it, try enabling **Virtual Desktop** in Heroic's Wine configuration settings.
-That gives Wine its own contained window and usually resolves mouse capture problems with old DirectX games.
+This happened after selecting the new 1900x1200 resolution.
+What fixed it: **Cmd+Tab** out of the game, force quit it, then relaunch. The mouse worked again after that.
 
 ## Troubleshooting
+
+### steamcmd: "Failed to load steamconsole.dylib" or a Breakpad.framework popup
+
+This is macOS Gatekeeper quarantining steamcmd's self-updated libraries, covered in Step 2.
+Click **Done** on any "Breakpad.framework" popup (never Move to Trash), then clear the quarantine and re-run:
+
+```bash
+xattr -dr com.apple.quarantine /opt/homebrew/Caskroom/steamcmd/*/MacOS
+```
+
+### Game won't start in Heroic
 
 If the game won't start, right-click the game icon in Heroic and select **Logs**.
 Common things to look for: D3D errors, missing DLL calls, or Wine prefix initialization failures.
