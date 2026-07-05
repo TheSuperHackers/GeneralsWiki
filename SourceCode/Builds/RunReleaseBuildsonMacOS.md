@@ -6,7 +6,7 @@ The game runs through Wine-CrossOver via Heroic Launcher, no native macOS build 
 
 - A Mac with Apple Silicon (M1 or later)
 - macOS Tahoe (or recent macOS — older versions should work but aren't tested here)
-- [Heroic Games Launcher](https://heroicgameslauncher.com/) (tested with 2.20.1)
+- [Heroic Games Launcher](https://heroicgameslauncher.com/) (tested with 2.22.0)
 - A Steam account that owns *Command & Conquer: Generals - Zero Hour* (app ID `2732960`)
 - [Homebrew](https://brew.sh/) installed
 
