@@ -2,8 +2,10 @@
 <!-- Needed to allow for <kbd> tags for keyboard key styling. -->
 # In-Game Debug Commands
 
-> **⚠️ Important Notice**: These debug commands are only available in debug builds of Command & Conquer: Generals
-> and Zero Hour. They will not work in release builds.
+> **⚠️ Important:** Most commands below require a debug build with `RTS_DEBUG`. Commands with additional compile
+> flags are called out in their descriptions.
+
+Source-only debug commands with no current default binding are intentionally omitted.
 
 <br>
 
@@ -11,44 +13,47 @@
 <summary>Commands Available in Both Generals and Zero Hour</summary>
 
   <details>
-  <summary>├─ Game State & Cheats (12)</summary>
+  <summary>├─ Game State & Cheats (13)</summary>
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Ctrl</kbd> + <kbd>W</kbd> | DEMO_WIN | Instantly win the current game or mission | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_win.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>=</kbd> | DEMO_ADDCASH | Adds 10000 cash to the player's current resources | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_addcash.jpg) |
-| <kbd>Alt</kbd> + <kbd>F</kbd> | DEMO_INSTANT_BUILD | Toggles instant building for all units and structures | GAME | Yes | |
-| <kbd>Ctrl</kbd> + <kbd>V</kbd> | DEMO_GIVE_VETERANCY | Grants the selected unit(s) a level of veterancy | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_give_veterancy.jpg) |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>V</kbd> | DEMO_TAKE_VETERANCY | Removes a level of veterancy from the selected unit(s) | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_take_veterancy.jpg) |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>P</kbd> | DEMO_GIVE_SCIENCEPURCHASEPOINTS | Gives the player 1 science purchase point | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_give_sciencepurchasepoints.jpg) |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>K</kbd> | DEMO_GIVE_ALL_SCIENCES | Instantly unlocks all sciences for the player | GAME | Yes | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_give_all_sciences.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>K</kbd> | DEMO_GIVE_RANKLEVEL | Grants the player a rank level | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_give_ranklevel.jpg) |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>K</kbd> | DEMO_TAKE_RANKLEVEL | Subtracts the player's current rank level by 1 | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_take_ranklevel.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>S</kbd> | DEMO_TOGGLE_SPECIAL_POWER_DELAYS | Toggles whether special powers, super weapons and abilities have a delay before they can be used again | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_special_power_delays.jpg) |
-| <kbd>Alt</kbd> + <kbd>P</kbd> | DEMO_REMOVE_PREREQ | Don't require prerequisite techs to be unlocked first. | GAME | Yes | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_remove_prereq.jpg) |
-| <kbd>Alt</kbd> + <kbd>B</kbd> | DEMO_FREE_BUILD | Build everything for free. | GAME | Yes | |
+| <kbd>Alt</kbd> + <kbd>F4</kbd> / window close | DEMO_INSTANT_QUIT | Starts the current quit flow. | GAME SHELL | No | |
+| <kbd>Ctrl</kbd> + <kbd>W</kbd> | DEMO_WIN | Instantly wins the current game or mission through debug victory. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_win.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>=</kbd> | DEMO_ADDCASH | Adds 10000 credits to the local player outside multiplayer. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_addcash.jpg) |
+| <kbd>Alt</kbd> + <kbd>P</kbd> | DEMO_REMOVE_PREREQ | Toggles prerequisite checks for all human players, allowing tech prerequisites to be ignored. | GAME | Yes | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_remove_prereq.jpg) |
+| <kbd>Alt</kbd> + <kbd>F</kbd> | DEMO_INSTANT_BUILD | Toggles instant production for all human players; in multiplayer, it only toggles when no human player currently has anything in production. | GAME | Yes | |
+| <kbd>Alt</kbd> + <kbd>B</kbd> | DEMO_FREE_BUILD | Toggles zero-cost production for all human players. | GAME | Yes | |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>K</kbd> | DEMO_GIVE_ALL_SCIENCES | Grants all grantable sciences to human players. | GAME | Yes | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_give_all_sciences.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>K</kbd> | DEMO_GIVE_RANKLEVEL | Adds one rank level to the local player. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_give_ranklevel.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>K</kbd> | DEMO_TAKE_RANKLEVEL | Removes one rank level from the local player. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_take_ranklevel.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>P</kbd> | DEMO_GIVE_SCIENCEPURCHASEPOINTS | Adds one science purchase point to the local player. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_give_sciencepurchasepoints.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>V</kbd> | DEMO_GIVE_VETERANCY | Adds one veterancy level to the selected objects. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_give_veterancy.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>V</kbd> | DEMO_TAKE_VETERANCY | Removes one veterancy level from the selected objects. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_take_veterancy.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>S</kbd> | DEMO_TOGGLE_SPECIAL_POWER_DELAYS | Toggles recharge delays for special powers, superweapons, and abilities. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_special_power_delays.jpg) |
 
   </details>
 
   <details>
-  <summary>├─ Visual & Rendering (14)</summary>
+  <summary>├─ Visual & Rendering (16)</summary>
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>F11</kbd> | DEMO_TOGGLE_BEHIND_BUILDINGS | Toggles the outline around units when they are obscured by buildings | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_behind_buildings.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>F10</kbd> | DEMO_TOGGLE_BW_VIEW | Toggles a black and white wireframe mode | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_bw_view.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>F11</kbd> | DEMO_TOGGLE_RED_VIEW | Toggles a (useless?) red view mode | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_red_view.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>F12</kbd> | DEMO_TOGGLE_GREEN_VIEW | Toggles a (useless?) green view mode | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_green_view.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>F9</kbd> | DEMO_TOGGLE_MOTION_BLUR_ZOOM | Plays a (useless?) zoom animation with motion blur effects | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_motion_blur_zoom.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>\\</kbd> | DEMO_TOGGLE_RENDER | Toggles rendering of new frames (essentially freezes the game in place) | GAME | No | |
-| <kbd>/</kbd> | DEMO_TOGGLE_NO_DRAW | Toggles rendering of new frames (essentially freezes the game in place). Appears to be redundant with DEMO_TOGGLE_RENDER. **Note:** BROKEN, the off toggle does not work | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>J</kbd> | DEMO_TOGGLE_SHADOW_VOLUMES | Toggles the rendering of shadow volumes | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_shadow_volumes.jpg) |
-| <kbd>]</kbd> | DEMO_TOGGLE_WATERPLANE | Toggles the rendering of the water plane (does not seem to work) | GAME | No | |
-| <kbd>[</kbd> | DEMO_TOGGLE_TRACKMARKS | Toggles the rendering of track marks on the ground | GAME | No | |
-| <kbd>Alt</kbd> + <kbd>W</kbd> | DEMO_TOGGLE_FEATHER_WATER | Visually cycles between different water depths | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_feather_water.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>E</kbd> | DEMO_SHOW_EXTENTS | Toggles the visibility of the bounding box around units | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_show_extents.jpg) |
-| <kbd>Alt</kbd> + <kbd>H</kbd> | DEMO_SHOW_HEALTH | Toggles the visibility of health bars above units and structures | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_show_health.jpg) |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>D</kbd> | DEMO_TIME_OF_DAY | Cycles through different times of day | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_time_of_day.jpg) |
+| <kbd>F11</kbd> | DEMO_TOGGLE_BEHIND_BUILDINGS | Toggles outlines for objects hidden behind buildings. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_behind_buildings.jpg) |
+| <kbd>Alt</kbd> + <kbd>T</kbd> | DEMO_TOGGLE_MESSAGE_TEXT | Toggles on-screen message text. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_message_text.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>\\</kbd> | DEMO_TOGGLE_RENDER | Toggles frame rendering, effectively freezing or resuming the visual output. | GAME | No | |
+| <kbd>/</kbd> | DEMO_TOGGLE_NO_DRAW | Toggles the global no-draw rendering mask between hidden and normal rendering. | GAME | No | |
+| <kbd>Ctrl</kbd> + <kbd>F10</kbd> | DEMO_TOGGLE_BW_VIEW | Cycles wireframe/crossfade debug view states; one state freezes time while the crossfade filter is active. | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_bw_view.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>F11</kbd> | DEMO_TOGGLE_RED_VIEW | Toggles the red view mode. | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_red_view.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>F12</kbd> | DEMO_TOGGLE_GREEN_VIEW | Toggles the green view mode. | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_green_view.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>F9</kbd> | DEMO_TOGGLE_MOTION_BLUR_ZOOM | Toggles the motion-blur zoom view effect. | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_motion_blur_zoom.jpg) |
+| <kbd>Shift</kbd> + <kbd>J</kbd> | DEMO_TOGGLE_SHADOW_VOLUMES | Toggles shadow volume rendering. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_shadow_volumes.jpg) |
+| <kbd>[</kbd> | DEMO_TOGGLE_TRACKMARKS | Toggles track marks. | GAME | No | |
+| <kbd>]</kbd> | DEMO_TOGGLE_WATERPLANE | Toggles water plane rendering. | GAME | No | |
+| <kbd>Alt</kbd> + <kbd>W</kbd> | DEMO_TOGGLE_FEATHER_WATER | Cycles the feather-water debug value. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_feather_water.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>E</kbd> | DEMO_SHOW_EXTENTS | Toggles object collision bounding boxes/extents. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_show_extents.jpg) |
+| <kbd>Alt</kbd> + <kbd>H</kbd> | DEMO_SHOW_HEALTH | Toggles health bars above units and structures. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_show_health.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>D</kbd> | DEMO_TIME_OF_DAY | Cycles the map time of day. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_time_of_day.jpg) |
+| <kbd>Shift</kbd> + <kbd>F11</kbd> | DEMO_TOGGLE_AVI | Toggles movie capture through the display system. | GAME SHELL | No | |
 
   </details>
 
@@ -57,26 +62,28 @@
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>S</kbd> | DEMO_TOGGLE_SOUND | Toggles game audio on and off | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>M</kbd> | DEMO_TOGGLE_MUSIC | Toggles game music on and off | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_music.jpg) |
-| <kbd>Shift</kbd> + <kbd>M</kbd> | DEMO_MUSIC_NEXT_TRACK | Skips to the next music track in the playlist | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_music_next_track.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>M</kbd> | DEMO_MUSIC_PREV_TRACK | Skips to the previous music track in the playlist | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_music_prev_track.jpg) |
-| <kbd>Shift</kbd> + <kbd>A</kbd> | DEMO_TOGGLE_AUDIODEBUG | Toggles audio debugging information on and off | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_audiodebug.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>S</kbd> | DEMO_TOGGLE_SOUND | Toggles game audio. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>M</kbd> | DEMO_TOGGLE_MUSIC | Toggles music playback. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_music.jpg) |
+| <kbd>Shift</kbd> + <kbd>M</kbd> | DEMO_MUSIC_NEXT_TRACK | Skips to the next music track. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_music_next_track.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>M</kbd> | DEMO_MUSIC_PREV_TRACK | Skips to the previous music track. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_music_prev_track.jpg) |
+| <kbd>Shift</kbd> + <kbd>A</kbd> | DEMO_TOGGLE_AUDIODEBUG | Toggles audio debug information. | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_audiodebug.jpg) |
 
   </details>
 
   <details>
-  <summary>├─ Camera & View (7)</summary>
+  <summary>├─ Camera & View (9)</summary>
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>L</kbd> | DEMO_LOCK_CAMERA_TO_SELECTION | Locks the camera to the currently selected unit or structure | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>C</kbd> | DEMO_TOGGLE_CAMERA_DEBUG | Needs further information | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_camera_debug.jpg) |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>C</kbd> | DEMO_TOGGLE_ZOOM_LOCK | Toggles the camera's zoom limitations, allowing for unrestricted zooming in and out when disabled | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_zoom_lock.jpg) |
-| <kbd>,</kbd> | DEMO_BEGIN_ADJUST_PITCH | Begins adjusting the camera's pitch | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_begin_adjust_pitch%20%26%20demo_end_adjust_pitch.jpg) |
-| <kbd>,</kbd> (Release) | DEMO_END_ADJUST_PITCH | Ends adjusting the camera's pitch | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_begin_adjust_pitch%20%26%20demo_end_adjust_pitch.jpg) |
-| <kbd>.</kbd> | DEMO_BEGIN_ADJUST_FOV | Begins adjusting the camera's field of view (FOV) | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_begin_adjust_fov%20%26%20demo_end_adjust_fov.jpg) |
-| <kbd>.</kbd> (Release) | DEMO_END_ADJUST_FOV | Ends adjusting the camera's field of view (FOV) | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_begin_adjust_fov%20%26%20demo_end_adjust_fov.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>L</kbd> | DEMO_LOCK_CAMERA_TO_SELECTION | Locks the camera to the current selection. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>C</kbd> | DEMO_TOGGLE_CAMERA_DEBUG | Toggles camera debug mode. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_camera_debug.jpg) |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>C</kbd> | DEMO_TOGGLE_ZOOM_LOCK | Toggles tactical-view zoom limits; disabling them allows unrestricted zooming. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_zoom_lock.jpg) |
+| <kbd>,</kbd> | DEMO_BEGIN_ADJUST_PITCH | Starts adjusting camera pitch. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_begin_adjust_pitch%20%26%20demo_end_adjust_pitch.jpg) |
+| <kbd>,</kbd> (Release) | DEMO_END_ADJUST_PITCH | Stops adjusting camera pitch. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_begin_adjust_pitch%20%26%20demo_end_adjust_pitch.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>,</kbd> | DEMO_BEGIN_ADJUST_DEFAULTPITCH | Starts adjusting the default camera pitch. | GAME | No | |
+| <kbd>Ctrl</kbd> + <kbd>,</kbd> (Release) | DEMO_END_ADJUST_DEFAULTPITCH | Stops adjusting the default camera pitch. | GAME | No | |
+| <kbd>.</kbd> | DEMO_BEGIN_ADJUST_FOV | Starts adjusting camera field of view. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_begin_adjust_fov%20%26%20demo_end_adjust_fov.jpg) |
+| <kbd>.</kbd> (Release) | DEMO_END_ADJUST_FOV | Stops adjusting camera field of view. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_begin_adjust_fov%20%26%20demo_end_adjust_fov.jpg) |
 
   </details>
 
@@ -85,26 +92,30 @@
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Space</kbd> | DEMO_SWITCH_TEAMS | Cycles through the players in the game, sequentially passing control to each one | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_switch_teams.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>T</kbd> | DEMO_SWITCH_TEAMS_CHINA_USA | Cycles through USA and China players in the game on the same team as the player, sequentially passing control to each one | GAME | No | |
-| <kbd>Ctrl</kbd> + <kbd>A</kbd> | DEMO_TOGGLE_AI_DEBUG | Toggles visual AI debugging information on and off | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_ai_debug.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Space</kbd> | DEMO_SWITCH_TEAMS | Cycles local control through players in the match. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_switch_teams.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>T</kbd> | DEMO_SWITCH_TEAMS_CHINA_USA | Switches local control between China and USA players by side. | GAME | No | |
+| <kbd>Ctrl</kbd> + <kbd>A</kbd> | DEMO_TOGGLE_AI_DEBUG | Cycles visible AI debug levels/modes. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_ai_debug.jpg) |
 
   </details>
 
   <details>
-  <summary>├─ Debug Information & Stats (9)</summary>
+  <summary>├─ Debug Information & Stats (13)</summary>
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Ctrl</kbd> + <kbd>Q</kbd> | DEMO_TOGGLE_DEBUG_STATS | Toggles the visibility of debug information overlays | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_debug_stats.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>L</kbd> | DEMO_TOGGLE_METRICS | Needs further information | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Q</kbd> | DEMO_TOGGLE_GRAPHICALFRAMERATEBAR | Toggles the world's most useless graphical frame rate bar on and off | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_graphicalframeratebar.jpg) |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>V</kbd> | DEMO_TOGGLE_VISIONDEBUG | Toggles the visibility of the vision debug overlay for units and structures | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_visiondebug.jpg) |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>B</kbd> | DEMO_TOGGLE_PROJECTILEDEBUG | Toggles the visibility of visual projectile debug information | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_projectiledebug.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>P</kbd> | DEMO_TOGGLE_PARTICLEDEBUG | Toggles the visibility of visual particle debug information | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_particledebug.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>O</kbd> | DEMO_TOGGLE_CASHMAPDEBUG | Toggles the visibility of visual cash map debug information | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_cashmapdebug.jpg) |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>O</kbd> | DEMO_TOGGLE_THREATDEBUG | Toggles the visibility of visual threat debug information | GAME | No | |
-| <kbd>Ctrl</kbd> + <kbd>D</kbd> | DEMO_DEBUG_SELECTION | Toggles the visibility of the selected unit(s) or structure's debug information | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_debug_selection.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>Q</kbd> | DEMO_TOGGLE_DEBUG_STATS | Toggles the stats debug display callback. | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_debug_stats.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>L</kbd> | DEMO_TOGGLE_METRICS | Toggles the metrics display when built with `PERF_TIMERS`. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Q</kbd> | DEMO_TOGGLE_GRAPHICALFRAMERATEBAR | Toggles the graphical frame-rate bar. | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_graphicalframeratebar.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>O</kbd> | DEMO_TOGGLE_CASHMAPDEBUG | Toggles the cash-value map overlay. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_cashmapdebug.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>O</kbd> | DEMO_TOGGLE_THREATDEBUG | Toggles the threat map overlay. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>V</kbd> | DEMO_TOGGLE_VISIONDEBUG | Toggles the visibility debug overlay. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_visiondebug.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>B</kbd> | DEMO_TOGGLE_PROJECTILEDEBUG | Toggles projectile path debugging. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_projectiledebug.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>P</kbd> | DEMO_TOGGLE_PARTICLEDEBUG | Toggles the particle-system debug display callback. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_particledebug.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>D</kbd> | DEMO_DEBUG_SELECTION | Toggles debug-selected-item mode; in `DEBUG_OBJECT_ID_EXISTS` builds, the next selected object becomes the debug target. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_debug_selection.jpg) |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> | DEMO_SHOW_AUDIO_LOCATIONS | Toggles visual audio location markers. | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_show_audio_locations.jpg) |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>S</kbd> | DEMO_TOGGLE_SUPPLY_CENTER_PLACEMENT | Toggles supply-center placement logging/debugging. | GAME | No | |
+| <kbd>Alt</kbd> + <kbd>O</kbd> | DEBUG_DUMP_PLAYER_OBJECTS | Dumps playable-side object counts and small object lists to the script debug log. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>O</kbd> | DEBUG_DUMP_ALL_PLAYER_OBJECTS | Dumps playable-side object counts and full object lists to the script debug log. | GAME | No | |
 
   </details>
 
@@ -113,9 +124,9 @@
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd> | DEMO_TOGGLE_FOGOFWAR | Toggles the rendering of certain things in the fog of war (Useless?) | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_fogofwar.jpg) |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>R</kbd> | DEMO_ENSHROUD | Shrouds all areas of the map that are not currently visible to the player or their allies | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_enshroud.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>R</kbd> | DEMO_DESHROUD | Fully reveals the entire map, removing all fog of war and shroud | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_deshroud.jpg) |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd> | DEMO_TOGGLE_FOGOFWAR | Toggles fog-of-war rendering, not the permanent shroud state. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_fogofwar.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>R</kbd> | DEMO_DESHROUD | Permanently reveals the map for the local player. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_deshroud.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>R</kbd> | DEMO_ENSHROUD | Undoes `DEMO_DESHROUD`'s permanent reveal, then shrouds the map for the local player. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_enshroud.jpg) |
 
   </details>
 
@@ -124,40 +135,40 @@
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Numpad /</kbd> | DEMO_KILL_ALL_ENEMIES | Instantly kills all enemies on the map | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_kill_all_enemies.jpg) |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>X</kbd> | DEMO_KILL_SELECTION | Instantly kills the currently selected unit or structure. Only works on units and structures belonging to the player | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_kill_selection.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>X</kbd> | DEMO_TOGGLE_HURT_ME_MODE | Toggles the "Hurt Me" mode, causing 10% damage every time a unit or structure is selected | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_hurt_me_mode.jpg) |
-| <kbd>Alt</kbd> + <kbd>G</kbd> | DEMO_TOGGLE_HAND_OF_GOD_MODE | Toggles the "Hand of God" mode, allowing the player to instantly destroy any unit or structure by selecting it | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_hand_of_god_mode.jpg) |
-| <kbd>Shift</kbd> + <kbd>B</kbd> | DEMO_BATTLE_CRY | Plays a battle cry sound effect (Useless?) | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Numpad /</kbd> | DEMO_KILL_ALL_ENEMIES | Kills all enemy objects on the map. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_kill_all_enemies.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>X</kbd> | DEMO_KILL_SELECTION | Kills the currently selected objects in the selected group. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_kill_selection.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>X</kbd> | DEMO_TOGGLE_HURT_ME_MODE | Toggles hurt-me mode; selecting an object applies 10% of its max health as unresistable damage. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_hurt_me_mode.jpg) |
+| <kbd>Alt</kbd> + <kbd>G</kbd> | DEMO_TOGGLE_HAND_OF_GOD_MODE | Toggles hand-of-god mode; selecting an object sends a debug kill-object message. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_hand_of_god_mode.jpg) |
+| <kbd>Shift</kbd> + <kbd>B</kbd> | DEMO_BATTLE_CRY | Plays the configured battle-cry sound. | GAME | No | |
 
   </details>
 
   <details>
-  <summary>├─ Performance & Level of Detail (5)</summary>
+  <summary>├─ Performance & Level of Detail (9)</summary>
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>=</kbd> | DEMO_LOD_DECREASE | Decreases the level of detail (LOD) by one level for all objects in the game | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_lod_decrease%20%26%20demo_lod_increase.jpg) |
-| <kbd>-</kbd> | DEMO_LOD_INCREASE | Increases the level of detail (LOD) by one level for all objects in the game | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_lod_decrease%20%26%20demo_lod_increase.jpg) |
-| <kbd>Alt</kbd> + <kbd>-</kbd> | DEMO_CYCLE_LOD_LEVEL | Cycles through the available LOD levels for all objects in the game | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_cycle_lod_level.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>J</kbd> | DEMO_INCR_ANIM_SKATE_SPEED | Increases the animation skate speed for all units and structures in the game (Needs further information) | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_incr_anim_skate_speed%20%26%20demo_decr_anim_skate_speed.jpg) |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>J</kbd> | DEMO_DECR_ANIM_SKATE_SPEED | Decreases the animation skate speed for all units and structures in the game (Needs further information) | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_incr_anim_skate_speed%20%26%20demo_decr_anim_skate_speed.jpg) |
+| <kbd>=</kbd> | DEMO_LOD_DECREASE | Decreases the current LOD setting by one level. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_lod_decrease%20%26%20demo_lod_increase.jpg) |
+| <kbd>-</kbd> | DEMO_LOD_INCREASE | Increases the current LOD setting by one level. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_lod_decrease%20%26%20demo_lod_increase.jpg) |
+| <kbd>Alt</kbd> + <kbd>-</kbd> | DEMO_CYCLE_LOD_LEVEL | Cycles dynamic game detail/LOD levels. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_cycle_lod_level.jpg) |
+| <kbd>Ctrl</kbd> + <kbd>J</kbd> | DEMO_INCR_ANIM_SKATE_SPEED | Increases the animation skate-distance override by `0.25`. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_incr_anim_skate_speed%20%26%20demo_decr_anim_skate_speed.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>J</kbd> | DEMO_DECR_ANIM_SKATE_SPEED | Decreases the animation skate-distance override by `0.25`. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_incr_anim_skate_speed%20%26%20demo_decr_anim_skate_speed.jpg) |
+| <kbd>Alt</kbd> + <kbd>Q</kbd> | DEMO_PERFORM_STATISTICAL_DUMP | Dumps the current frame to `StatisticsDump.txt` when built with `DUMP_PERF_STATS`. | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_perform_statistical_dump.jpg) |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>Q</kbd> | DEBUG_OBJECT_ID_PERFORMANCE | Runs ObjectID lookup performance tests. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/debug_object_id_performance.jpg) |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>A</kbd> | DEBUG_DRAWABLE_ID_PERFORMANCE | Runs DrawableID lookup performance tests. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/debug_drawable_id_performance.jpg) |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>W</kbd> | DEBUG_SLEEPY_UPDATE_PERFORMANCE | Reports the number of sleepy update modules. | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/debug_sleepy_update_performance.jpg) |
 
   </details>
 
   <details>
-  <summary>├─ System & Technical (8)</summary>
+  <summary>├─ System & Technical (4)</summary>
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>A</kbd> | DEMO_DUMP_ASSETS | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>F11</kbd> | DEMO_TOGGLE_AVI | (Needs further information) | GAME SHELL | No | |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>N</kbd> | DEMO_TOGGLE_NETWORK | (Needs further information) | GAME | No | |
-| <kbd>Alt</kbd> + <kbd>T</kbd> | DEMO_TOGGLE_MESSAGE_TEXT | Toggles the visibility of in-game messages | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_toggle_message_text.jpg) |
-| <kbd>Ctrl</kbd> + <kbd>G</kbd> | DEMO_VTUNE_ON | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>G</kbd> | DEMO_VTUNE_OFF | (Needs further information) | GAME | No | |
-| <kbd>Alt</kbd> + <kbd>O</kbd> | DEBUG_DUMP_PLAYER_OBJECTS | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>O</kbd> | DEBUG_DUMP_ALL_PLAYER_OBJECTS | (Needs further information) | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>A</kbd> | DEMO_DUMP_ASSETS | Dumps asset information through the debug asset store path. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>N</kbd> | DEMO_TOGGLE_NETWORK | Toggles the network layer on when a network object is present. | GAME | No | |
+| <kbd>Ctrl</kbd> + <kbd>G</kbd> | DEMO_VTUNE_ON | Enables VTune gathering. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>G</kbd> | DEMO_VTUNE_OFF | Disables VTune gathering. | GAME | No | |
 
   </details>
 
@@ -166,64 +177,16 @@
 
 | Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
 | ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F1</kbd> | DEMO_RUNSCRIPT1 | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F2</kbd> | DEMO_RUNSCRIPT2 | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F3</kbd> | DEMO_RUNSCRIPT3 | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F4</kbd> | DEMO_RUNSCRIPT4 | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F5</kbd> | DEMO_RUNSCRIPT5 | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F6</kbd> | DEMO_RUNSCRIPT6 | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F7</kbd> | DEMO_RUNSCRIPT7 | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F8</kbd> | DEMO_RUNSCRIPT8 | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F9</kbd> | DEMO_RUNSCRIPT9 | (Needs further information) | GAME | No | |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Tab</kbd> | DEMO_NEXT_OBJECTIVE_MOVIE | (Needs further information) | GAME | No | |
-
-  </details>
-
-</details>
-
-<br>
-
-<details>
-<summary>Commands Available Only in Generals</summary>
-
-| Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
-| ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Backspace</kbd> | DEMO_INSTANT_QUIT | (Needs further information) | GAME SHELL | No | |
-
-</details>
-
-<br>
-
-<details>
-<summary>Commands Available Only in Zero Hour</summary>
-
-  <details>
-  <summary>├─ Performance Analysis (4)</summary>
-
-| Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
-| ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>Q</kbd> | DEBUG_OBJECT_ID_PERFORMANCE | (Needs further information) | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/debug_object_id_performance.jpg) |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>A</kbd> | DEBUG_DRAWABLE_ID_PERFORMANCE | (Needs further information) | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/debug_drawable_id_performance.jpg) |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>W</kbd> | DEBUG_SLEEPY_UPDATE_PERFORMANCE | (Needs further information) | GAME | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/debug_sleepy_update_performance.jpg) |
-| <kbd>Alt</kbd> + <kbd>Q</kbd> | DEMO_PERFORM_STATISTICAL_DUMP | (Needs further information) | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_perform_statistical_dump.jpg) |
-
-  </details>
-
-  <details>
-  <summary>├─ Game Features (1)</summary>
-
-| Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
-| ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Ctrl</kbd> + <kbd>S</kbd> | DEMO_TOGGLE_SUPPLY_CENTER_PLACEMENT | (Needs further information) | GAME | No | |
-
-  </details>
-
-  <details>
-  <summary>├─ Audio (1)</summary>
-
-| Hotkey | Command Name | Description | Accessible In | Usable in Multiplayer? | Image |
-| ------ | ------------ | ----------- | ------------- | ---------------------- | ----- |
-| <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> | DEMO_SHOW_AUDIO_LOCATIONS | Displays visual overlays regarding audio (Needs further information) | GAME SHELL | No | [Image](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Debug/files/ingame_debugs_media/demo_show_audio_locations.jpg) |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F1</kbd> | DEMO_RUNSCRIPT1 | Runs script `KEY_F1`. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F2</kbd> | DEMO_RUNSCRIPT2 | Runs script `KEY_F2`. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F3</kbd> | DEMO_RUNSCRIPT3 | Runs script `KEY_F3`. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F4</kbd> | DEMO_RUNSCRIPT4 | Runs script `KEY_F4`. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F5</kbd> | DEMO_RUNSCRIPT5 | Runs script `KEY_F5`. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F6</kbd> | DEMO_RUNSCRIPT6 | Runs script `KEY_F6`. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F7</kbd> | DEMO_RUNSCRIPT7 | Runs script `KEY_F7`. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F8</kbd> | DEMO_RUNSCRIPT8 | Runs script `KEY_F8`. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>F9</kbd> | DEMO_RUNSCRIPT9 | Runs script `KEY_F9`. | GAME | No | |
+| <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Tab</kbd> | DEMO_NEXT_OBJECTIVE_MOVIE | Advances to the next `DemoObjective##` movie and plays it. | GAME | No | |
 
   </details>
 
@@ -247,6 +210,12 @@ All hotkeys in this document are displayed using keyboard key styling with `<kbd
 
 - **GAME:** Commands work during gameplay (in a match/mission)
 - **GAME SHELL:** Commands work in menus and during gameplay
+
+**Usable in Multiplayer?:**
+
+- **Yes:** The command can be used in multiplayer. For state-changing cheats, every client should apply the same
+  action or debug state to avoid mismatches or desyncs.
+- **No:** The command is single-player, local-only, or blocked while a network game is running.
 
 **Examples:**
 
