@@ -30,6 +30,11 @@
   - [Using Cmake (x86) (Windows)](build_with_msvc22)
   - [Using Cmake (Linux)](build_with_msvc22_linux)
 
+### **Community Guides**:
+- **macOS Guides**:
+  - [Using Heroic & Wine-CrossOver (Apple Silicon)](macos_heroic_wine_crossover.md)
+
+
 ### **Other Forks**:
   - [MSVC22 (x64) Generals Only (Windows)](build_with_msvc22_x64_jmarshall2323)
 
