@@ -13,6 +13,7 @@ Boolean values are written as `yes` or `no`; parsing is case-insensitive.
 | `TextureFilter` | `None`, `Point`, `Bilinear`, `Trilinear`, `Anisotropic` | `Bilinear` | Selects the global texture filtering mode. Invalid names fall back to `None`. |
 | `AnisotropyLevel` | Practical values are `2`, `4`, `8`, `16` | `2` | Selects anisotropic filtering level. Other integer values are clamped to `2` through `16` and rounded down to the highest supported power of two. |
 | `ResolutionFontAdjustment` | Non-negative number. `100` means 100%. | Unset | Overrides the `GlobalLanguage.ini` resolution font adjustment. Negative values or an absent key use the `GlobalLanguage.ini` setting. |
+| `JPEGQuality` | `1` through `95`; values are clamped | `80` | Controls JPEG screenshot quality; PNG is unaffected. |
 
 ## Shell and UI
 
