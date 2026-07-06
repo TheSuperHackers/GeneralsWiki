@@ -14,6 +14,12 @@ Boolean values are written as `yes` or `no`; parsing is case-insensitive.
 | `AnisotropyLevel` | Practical values are `2`, `4`, `8`, `16` | `2` | Selects anisotropic filtering level. Other integer values are clamped to `2` through `16` and rounded down to the highest supported power of two. |
 | `ResolutionFontAdjustment` | Non-negative number. `100` means 100%. | Unset | Overrides the `GlobalLanguage.ini` resolution font adjustment. Negative values or an absent key use the `GlobalLanguage.ini` setting. |
 
+## Shell and UI
+
+| Name | Accepted Values | Default | Description |
+| --- | --- | --- | --- |
+| `GameWindowTransitionSpeedMultiplier` | Number from `1` through `1000` | `1` | Multiplies game window transition speed for menu/window animations and whole-screen fades. Values below `1`, invalid values, and missing values use `1`; values above `1000` are clamped to `1000`. |
+
 ## HUD Overlays
 
 Set a font size to `0` to disable that overlay. The visual styling for these overlays is configured in
