@@ -29,11 +29,15 @@ RUN apt install wget gpg unzip git -y
 RUN dpkg --add-architecture i386
 RUN mkdir -pm755 /etc/apt/keyrings
 RUN wget -O - https://dl.winehq.org/wine-builds/winehq.key | gpg --dearmor -o /etc/apt/keyrings/winehq-archive.key -
-RUN wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/oracular/winehq-oracular.sources
+RUN wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources
 RUN apt update
 RUN apt install --install-recommends winehq-stable -y
 
 WORKDIR /build/tools/
+
+# Install ninja windows
+RUN wget https://github.com/ninja-build/ninja/releases/download/v1.12.1/ninja-win.zip
+RUN unzip ninja-win.zip -d /build/tools/ninja/
 
 # Install cmake windows
 RUN wget https://github.com/Kitware/CMake/releases/download/v3.31.6/cmake-3.31.6-windows-x86_64.zip
@@ -68,6 +72,7 @@ ENV TEMPDIR="Z:\\build\\tmp"
 ENV VS="Z:\\build\\tools\\vs6"
 ENV MSVCDir="$VS\\vc98"
 ENV WINEPATH="C:\\windows\\system32;\
+Z:\\build\\tools\\ninja;\
 $VS\\vc98\\bin;\
 $VS\\vc98\\lib;\
 $VS\\vc98\\include;\
@@ -90,11 +95,12 @@ WORKDIR /build/cnc
 
 # Run cmake
 RUN wine /build/tools/cmake/bin/cmake.exe \
+    -G "Ninja" \
     --preset vc6 \
     -DCMAKE_SYSTEM="Windows" \
     -DCMAKE_SYSTEM_NAME="Windows" \
     -DCMAKE_SIZEOF_VOID_P=4 \
-    -DCMAKE_MAKE_PROGRAM="Z:/build/tools/vs6/vc98/bin/nmake.exe" \
+    -DCMAKE_MAKE_PROGRAM="Z:/build/tools/ninja/ninja.exe" \
     -DCMAKE_C_COMPILER="Z:/build/tools/vs6/vc98/bin/cl.exe" \
     -DCMAKE_CXX_COMPILER="Z:/build/tools/vs6/vc98/bin/cl.exe" \
     -DGIT_EXECUTABLE="Z:/build/tools/git/git.exe" \
@@ -108,14 +114,23 @@ RUN wine /build/tools/cmake/bin/cmake.exe \
 WORKDIR /build/cnc/build/vc6
 
 # Compile
-RUN wine cmd /c "set TMP=Z:\build\tmp& set TEMP=Z:\build\tmp& Z:\build\tools\vs6\VC98\Bin\NMAKE.exe"
+RUN wine ninja
 
 # Keep the container alive
-CMD tail -f /dev/null
+CMD ["tail", "-f", "/dev/null"]
 ```
 
 Build the game by executing `docker build -t zerohour .`
 
 After the build you can run the container and use `docker cp`
-or you could mount a volume to `/build` so you can directly
+
+```bash
+# 1. Start the container in the background
+docker run -d --name zh_builder zerohour
+
+# 2. Copy the executable to your host machine
+docker cp zh_builder:/build/cnc/build/vc6/GeneralsMD .
+```
+
+Or you could mount a volume to `/build` so you can directly
 compile your own code and copy the binary off.
