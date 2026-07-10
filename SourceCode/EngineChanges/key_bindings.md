@@ -24,6 +24,8 @@ The command names are the names used by `CommandMap.ini` unless the entry is mar
 | `STEP_FRAME` | <kbd>O</kbd> | Observer | Advances one frame and pauses again in non-multiplayer games. |
 | `STEP_FRAME_ALT` | <kbd>Shift</kbd>+<kbd>O</kbd> | Everywhere | Alternate frame-step binding that can be used while playing. |
 | `SELECT_NEXT_IDLE_WORKER` | <kbd>Ctrl</kbd>+<kbd>I</kbd> | Game | Selects the next idle worker for the observed or local player. |
+| `TAKE_SCREENSHOT` | <kbd>F12</kbd> | Everywhere | Saves a JPEG screenshot with a timestamped filename in the user data `Screenshots` folder. JPEG quality is controlled by [`JPEGQuality`](options_ini). |
+| `TAKE_SCREENSHOT_PNG` | <kbd>Ctrl</kbd>+<kbd>F12</kbd> | Everywhere | Saves a lossless PNG screenshot with a timestamped filename in the user data `Screenshots` folder. |
 
 ## Default-Only Controls
 
