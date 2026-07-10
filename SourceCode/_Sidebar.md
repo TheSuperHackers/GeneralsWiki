@@ -5,7 +5,6 @@
 - [How to Get Involved](how_to_involved)
 - [How to Contribution](https://github.com/TheSuperHackers/GeneralsGameCode/blob/main/CONTRIBUTING.md)
 - [Replays for testing](replay_testing)
-- [New Configuration Options](new_configuration_options)
 - [In-Game Debug Commands](ingame_debug_commands)
 - [Community forks](forks)
 - [License](https://github.com/TheSuperHackers/GeneralsGameCode/blob/main/LICENSE.md)
@@ -14,6 +13,17 @@
 - [FAQ](faq)
 - [Known Issues](known_issues)
 - [Contact & Community](contact_community)
+
+## [Added and Changed](engine_changes)
+
+- [Options.ini](options_ini)
+- [Added/Changed Command Line Arguments](command_line_arguments)
+- [Key Bindings](key_bindings)
+- [Debug Commands](debug_commands)
+- [GameData.ini](gamedata_ini)
+- [GameAudio.ini](gameaudio_ini)
+- [InGameUI.ini](ingameui_ini)
+- [Object Module Fields](module_fields)
 
 ## [Builds](build_guides)
 - [Build Configuration Overview](build_configuration)
