@@ -5,7 +5,7 @@ and appearance of the progress bar, and it updates automatically as the progress
 
 ## Available Tags
 
-The ProgressBar control does not have any unique tags beyond the [default control tags](/user.md).
+The ProgressBar control does not have any unique tags beyond the [default control tags](wnd_controls_user).
 It uses the same general set of tags applicable to all controls.
 
 ## Default Values and Usage
@@ -86,6 +86,4 @@ END
 ## See also
 
 - [Default control](wnd_controls_user)
-- [Texturing](../texturing.md)
-
-[Category:](../Categories.md) [Controls](../Controls.md)
+- [Texturing](texturing)

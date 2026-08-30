@@ -165,7 +165,5 @@ You can create new textures or modify existing ones by editing the `.tga` files 
 
 ## See Also
 
-- [Controls](../Controls.md)
-- [User Control](../controls/user.md)
-
-[Category:](../Categories.md) [General](../General.md)
+- [Controls](wnd_reference)
+- [User Control](wnd_controls_user)
