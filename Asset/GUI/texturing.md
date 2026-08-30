@@ -17,7 +17,7 @@ DXT5 formats, and reference them within the game's `.wnd` files.
 
 you can find the texture files in the `Data\Art\Textures` directory.
 
-![Description of the image](https://github.com/TheSuperHackers/GeneralsDocuments/blob/main/documents/wnd/SCSmShellUserInterface512_001.tga.png)
+![SCSmShellUserInterface512_001.tga](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/Asset/GUI/SCSmShellUserInterface512_001.tga.png)
 
 The main texture file used for the game's UI is `SCSmShellUserInterface512_001.tga`.
 This file contains a large number of textures, packed together into a single image file.
