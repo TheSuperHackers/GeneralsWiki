@@ -27,7 +27,8 @@ For Visual Studio 2026, enable these v143 compatibility components:
 - **MSVC v143 - VS 2022 C++ x64/x86 build tools (v14.44)**
 - **C++ v14.44 (17.14) MFC for v143 build tools (x86 & x64)**
 
-Standalone CMake and Ninja installations are not required when building through the IDE.
+Standalone CMake and Ninja installations are not required for the built-in CMake workflow below. Generating a
+traditional Visual Studio solution requires a standalone CMake installation.
 
 ## Clone and open the source
 
@@ -40,6 +41,9 @@ git clone https://github.com/TheSuperHackers/GeneralsGameCode.git
 In Visual Studio, select **File > Open > Folder** and open the cloned `GeneralsGameCode` directory. Visual Studio reads
 `CMakePresets.json` and starts configuring the project. The first configure downloads several dependencies, so it
 requires an internet connection.
+
+To work with a traditional Visual Studio solution instead, see
+[Generate a Visual Studio solution](#generate-a-visual-studio-solution).
 
 ## Select a preset
 
@@ -84,6 +88,22 @@ Start Without Debugging** or press **Ctrl+F5**.
 
 See the [Building with CMake guide](cmake_guide) for Debug and Profile output, game and tool selection, and
 individual targets.
+
+## Generate a Visual Studio solution
+
+To generate a traditional `.sln` file, install [CMake](https://cmake.org/download/) 3.25 or newer for Visual Studio 2022
+or 4.2 or newer for Visual Studio 2026. A separate Ninja installation is not required.
+
+Use a build directory other than `build/win32` to avoid conflicts with an existing Ninja configuration.
+
+```batch
+cmake --preset win32 -B build/vs2022 -G "Visual Studio 17 2022" -A Win32
+cmake --preset win32 -B build/vs2026 -G "Visual Studio 18 2026" -A Win32 -T v143
+```
+
+For Debug or Profile, use the matching `win32-debug` or `win32-profile` preset and a separate build directory. After
+CMake finishes, open the generated `.sln` file. CMake GUI provides the same generator, Win32 platform, and v143 toolset
+settings.
 
 ## Troubleshooting
 
