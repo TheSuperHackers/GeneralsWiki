@@ -8,7 +8,7 @@ and appearance of the **ComboBox**.
 In addition to the [default control tags](wnd_controls_user), the following tags are available.
 
 - The control does not have a `TEXT` tag. Unlike controls such as checkboxes, which include a text label,
-this control is self-contained and does not display or use a text label.
+  this control is self-contained and does not display or use a text label.
 
 | Tag                                      | Description                                                                  |
 |------------------------------------------|------------------------------------------------------------------------------|
@@ -37,7 +37,7 @@ this control is self-contained and does not display or use a text label.
 
 ## Default values
 
-The following section list the default values and available textures for each tag
+The following section lists the default values and available textures for each tag.
 
 <details>
   <summary>Click to expand</summary>
@@ -45,13 +45,13 @@ The following section list the default values and available textures for each ta
 ### COMBOBOXDATA
 
 - **ISEDITABLE**: Defines whether the combobox is editable.
-                  0 = non-editable (only dropdown selection allowed), 1 = editable (user can type in the field).
+  0 = non-editable (only dropdown selection allowed), 1 = editable (user can type in the field).
 - **MAXCHARS**: The maximum number of characters allowed in the edit field when the combobox is editable (e.g., 16).
 - **MAXDISPLAY**: The maximum number of items to display at once in the dropdown list without scrolling (e.g., 2).
-- **ASCIIONLY**:  Defines if only ASCII characters are allowed in the edit field:
-                  0 = allows non-ASCII characters, 1 = only ASCII.
-- **LETTERSANDNUMBERS**:  Defines if only letters and numbers are allowed in the edit field:
-                          0 = allows all characters, 1 = allows only letters and numbers.
+- **ASCIIONLY**: Defines whether only ASCII characters are allowed in the edit field:
+  0 = allows non-ASCII characters, 1 = only ASCII.
+- **LETTERSANDNUMBERS**: Defines whether only letters and numbers are allowed in the edit field:
+  0 = allows all characters, 1 = allows only letters and numbers.
 
 ### ENABLEDDRAWDATA, DISABLEDDRAWDATA, HILITEDRAWDATA
 
@@ -96,7 +96,7 @@ The following section list the default values and available textures for each ta
 
 </details>
 
-## Known Issues
+## Known issues
 
 1. **Item text color cannot be changed:**
    It is currently not possible to change the color of the text (for list items). By default, the text color is white.
@@ -106,9 +106,17 @@ The following section list the default values and available textures for each ta
    it is not possible to click on items that are outside of the visible area of the container.
    This may cause issues when interacting with the ComboBox.
 
+3. **Dropdown menu z-order (overlap issues):**
+   The SAGE engine renders UI elements based on their order in the `.wnd` file hierarchy. Elements defined lower
+   down in the file are drawn on top of elements defined earlier.
+   Because the ComboBox features a dropdown list that extends downwards, it must be rendered *over* any other UI
+   elements that are physically located below it on the screen.
+   To ensure the dropdown menu is not hidden behind other elements, the `COMBOBOX` must be placed **below** those
+   underlying elements in the `.wnd` file's code hierarchy.
+
 ## Example
 
-Here example from IP address ComboBox in the `OptionsMenu.wnd` file:
+Here is an example of the IP address ComboBox from the `OptionsMenu.wnd` file:
 
 <details>
   <summary>Click to expand</summary>
