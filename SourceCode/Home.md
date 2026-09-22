@@ -18,7 +18,6 @@ new to the project, here’s how you can contribute:
 
 - Check out the [**Build Guides**](build_guides) for instructions on how to compile the game code on
   different platforms.
-- Learn about the project's **dependencies** and **libraries** in the [Dependencies](dependencies) section.
 - Look through the **community forks** and other variations of the project in the [Forks](forks) section.
 - If you're an experienced developer, you can start contributing by reviewing and submitting **pull requests** or
   opening **issues**.
@@ -26,41 +25,11 @@ new to the project, here’s how you can contribute:
 ## **Quick Links**
 
 - [Build Guides for Different Platforms](build_guides)
-- [Dependencies and Libraries](dependencies)
+- [Build Configurations Overview](build_configuration)
 - [Replays for testing](replay_testing)
+- [In-Game Debug Commands](ingame_debug_commands)
+- [Added and Changed](engine_changes)
 - [Community Forks](forks)
-- [Tools for Developers](tools)
-- [FAQ](faq)
-
-## **Building the Game Code**
-
-Here you'll find detailed guides on how to compile and build *Generals: Zero Hour* from source code for various
-platforms:
-
-- **Windows**: Instructions for building on Windows using Visual Studio.
-- **Linux**: Instructions for building on Linux with the necessary tools and libraries.
-- **macOS**: Instructions for building on macOS, with support for cross-compiling where necessary.
-
-These guides will help you get set up and running, so you can start working on the game code in no time.
-
-## **Dependencies & Libraries**
-
-This section outlines all the essential dependencies and libraries you need in order to successfully build and run the
-source code. It includes:
-
-- **External Libraries**: Instructions on downloading and configuring the third-party libraries required by the project.
-- **Codebase Structure**: Understanding the layout and architecture of the game code.
-
-## **Tools for Developers**
-
-As a developer, you will need a set of tools to interact with the codebase efficiently. Here are some tools that can
-assist you:
-
-- **Code Editors/IDEs**: Recommended editors/IDEs for working with the game’s code (e.g., Visual Studio, Eclipse, etc.).
-- **Debugging Tools**: Recommended tools for debugging and troubleshooting.
-- **Version Control**: Using Git for managing changes, commits, and collaboration.
-
-Check out the [**Tools for Developers**](tools) page for more information.
 
 ## **Community and Forks**
 
@@ -72,6 +41,10 @@ For a list of active forks, visit the [**Community Forks**](forks) page.
 
 ## **Contact and Community**
 
-For any questions, discussions, or to get involved in the community, check out the **[Contact and Community Page](contact_community)**.
-Join our forums, Discord channels, or GitHub discussions to communicate with other
-contributors and developers.
+For questions, discussions, or to get involved, join the community on Discord:
+
+- [Community Outpost](https://discord.com/invite/WzxQDZersE)
+- [The Assembly Armada](https://discord.gg/UnWK2Tw)
+
+You can also open an [issue](https://github.com/TheSuperHackers/GeneralsGameCode/issues) or start a
+[discussion](https://github.com/TheSuperHackers/GeneralsGameCode/discussions) on GitHub.

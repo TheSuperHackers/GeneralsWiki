@@ -13,15 +13,13 @@ goal of this project is to provide a higher quality and more polished experience
 ## **Getting Started**
 
 To get started with the project, you can submit issues or pull requests (PRs). Additionally, you can install the current
-asset patch using **GeneralsModBuilder** (see the [installation guide](installation)),
+asset patch using [**GeneralsModBuilder**](https://github.com/TheSuperHackers/GeneralsModBuilder),
 which allows you to install the patch directly into your game directory and try it out.
 
 ## **Quick Links**
 
 - [How to Get Involved](how_to_get_involved)
-- [Installation Guide](installation)
 - [List of Improvements and Fixes](https://github.com/TheSuperHackers/GeneralsGamePatch?tab=readme-ov-file#change-logs)
-- [FAQ](faq)
 
 ## **Types of Assets, Usage, and Configuration Instructions**
 
@@ -38,7 +36,7 @@ For a detailed list of asset types and guidelines on how to contribute or fix th
 the [How to Get Involved](how_to_get_involved) page.
 
 For detailed information on how to use and configure the different types of assets in the game, such as the behavior of
-various GUI elements, control mechanics, and more, see the relevant section in the wiki navigation, such as [WND](wnd_reference),
+various GUI elements, control mechanics, and more, see the relevant section in the wiki navigation, such as [WND](wnd_reference).
 
 ## **Contact and Community**
 

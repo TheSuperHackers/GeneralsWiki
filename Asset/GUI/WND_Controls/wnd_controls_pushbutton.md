@@ -6,7 +6,7 @@ as well as how it behaves in different states (enabled, disabled, highlighted).
 
 ## Available Tags
 
-The PushButton control does not include any unique tags beyond the [default control tags](/user.md).
+The PushButton control does not include any unique tags beyond the [default control tags](wnd_controls_user).
 It uses the same general set of tags applicable to all controls.
 
 ## Default values and usage
@@ -100,6 +100,4 @@ END
 ## See also
 
 - [Default control](wnd_controls_user)
-- [Texturing](../texturing.md)
-
-[Category:](../Categories.md) [Controls](../Controls.md)
+- [Texturing](texturing)

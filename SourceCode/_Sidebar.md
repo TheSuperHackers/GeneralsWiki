@@ -9,11 +9,6 @@
 - [In-Game Debug Commands](ingame_debug_commands)
 - [Community forks](forks)
 - [License](https://github.com/TheSuperHackers/GeneralsGameCode/blob/main/LICENSE.md)
-- [Credits](credits)
-- [Changelog](changelog)
-- [FAQ](faq)
-- [Known Issues](known_issues)
-- [Contact & Community](contact_community)
 
 ## [Added and Changed](engine_changes)
 
@@ -39,25 +34,8 @@
 - **Linux**:
   - [Build on Linux with Docker](linux_docker)
 
-## Libraries
-
-- DirectX
-- STLport
-- Max4SDK
-- NVASM
-- Benchmark
-- MilesSoundSystem
-- Bink
-- SafeDisk
-- Asimp3
-- GameSpy
-- ZLib
-- LZHCompress
-
 ## Tools
 
 - [Command Line Arguments](switchers_arguments)
-- [SafeDiskLauncher](safedisklauncher)
-- [CRCDiff](crcdiff)
 - [Crash dumps](crashdumps)
 <!-- markdownlint-restore -->
