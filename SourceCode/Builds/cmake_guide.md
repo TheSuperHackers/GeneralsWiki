@@ -1,241 +1,167 @@
-# **CMake Command Line Usage Guide**
+# Building with CMake
 
-This guide provides an overview of how to configure and build **Generals** and its expansion **Zero Hour** using **CMake**
-via the command line. It covers the various options and flags defined in the CMake files that control the build process,
-allowing you to choose different components of the game and tools to build.
+CMake provides a common workflow for building GeneralsGameCode with Visual C++ 6 or a modern compiler. Run the commands
+on this page from the repository root.
 
-For more details on using **Visual Studio 2022**, **Visual Studio 6**, or **CLion**, please refer to the respective
-guides.
+## Requirements
+
+- [Git](https://git-scm.com/downloads)
+- [CMake](https://cmake.org/download/) 3.25 or newer, added to `PATH`
+- [Ninja](https://ninja-build.org/), added to `PATH`
+- The toolchain required by your chosen preset
 
 > [!NOTE]
-> CMake retains previous configurations. If you encounter any issues or strange behavior, it is recommended to delete
-> the `build` directory and start fresh to ensure the build process uses the latest settings.
+> The `PATH` requirements apply whenever you type these commands in a terminal, including an IDE's built-in
+> terminal, because it runs a normal shell. They do not apply when using the IDE's CMake integration through its
+> configure and build actions; in that case, the IDE can use its bundled CMake and Ninja tools directly.
 
-- [Build Configuration (Preset)](#1-build-configuration-preset)
-- [Selecting Game and Tools](#2-selecting-game-and-tools)
-- [Building the Project](#3-building-the-project)
-- [Install the Project](#4-install-the-project)
-- [Define a Custom Installation Path](#5-define-a-custom-installation-path)
-- [Building Specific Targets](#6-building-specific-targets)
-- [Examples](#7-examples)
+For Visual C++ 6 setup, see [CMake and Visual Studio 6](visual_studio_6).
 
----
+## Build presets
 
-## 1. **Build Configuration (Preset)**
+These are the presets most contributors will use:
 
-The **preset** defines the predefined build configuration. The available presets for this project are:
+| Preset          | Toolchain         | Purpose                                                                   |
+| --------------- | ----------------- | ------------------------------------------------------------------------- |
+| `vc6`           | Visual C++ 6      | Release build and the retail-compatible path                              |
+| `vc6-debug`     | Visual C++ 6      | Unoptimized development build; [runtime requirements](#vc6-debug-runtime) |
+| `vc6-profile`   | Visual C++ 6      | Optimized profiling build                                                 |
+| `win32`         | Modern Visual C++ | Release build                                                             |
+| `win32-debug`   | Modern Visual C++ | Unoptimized development build                                             |
+| `win32-profile` | Modern Visual C++ | Optimized profiling build                                                 |
 
-### For Visual Studio 2022 or Ninja
+For example, configure and build a VC6 Release build with:
 
-- `win32`: Release build.
-- `win32-debug`: Debug build.
-- `win32-profile`: Profile build.
-
-### For Visual Studio 6
-
-- `vc6`: Release build.
-- `vc6-debug`: Debug build.
-- `vc6-profile`: Profile build.
-
-### Usage
-
-```bash
-cmake --preset <preset>
+```shell
+cmake --workflow --preset vc6
 ```
 
-### Using the Default Workflow
+Use this command to see every preset in the current checkout, including specialized presets not covered here:
 
-You can simplify the build process by using the **workflow** option, which automatically selects the appropriate
-configurations based on the preset and the project’s default settings. This eliminates the need to manually specify
-build options. For example, to perform a release build with the default configuration, you can run:
-
-```bash
-cmake --workflow --preset win32
+```shell
+cmake --list-presets=all
 ```
 
-After the build process is complete, you can proceed with the installation using the default settings, as outlined in
-the installation section (not the custom path). To install the project, simply use:
+> **Retail compatibility:** Use the `vc6` Release preset for builds compatible with retail multiplayer and replays. VC6
+> Debug builds and builds produced with modern Visual Studio toolchains are not retail-compatible.
 
-```bash
+### VC6 Debug runtime
+
+VC6 Debug builds require these Microsoft debug runtime libraries in the same directory as the built executable:
+
+- `MSVCP60D.DLL`
+- `MSVCRTD.DLL`
+
+The project and this wiki cannot distribute these files. Users must obtain them independently through legitimate means.
+
+## Configure and build
+
+The workflow command above configures and builds the project in one step. Replace `vc6` with another preset when needed.
+To run the two steps separately:
+
+```shell
+cmake --preset vc6
+cmake --build --preset vc6
+```
+
+CMake stores each configuration under `build/<preset>`.
+
+## Select games and tools
+
+Both games and their tools are enabled by default. The common build options are:
+
+| Option                      | Default | Controls                        |
+| --------------------------- | ------- | ------------------------------- |
+| `RTS_BUILD_GENERALS`        | `ON`    | Generals                        |
+| `RTS_BUILD_ZEROHOUR`        | `ON`    | Zero Hour                       |
+| `RTS_BUILD_CORE_TOOLS`      | `ON`    | Tools shared by both games      |
+| `RTS_BUILD_GENERALS_TOOLS`  | `ON`    | Generals tools                  |
+| `RTS_BUILD_ZEROHOUR_TOOLS`  | `ON`    | Zero Hour tools                 |
+| `RTS_BUILD_CORE_EXTRAS`     | `OFF`   | Shared extra tools and tests    |
+| `RTS_BUILD_GENERALS_EXTRAS` | `OFF`   | Generals extra tools and tests  |
+| `RTS_BUILD_ZEROHOUR_EXTRAS` | `OFF`   | Zero Hour extra tools and tests |
+
+Pass options while configuring. This example builds Zero Hour and its tools without Generals:
+
+```shell
+cmake --preset vc6 -DRTS_BUILD_GENERALS=OFF -DRTS_BUILD_ZEROHOUR=ON -DRTS_BUILD_ZEROHOUR_TOOLS=ON
+cmake --build --preset vc6
+```
+
+CMake retains these choices in the preset's build directory until it is reconfigured or removed.
+
+## Build a target
+
+Common targets include:
+
+| Target                                    | Output                         |
+| ----------------------------------------- | ------------------------------ |
+| `g_generals` / `z_generals`               | Game executable                |
+| `g_worldbuilder` / `z_worldbuilder`       | World Builder                  |
+| `g_guiedit` / `z_guiedit`                 | GUI Editor                     |
+| `g_imagepacker` / `z_imagepacker`         | Image Packer                   |
+| `g_mapcachebuilder` / `z_mapcachebuilder` | Map Cache Builder              |
+| `core_debugwindow`                        | Shared Debug Window library    |
+| `core_particleeditor`                     | Shared Particle Editor library |
+
+Build one target by adding `--target`:
+
+```shell
+cmake --build --preset vc6 --target z_generals
+```
+
+List the targets available in a configured preset with:
+
+```shell
+cmake --build --preset vc6 --target help
+```
+
+Only enabled games and tools produce targets. Installing after a partial build may fail if another enabled installable
+target has not been built.
+
+## Build output
+
+VC6 places the main executables at:
+
+- `build/<preset>/Generals/generalsv.exe`
+- `build/<preset>/GeneralsMD/generalszh.exe`
+
+The modern `win32` presets are multi-configuration builds, so their output paths also contain `Release` or `Debug`.
+
+## Install
+
+On Windows, CMake tries to find EA App, CD, The First Decade, and Steam installations from the registry. Run each
+installed game at least once first to ensure its registry entries exist.
+
+Install a VC6 Release build with:
+
+```shell
+cmake --install build/vc6
+```
+
+Modern `win32` builds require the configuration name:
+
+```shell
 cmake --install build/win32 --config Release
 ```
 
-This will install the project to the default installation location based on the preset configuration.
+To use explicit game directories, set the install paths while configuring:
 
----
-
-## 2. **Selecting Game and Tools**
-
-You can specify various options to select which parts of the project to build.
-
-### The available options are
-
-- `DGENZH_BUILD_GENERALS`: Build the base Generals code, default is `ON`.
-- `DGENZH_BUILD_GENERALS_TOOLS`: Build tools for Generals, default is `ON`.
-- `DGENZH_BUILD_GENERALS_EXTRAS`: Build additional tools/tests for Generals, default is `OFF`.
-- `DGENZH_BUILD_ZEROHOUR`: Build the Zero Hour code, default is `ON`.
-- `DGENZH_BUILD_ZEROHOUR_TOOLS`: Build tools for Zero Hour, default is `ON`.
-- `DGENZH_BUILD_ZEROHOUR_EXTRAS`: Build additional tools/tests for Zero Hour, default is `OFF`.
-
-You can find the list of tools included in the targets list below.
-
-### Example Usage
-
-To build Zero Hour and its tools while excluding Generals:
-
-```bash
-cmake -DGENZH_BUILD_ZEROHOUR=ON -DGENZH_BUILD_GENERALS=OFF -DGENZH_BUILD_ZEROHOUR_TOOLS=ON
+```shell
+cmake --preset vc6 -DRTS_INSTALL_PREFIX_GENERALS="C:\Games\Generals Test" -DRTS_INSTALL_PREFIX_ZEROHOUR="C:\Games\Zero Hour Test"
+cmake --build --preset vc6
+cmake --install build/vc6
 ```
 
----
+Use `RTS_INSTALL_PREFIX_GENERALS` and `RTS_INSTALL_PREFIX_ZEROHOUR` independently when building only one game.
 
-## 3. **Building the Project**
+## Reset a configuration
 
-After configuring the project with CMake, you can proceed with the build step. To build the project in the appropriate
-mode, use:
+CMake caches compiler, option, and installation settings. If a configuration starts behaving unexpectedly, discard that
+preset's cache and configure it again:
 
-```bash
-cmake --build build/win32
+```shell
+cmake --fresh --preset vc6
 ```
 
-> [!NOTE]
-> Replace the folder preset name as needed.
-
-The build process will place the compiled executable files in the appropriate directories based on the configuration,
-for example, `build/win32/GeneralsMD/Release` for the release build of Zero Hour.
-
----
-
-## 4. **Install the Project**
-
-To install the built project, use:
-
-```bash
-cmake --install build/win32
-```
-
-> [!NOTE]
-> Replace the folder preset name as needed. This installs the executable project in the specified paths (see next
-> section).
-<!-- markdownlint-disable-line -->
-> [!IMPORTANT]
-> In the `win32` preset, use also `--config Release` to install the release executable, because the default installation
-> path looks in the debug folder.
-
----
-
-## 5. **Define a Custom Installation Path**
-
-> [!NOTE]
-> To define a custom installation path, it must be set during the preset configuration. The installation path cannot be
-> changed after the build is complete.
-
-By default, CMake installs the build executable in the retail game directory. If you want to specify a custom
-installation path, use the following option:
-
-For Generals:
-
-```bash
-cmake -DGENZH_GENERALS_INSTALL_PREFIX="/path/to/install" .
-```
-
-For the Zero Hour expansion:
-
-```bash
-cmake -DGENZH_ZEROHOUR_INSTALL_PREFIX="/path/to/install" .
-```
-
----
-
-## 6. **Building Specific Targets**
-
-> [!IMPORTANT]
-> Please note that specific **targets** (such as `z_generals` or `z_worldbuilder`) will only work if the corresponding
-> game source tree is enabled through the appropriate **preset** (e.g., `DGENZH_BUILD_ZEROHOUR` or
-> `DGENZH_BUILD_ZEROHOUR_TOOLS`). Make sure the relevant game sources are included in the configuration before
-> attempting to build the **targets**.
-
-You can build specific targets by specifying them in the build command. The common targets are:
-
-> [!TIP]
-> The list below are suitable zero hour targets, to build base Generals targets, replace `z` with `g`.
-
-- `z_generals`: Build the Zero Hour code.
-
-### Tools
-
-- `z_debugwindow`: Build the Debug Window tool.
-- `z_guiedit`: Build the GUI Editor tool.
-- `z_imagepacker`: Build the Image Packer tool.
-- `z_mapcachebuilder`: Build the Map Cache Builder tool.
-- `z_particleeditor`: Build the Particle Editor tool.
-- `z_worldbuilder`: Build the World Builder tool.
-<!-- markdownlint-disable-next-line -->
-### Usage
-
-```bash
-cmake --build build/win32 --target z_generals
-```
-
-Replace the folder preset name as needed.
-
-> [!NOTE]
-> If from the beginning you build only with specific targets, the installation step will fail because the other targets
-> are not built yet. To fix this, you need to build all targets or build the missing targets before installing. Or you
-> can install the targets manually by copying the files to the correct directories from the build folder.
-
----
-
-## 7. **Examples**
-
-### **Build Zero Hour with Debug Configuration and Tools:**
-
-To build the Zero Hour code along with its tools in debug mode, use the following command:
-
-```bash
-# Step 1: Configure the build with a preset and additional options
-cmake --preset win32-debug -DGENZH_BUILD_ZEROHOUR=ON -DGENZH_BUILD_ZEROHOUR_TOOLS=ON
-
-# Step 2: Build the project
-cmake --build build/win32-debug
-
-# Step 3: Install the project to the default installation path
-cmake --install build/win32-debug
-```
-<!-- markdownlint-disable-next-line -->
-### **Build Only World Builder Tool:**
-
-To build only the World Builder tool for Zero Hour, use the following command:
-
-```bash
-# Step 1: Configure the build with specific target
-cmake --preset win32 --target z_worldbuilder
-
-# Step 2: Build the project
-cmake --build build/win32
-
-# Step 3: Install the project to the default installation path
-cmake --install build/win32 --config Release
-```
-<!-- markdownlint-disable-next-line -->
-### **Build Generals with Extras and Custom Installation Path:**
-
-To build the Generals code with additional extras, configure the build for release, and then install the executable to a
-custom directory, you can run the following commands in sequence:
-
-```bash
-# Step 1: Configure the build with a preset and additional options
-cmake --preset win32 -DGENZH_BUILD_GENERALS=ON -DGENZH_BUILD_GENERALS_EXTRAS=ON -DGENZH_GENERALS_INSTALL_PREFIX="/custom/install/path"
-
-# Step 2: Build the project
-cmake --build build/win32
-
-# Step 3: Install the project to the specified custom directory with release configuration
-cmake --install build/win32 --config Release
-```
-
----
-
-**Reminder:**  
-If you encounter issues from previous configurations, make sure to clear the `build` directory and restart the
-configuration process.
+Replace `vc6` with the affected preset. Other build configurations are left unchanged.

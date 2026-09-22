@@ -1,113 +1,113 @@
 # Build Configurations Overview
 
-This page describes the various build configurations used in the project, detailing the different types of builds, their
-purpose, and the associated compiler flags for each configuration. These configurations control how the code is compiled
-and optimized for different development and release scenarios.
+This page describes the build configurations GeneralsGameCode supports and the CMake options that control them. For
+presets, targets, and installation, see the [Building with CMake guide](cmake_guide).
 
-## Build Configurations
+Configurations are selected through CMake cache variables, which the presets in `CMakePresets.json` set for you. You
+rarely need to set them by hand; pass them while configuring only when you want a combination no preset provides.
 
-There are four main build configurations in the project, each designed for different purposes:
+## Configurations
 
-### 1. **Release (O2, _RELEASE)**
+| Configuration | VC6 preset    | Win32 preset    | Cache variables set by the preset                       |
+| ------------- | ------------- | --------------- | ------------------------------------------------------- |
+| Release       | `vc6`         | `win32`         | none; this is the default                               |
+| Debug         | `vc6-debug`   | `win32-debug`   | `RTS_BUILD_OPTION_DEBUG=ON`                             |
+| Profile       | `vc6-profile` | `win32-profile` | `RTS_BUILD_OPTION_PROFILE=ON`                           |
 
-- **Purpose:** The release configuration is used for building the final version of the game that will be distributed to
-  end users.
-- **Features:**
-  - Maximum optimization (`/O2`) for better performance.
-  - No debugging information is included to ensure smaller binary size and improved performance.
-  - Suitable for production builds.
+Two differences between the toolchains are worth noting:
 
-- **Compiler Flags:**
-  - `/O2`: Optimization for speed.
-  - `/D "_RELEASE"`: Defines the release configuration.
-  - `/D "NDEBUG"`: Disables debugging code.
+- `vc6-debug` also sets `CMAKE_BUILD_TYPE=Debug`, because the VC6 presets use Ninja, a single-configuration generator.
+  The `win32` presets are multi-configuration, so the configuration is chosen when building instead.
+- `win32-profile` additionally sets `RTS_BUILD_OPTION_PROFILE_TRACY=ON`. The VC6 profile build does not use Tracy.
 
-- **Use Case:** This configuration is used when preparing the game for release to the end user.
+> **Retail compatibility:** Only the `vc6` Release build is compatible with retail multiplayer and replays. See
+> [Build presets](cmake_guide#build-presets).
 
-### 2. **Debug (Od, _DEBUG)**
+## Configuration definitions
 
-- **Purpose:** The debug configuration is used for development and debugging. It includes debugging symbols and disables
-  optimizations to make it easier to step through code.
-- **Features:**
-  - No optimization (`/Od`), making debugging easier but with slower execution.
-  - Debugging symbols and additional information are included to help track issues.
-  - The build is less efficient but provides full access to debugging features.
+Each configuration compiles the code with a different set of preprocessor definitions:
 
-- **Compiler Flags:**
-  - `/Od`: Disables optimizations to facilitate debugging.
-  - `/D "_DEBUG"`: Defines the debug configuration.
-  - `/ZI`: Generates debugging information.
-  - `/Gm`: Enables minimal rebuilds.
+| Configuration | Definitions                                    |
+| ------------- | ---------------------------------------------- |
+| Release       | `RTS_RELEASE`, `NDEBUG`                        |
+| Debug         | `RTS_DEBUG`, `WWDEBUG`, `DEBUG`                |
+| Profile       | `RTS_RELEASE`, `NDEBUG`, `RTS_PROFILE_LEGACY`  |
 
-- **Use Case:** Used during development for debugging and resolving issues in the code.
+The Profile configuration builds on Release, so it defines `RTS_RELEASE` and `NDEBUG` as well.
 
-> **⚠️ Debug Build Requirements:** To run a debug build of the game, you need to have  
-> the following two files in the game directory alongside the built executable:
->
-> - [`MSVCRTD.DLL`](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Builds/files/MSVCRTD.DLL)  
->   Microsoft Visual C++ Runtime Library (Debug)
-> - [`MSVCIRTD.DLL`](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/SourceCode/Builds/files/MSVCIRTD.DLL)  
->   Microsoft Visual C++ Internationalization Runtime Library (Debug)
+Two further definitions are applied by platform rather than by configuration:
 
-### 3. **Profile (O2, IG_DEBUG_STACKTRACE, _RELEASE, _PROFILE)**
+- On MSVC: `_CRT_NONSTDC_NO_WARNINGS` and `_CRT_SECURE_NO_WARNINGS`, plus `_DEBUG_CRT` in the Debug configuration.
+- On Unix: `_UNIX`.
 
-- **Purpose:** The profile configuration is used for performance profiling and optimization. It is designed to help
-  developers analyze performance bottlenecks and gather performance data.
-- **Features:**
-  - Includes optimization (`/O2`) and performance profiling flags.
-  - Supports detailed stack tracing (`IG_DEBUG_STACKTRACE`) to gather performance metrics.
-  - Designed for analyzing how the game performs under various conditions and measuring optimization effectiveness.
+> [!NOTE]
+> Optimization and debug-information flags such as `/O2`, `/Od`, and `/Zi` are not set by the project. They come
+> from the compiler defaults CMake applies for the selected `CMAKE_BUILD_TYPE`. The presets set warning level `/W3`
+> through the `RTS_FLAGS` cache variable.
 
-- **Compiler Flags:**
-  - `/O2`: Optimization for performance.
-  - `/D "_PROFILE"`: Enables profiling configuration.
-  - `/D "IG_DEBUG_STACKTRACE"`: Enables stack trace debugging for performance analysis.
-  - `/D "NDEBUG"`: Disables debugging code in the final build.
+The Debug configuration has one additional runtime requirement.
 
-- **Use Case:** Used for profiling and performance analysis to optimize code and identify potential bottlenecks.
+> [!IMPORTANT]
+> Debug builds require the Microsoft debug runtime libraries in the same directory as the built executable.
+> See [VC6 Debug runtime](cmake_guide#vc6-debug-runtime) for the required files.
 
----
+## Build options
 
-## Key Compiler Flags
+These options change how the code is built. All default to `OFF`.
 
-Below is a list of the key compiler flags used across different configurations:
+| Option                            | Effect                                                              |
+| --------------------------------- | ------------------------------------------------------------------- |
+| `RTS_BUILD_OPTION_DEBUG`          | Builds the Debug configuration                                      |
+| `RTS_BUILD_OPTION_PROFILE`        | Builds the Profile configuration                                    |
+| `RTS_BUILD_OPTION_PROFILE_TRACY`  | Enables Tracy profiler integration                                  |
+| `RTS_BUILD_OPTION_ASAN`           | Builds with Address Sanitizer (`/fsanitize=address`)                |
+| `RTS_BUILD_OPTION_VC6_FULL_DEBUG` | Builds VC6 with full debug information (`/Zi`)                      |
+| `RTS_BUILD_OPTION_FFMPEG`         | Enables FFmpeg support                                              |
 
-### Optimization Flags
+There is also `RTS_BUILD_OUTPUT_SUFFIX`, a string appended to the output names of installable targets. It is empty by
+default, which is why the executables are named `generalsv.exe` and `generalszh.exe`.
 
-- **`/O2`**: Optimizes the code for speed. This flag is typically used in release builds and performance profiling
-  builds.
-- **`/Od`**: Disables optimizations, which is useful during debugging when you want to ensure that the debugger can
-  easily track code execution.
+## Debug feature options
 
-### Debugging Flags
+These options control individual debug features independently of the configuration, so a Release build can keep
+logging or assert dialogs enabled.
 
-- **`/D "_DEBUG"`**: Defines the build as a debug version, enabling debugging-specific features in the code.
-- **`/D "_RELEASE"`**: Defines the build as a release version, disabling debugging features and optimizing for
-  performance.
-- **`/D "NDEBUG"`**: Disables debugging code, typically used in release builds.
+The following four accept `DEFAULT`, `ON`, or `OFF`. `DEFAULT` leaves the feature to the configuration, where it is
+enabled for Debug and Internal builds:
 
-### Profiling Flags
+| Option                 | `ON` defines        | `OFF` defines               |
+| ---------------------- | ------------------- | --------------------------- |
+| `RTS_DEBUG_LOGGING`    | `DEBUG_LOGGING`     | `DISABLE_DEBUG_LOGGING`     |
+| `RTS_DEBUG_CRASHING`   | `DEBUG_CRASHING`    | `DISABLE_DEBUG_CRASHING`    |
+| `RTS_DEBUG_STACKTRACE` | `DEBUG_STACKTRACE`  | `DISABLE_DEBUG_STACKTRACE`  |
+| `RTS_DEBUG_PROFILE`    | `DEBUG_PROFILE`     | `DISABLE_DEBUG_PROFILE`     |
 
-- **`/D "_PROFILE"`**: Enables performance profiling in the build. This flag is used to gather performance data during
-  runtime.
-- **`/D "IG_DEBUG_STACKTRACE"`**: Enables stack trace generation, which helps in analyzing performance issues and
-  crashes.
+Each of these definitions is set to `1`. Enabling `RTS_DEBUG_STACKTRACE` also enables debug logging.
 
-### Additional Flags
+The remaining options are simple on/off switches, all `OFF` by default:
 
-- **`/ZI`**: Generates debugging information and supports editing and continuing in Visual Studio.
-- **`/WX`**: Treats warnings as errors, which is often used to enforce strict coding standards.
-- **`/Gm`**: Enables minimal rebuild, allowing faster incremental builds.
-- **`/MD`**: Links with the dynamic version of the C runtime library, commonly used for Windows builds.
-- **`/Yu"PreRTS.h"`**: Tells the compiler to use precompiled headers, which can speed up compilation time.
+| Option                                   | Defines                          | Purpose                                  |
+| ---------------------------------------- | -------------------------------- | ---------------------------------------- |
+| `RTS_DEBUG_CHEATS`                       | `_ALLOW_DEBUG_CHEATS_IN_RELEASE` | Enables debug cheats in release builds   |
+| `RTS_DEBUG_INCLUDE_DEBUG_LOG_IN_CRC_LOG` | `INCLUDE_DEBUG_LOG_IN_CRC_LOG`   | Includes the debug log in the CRC log    |
+| `RTS_DEBUG_MULTI_INSTANCE`               | `RTS_MULTI_INSTANCE`             | Allows running multiple client instances |
 
----
+## Additional presets
 
-## When to Use Each Configuration
+Two VC6 presets combine a Release build with debug features:
 
-- **Release:** Use this configuration when preparing the final version of the game for distribution. It ensures the game
-  is optimized for performance with no debugging overhead.
-- **Debug:** Use this configuration during development when you need to debug issues. It disables optimizations and
-  includes debugging information.
-- **Profile:** Use this configuration when analyzing the performance of the game. It helps identify bottlenecks and
-  areas that can be optimized further.
+| Preset            | Cache variables                                  | Purpose                                  |
+| ----------------- | ------------------------------------------------ | ---------------------------------------- |
+| `vc6-releaselog`  | `RTS_DEBUG_LOGGING=ON`, `RTS_DEBUG_CRASHING=ON`  | Release build with logging and asserts   |
+| `vc6-weekly`      | `RTS_BUILD_OPTION_VC6_FULL_DEBUG=ON`             | Release build with full debug info       |
+
+List every preset in your checkout with `cmake --list-presets=all`.
+
+## Example
+
+Configure a Release build with debug logging enabled and build it:
+
+```shell
+cmake --preset vc6 -DRTS_DEBUG_LOGGING=ON
+cmake --build --preset vc6
+```
