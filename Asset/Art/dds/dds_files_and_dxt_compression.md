@@ -72,7 +72,7 @@ First of all here's my personal ranking in terms of output quality:
 - DDS Converter (<http://www.ddsconverter.com/> but I'd rather you throw it deep into the sea)
 
 To motivate you to switch from a different tool, let me detail the issues encountered with the different encoders
-(comparison images are in the spoiler below).
+(see [Comparison images](#comparison-images) at the end of this page).
 
 No matter which tool you use, make sure it generates mipmaps unless it's a UI texture. Some will do this by default,
 some don't (Compressonator). Some tools also offer the ability to specify gamma/sRGB for mipmap generation. This should
@@ -128,3 +128,30 @@ in the first place. The quality is just godawful, in some parts it almost feels 
 than it really is because entire 4x4 blocks share the same color for no particular reason, and it's not even the
 correct color! In addition, some detail introduces harsh artifacts and noise. I weep for all the people googling for
 "dds converter" and having to put up with shit quality textures because of this tool.
+
+## Comparison images
+
+The same source texture encoded with each tool described above. Open an image at full size to judge the artifacts —
+the differences are easy to miss when the image is scaled down.
+
+### Gradients
+
+Gradients and dark areas are where the encoders separate most clearly, with banding, block structure and hue shifts
+showing up first.
+
+![Red gradient comparison](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/Asset/Art/dds/red-gradient.png)
+
+![Red gradient, artifacts highlighted](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/Asset/Art/dds/red-gradient-artifacts.png)
+
+![Dark gradient comparison](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/Asset/Art/dds/dark-gradient.png)
+
+![Green gradient comparison](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/Asset/Art/dds/green-gradient.png)
+
+### High-frequency detail
+
+Several of the weaker encoders do comparatively well here, which is why gradients rather than detail are the better
+test when choosing a tool.
+
+![High-frequency detail comparison](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/Asset/Art/dds/hf-detail.png)
+
+![High-frequency detail comparison, second sample](https://github.com/TheSuperHackers/GeneralsWiki/raw/refs/heads/main/Asset/Art/dds/hf-detail2.png)

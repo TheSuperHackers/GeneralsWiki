@@ -4,14 +4,10 @@
 
 ---
 ## Patch
-- [Installation](installation)
 - [How to Get Involved](how_to_get_involved)
 - [How to Contribute](contribution)
 - [License](https://github.com/TheSuperHackers/GeneralsGamePatch/blob/main/LICENSE.txt)
-- [Credits](credits)
 - [Changelog](https://github.com/TheSuperHackers/GeneralsGamePatch?tab=readme-ov-file#change-logs)
-- [FAQ](faq)
-- [Known Issues](known_issues)
 - [Contact & Community](contact_community)
 
 ---
@@ -22,11 +18,10 @@
     - Textures
         - [Cameo Sizes](cameo_sizes)
         - [DDS files and DXT compression](dds_files_and_dxt_compression)
-        - [Texture Guidelines](Art/dds/texture\_guidelines.md)
+        - [Texture Guidelines](texture_guidelines)
 
 - Audio & Video
     - [Game WAV Audio files](audio)
-    - BIK
 - Game Design
     - INI
         - INI Files
@@ -56,11 +51,10 @@
         - [Scroll Listbox](wnd_controls_scrollistbox)
         - [Slider](wnd_controls_slider)
         - [Statictext](wnd_controls_statictext)
-    - GUI Editor
 
 ## Tools
 
-- FinalBIG
+- [BIG File Format](big_format)
 - [Generals Mod Builder](https://github.com/TheSuperHackers/GeneralsModBuilder)
 
 <!-- markdownlint-restore -->

@@ -6,7 +6,7 @@ the slider, and it updates automatically as the user interacts with it.
 
 ## Available Tags
 
-In addition to the [default control tags](/user.md), the Slider control has the following unique tags:
+In addition to the [default control tags](wnd_controls_user), the Slider control has the following unique tags:
 
 | Tag                           | Description                                                                       |
 |-------------------------------|-----------------------------------------------------------------------------------|
@@ -223,7 +223,5 @@ END
 ## See also
 
 - [Default control](wnd_controls_user)
-- [Texturing](../texturing.md)
-- [Statuses](../statuses.md)
-
-[Category:](../Categories.md) [Controls](../Controls.md)
+- [Texturing](texturing)
+- [Statuses](wnd_reference)

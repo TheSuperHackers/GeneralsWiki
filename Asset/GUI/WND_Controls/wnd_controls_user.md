@@ -61,19 +61,19 @@ Click on the links to view available values and options for the tag.
 | `WINDOWTYPE`                                                  | The control type.                                                                                            |
 | `SCREENRECT`                                                  | Defines the size and position of the control on the screen.                                                  |
 | `NAME`                                                        | The name of the control.                                                                                     |
-| `STATUS`                                                      | The status of the control. see [statuses](../status.md)                                                      |
-| `STYLE`                                                       | The style of the control. see [styles](../style.md).                                                         |
-| `SYSTEMCALLBACK`                                              | The system callback function for the control. see [callbacks](../callbacks.md).                              |
+| `STATUS`                                                      | The status of the control. see [statuses](wnd_reference)                                                     |
+| `STYLE`                                                       | The style of the control. see [styles](wnd_reference).                                                       |
+| `SYSTEMCALLBACK`                                              | The system callback function for the control. see [callbacks](wnd_reference).                                |
 | `INPUTCALLBACK`                                               | The input callback function for the control.                                                                 |
 | `TOOLTIPCALLBACK`                                             | Callback function for the control’s tooltip.                                                                 |
 | `DRAWCALLBACK`                                                | Callback function for the control’s texture.                                                                 |
-| `FONT`                                                        | Font settings. see [Text Properties](../text_properties.md).                                                 |
-| `HEADERTEMPLATE` (Optional)                                   | Defines the template for the control’s text. see [Text Properties](../text_properties.md).                   |
-| `TOOLTIPTEXT` (Optional)                                      | Text for the tooltip displayed when hovering over the control. see [Text Properties](../text_properties.md). |
+| `FONT`                                                        | Font settings. see [Text Properties](wnd_reference).                                                         |
+| `HEADERTEMPLATE` (Optional)                                   | Defines the template for the control’s text. see [Text Properties](wnd_reference).                           |
+| `TOOLTIPTEXT` (Optional)                                      | Text for the tooltip displayed when hovering over the control. see [Text Properties](wnd_reference).         |
 | `TOOLTIPDELAY`                                                | Delay `0...n` time for the tooltip to appear, `-1` for disable.                                              |
-| `TEXT` (Optional)                                             | The text displayed in the control. see [Text Properties](../text_properties.md).                             |
-| `TEXTCOLOR`                                                   | Color settings for text in different states. see [Text Properties](../text_properties.md).                   |
-| `ENABLEDDRAWDATA`,<br>`DISABLEDDRAWDATA`,<br>`HILITEDRAWDATA` | Visual texture for the control in different states. see [Texturing](../texturing.md).                        |
+| `TEXT` (Optional)                                             | The text displayed in the control. see [Text Properties](wnd_reference).                                     |
+| `TEXTCOLOR`                                                   | Color settings for text in different states. see [Text Properties](wnd_reference).                           |
+| `ENABLEDDRAWDATA`,<br>`DISABLEDDRAWDATA`,<br>`HILITEDRAWDATA` | Visual texture for the control in different states. see [Texturing](texturing).                              |
 
 > [!IMPORTANT]
 > The order of the tags is crucial for proper rendering of the control and must be followed as specified.
@@ -136,7 +136,5 @@ END
 
 ## See Also
 
-- [Callbacks](../callbacks.md)
-- [Texturing](../texturing.md)
-
-[Category:](../Categories.md) [Controls](../Controls.md)
+- [Callbacks](wnd_reference)
+- [Texturing](texturing)

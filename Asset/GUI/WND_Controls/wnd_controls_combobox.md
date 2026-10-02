@@ -370,6 +370,4 @@ END
 ## See also
 
 - [Default control](wnd_controls_user)
-- [Texturing](../texturing.md)
-
-[Category:](../Categories.md) [Controls](../Controls.md)
+- [Texturing](texturing)

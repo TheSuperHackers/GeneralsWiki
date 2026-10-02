@@ -41,10 +41,6 @@ Use this link: [ZeroSyntax Pack](vscode:extension/vitexftw.zs-pack) or one of th
 3. Press the `Open in Visual Studio Code` button.
 4. Select the desired extension and click install.
 
-### Visual Studio Extension
-
-**Coming Soon...**
-
 > [!NOTE]  
 > You might need to reload the editor after installing the extension for it to take effect.
 

@@ -6,7 +6,7 @@ well as how it behaves in different states (enabled, disabled, highlighted).
 
 ## Available Tags
 
-In addition to the [default control tags](/user.md), the RadioButton control has the following unique tag:
+In addition to the [default control tags](wnd_controls_user), the RadioButton control has the following unique tag:
 
 | Tag               | Description                                                                     |
 |-------------------|---------------------------------------------------------------------------------|
@@ -112,7 +112,5 @@ END
 ## See also
 
 - [Default control](wnd_controls_user)
-- [Texturing](../texturing.md)
-- [Statuses](../statuses.md)
-
-[Category:](../Categories.md) [Controls](../Controls.md)
+- [Texturing](texturing)
+- [Statuses](wnd_reference)

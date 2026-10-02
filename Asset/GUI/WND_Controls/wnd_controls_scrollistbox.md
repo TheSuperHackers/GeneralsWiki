@@ -5,7 +5,7 @@ appearance of the list box, and it updates automatically as the user scrolls.
 
 ## Available Tags
 
-In addition to the [default control tags](/user.md), the ScrollListBox control has the following unique tags:
+In addition to the [default control tags](wnd_controls_user), the ScrollListBox control has the following unique tags:
 
 | Tag                                 | Description                                                                         |
 |-------------------------------------|-------------------------------------------------------------------------------------|
@@ -266,3 +266,6 @@ END
 </details>
 
 ## See also
+
+- [Default control](wnd_controls_user)
+- [Texturing](texturing)
