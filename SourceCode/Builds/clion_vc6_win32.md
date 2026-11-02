@@ -43,7 +43,8 @@ Open **File > Settings > Build, Execution, Deployment > Toolchains**.
 ### Win32
 
 Add a **Visual Studio** toolchain, select the Visual Studio Build Tools installation, and name it exactly
-`Visual Studio`. Keep the bundled Ninja build tool.
+`Visual Studio`. Set **Architecture** to `amd64_x86` to use 64-bit build tools producing 32-bit executables.
+Keep the bundled Ninja build tool.
 
 The exact names matter because `CMakePresets.json` uses them to select the correct toolchain automatically.
 
