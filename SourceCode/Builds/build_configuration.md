@@ -45,11 +45,7 @@ Two further definitions are applied by platform rather than by configuration:
 > from the compiler defaults CMake applies for the selected `CMAKE_BUILD_TYPE`. The presets set warning level `/W3`
 > through the `RTS_FLAGS` cache variable.
 
-The Debug configuration has one additional runtime requirement.
-
-> [!IMPORTANT]
-> Debug builds require the Microsoft debug runtime libraries in the same directory as the built executable.
-> See [VC6 Debug runtime](cmake_guide#vc6-debug-runtime) for the required files.
+VC6 Debug builds require the [debug runtime libraries](cmake_guide#vc6-debug-runtime) beside the executable.
 
 ## Build options
 

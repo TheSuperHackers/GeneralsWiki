@@ -43,7 +43,8 @@ Open **File > Settings > Build, Execution, Deployment > Toolchains**.
 ### Win32
 
 Add a **Visual Studio** toolchain, select the Visual Studio Build Tools installation, and name it exactly
-`Visual Studio`. Keep the bundled Ninja build tool.
+`Visual Studio`. Set **Architecture** to `amd64_x86` to use 64-bit build tools producing 32-bit executables.
+Keep the bundled Ninja build tool.
 
 The exact names matter because `CMakePresets.json` uses them to select the correct toolchain automatically.
 
@@ -63,13 +64,13 @@ After opening the project, CLion imports the profiles from `CMakePresets.json`:
 
 1. Open **File > Settings > Build, Execution, Deployment > CMake**.
 2. Disable the default `Debug` profile.
-3. Enable the profiles for either toolchain or both:
+3. Enable the profiles prefixed with **Build** for either toolchain or both:
 
-   | Build   | Visual C++ 6  | Win32           |
-   | ------- | ------------- | --------------- |
-   | Release | `vc6`         | `win32`         |
-   | Debug   | `vc6-debug`   | `win32-debug`   |
-   | Profile | `vc6-profile` | `win32-profile` |
+   | Build   | Visual C++ 6                    | Win32                       |
+   | ------- | ------------------------------- | --------------------------- |
+   | Release | Build Windows 32bit VC6 Release | Build Windows 32bit Release |
+   | Debug   | Build Windows 32bit VC6 Debug   | Build Windows 32bit Debug   |
+   | Profile | Build Windows 32bit VC6 Profile | Build Windows 32bit Profile |
 
 4. Wait for CMake to finish loading the selected profiles.
 
@@ -81,22 +82,14 @@ Configure both `g_generals` and `z_generals` separately:
 
 1. Select the game target from the **Run/Debug Configurations** dropdown, open the dropdown again, and choose **Edit
    Configurations**.
-2. Set optional **Program arguments**, such as `-win` or `-quickstart`.
-3. Set **Executable** to the installed game executable:
-
-   ```text
-   C:\Path\To\Generals\generalsv.exe
-   C:\Path\To\Zero Hour\generalszh.exe
-   ```
-
-4. Set **Working directory** to the corresponding game directory.
-5. Under **Before launch**, remove the **Build** step and add the top-level `install` target instead.
-6. Enable **Run as administrator** if the install target is in a protected directory such as `Program Files`.
+2. Add `-useCwd` to **Program arguments**. Optional arguments include `-win` or `-quickstart`.
+3. Set **Working directory** to the corresponding game directory containing the game data.
+4. Under **Before launch**, replace **Build** with the top-level `install` target.
 
 ## Build and run
 
 Select a CMake profile and the `g_generals` or `z_generals` configuration, then click **Run**. The `install` step copies
-the built executable into the game directory before CLion launches it.
+the built executables into the configured game directories before CLion launches the selected target.
 
 See [Install](cmake_guide#install) to set the game directories manually.
 
@@ -115,3 +108,17 @@ Confirm that the toolchains are named exactly `Visual Studio 6` and `Visual Stud
 
 Confirm that the VC6 toolchain uses `VCVARS32.bat` as its environment file. If necessary, select `VC98\Bin\cl.exe` as
 both compilers and reset the affected CMake profile.
+
+### Win32 architecture or linker memory errors
+
+For `Eip` or unsupported `__asm` errors, or a linker memory failure mentioning a 32-bit linker (sometimes `LNK1318`),
+check the [Win32 toolchain settings](#win32), then [reset the affected configuration](cmake_guide#reset-a-configuration).
+
+### VC6 Debug exits with `0xC0000135`
+
+Install the [required VC6 Debug runtime libraries](cmake_guide#vc6-debug-runtime) beside the executable you launch.
+
+### The game fails during startup
+
+Check the settings in [Configure running](#configure-running). If it still fails, see
+[Crash dumps](../Debug/crashdumps#debugging-a-crash).

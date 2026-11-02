@@ -47,10 +47,14 @@ cmake --list-presets=all
 
 ### VC6 Debug runtime
 
-VC6 Debug builds require these Microsoft debug runtime libraries in the same directory as the built executable:
+For both Generals and Zero Hour, VC6 Debug builds require all three Microsoft debug runtime libraries beside the
+executable you launch:
 
 - `MSVCP60D.DLL`
 - `MSVCRTD.DLL`
+- `MSVCIRTD.DLL`
+
+Exit code `0xC0000135` indicates a missing DLL dependency. Check that all three files are present.
 
 The project and this wiki cannot distribute these files. Users must obtain them independently through legitimate means.
 
@@ -130,8 +134,8 @@ The modern `win32` presets are multi-configuration builds, so their output paths
 
 ## Install
 
-On Windows, CMake tries to find EA App, CD, The First Decade, and Steam installations from the registry. Run each
-installed game at least once first to ensure its registry entries exist.
+On Windows, CMake tries to find installed games from the registry. Run each installed game at least once first to
+ensure its registry entries exist.
 
 Install a VC6 Release build with:
 
@@ -155,6 +159,9 @@ cmake --install build/vc6
 
 Use `RTS_INSTALL_PREFIX_GENERALS` and `RTS_INSTALL_PREFIX_ZEROHOUR` independently when building only one game.
 
+Set custom install paths for each preset you use. These control where the `install` target copies files; the run
+configuration's working directory does not change them.
+
 ## Reset a configuration
 
 CMake caches compiler, option, and installation settings. If a configuration starts behaving unexpectedly, discard that
@@ -164,4 +171,5 @@ preset's cache and configure it again:
 cmake --fresh --preset vc6
 ```
 
-Replace `vc6` with the affected preset. Other build configurations are left unchanged.
+Replace `vc6` with the affected preset. Resetting the cache removes custom install paths; pass them again when
+configuring, or CMake will try to detect the installed games again. Other build configurations are left unchanged.
