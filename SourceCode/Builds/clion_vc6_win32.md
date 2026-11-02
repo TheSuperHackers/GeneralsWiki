@@ -108,3 +108,17 @@ Confirm that the toolchains are named exactly `Visual Studio 6` and `Visual Stud
 
 Confirm that the VC6 toolchain uses `VCVARS32.bat` as its environment file. If necessary, select `VC98\Bin\cl.exe` as
 both compilers and reset the affected CMake profile.
+
+### Win32 architecture or linker memory errors
+
+For `Eip` or unsupported `__asm` errors, or a linker memory failure mentioning a 32-bit linker (sometimes `LNK1318`),
+check the [Win32 toolchain settings](#win32), then [reset the affected configuration](cmake_guide#reset-a-configuration).
+
+### VC6 Debug exits with `0xC0000135`
+
+Install the [required VC6 Debug runtime libraries](cmake_guide#vc6-debug-runtime) beside the executable you launch.
+
+### The game fails during startup
+
+Check the settings in [Configure running](#configure-running). If it still fails, see
+[Crash dumps](../Debug/crashdumps#debugging-a-crash).
