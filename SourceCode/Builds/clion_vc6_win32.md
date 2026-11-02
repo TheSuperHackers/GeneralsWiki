@@ -64,13 +64,13 @@ After opening the project, CLion imports the profiles from `CMakePresets.json`:
 
 1. Open **File > Settings > Build, Execution, Deployment > CMake**.
 2. Disable the default `Debug` profile.
-3. Enable the profiles for either toolchain or both:
+3. Enable the profiles prefixed with **Build** for either toolchain or both:
 
-   | Build   | Visual C++ 6  | Win32           |
-   | ------- | ------------- | --------------- |
-   | Release | `vc6`         | `win32`         |
-   | Debug   | `vc6-debug`   | `win32-debug`   |
-   | Profile | `vc6-profile` | `win32-profile` |
+   | Build   | Visual C++ 6                    | Win32                       |
+   | ------- | ------------------------------- | --------------------------- |
+   | Release | Build Windows 32bit VC6 Release | Build Windows 32bit Release |
+   | Debug   | Build Windows 32bit VC6 Debug   | Build Windows 32bit Debug   |
+   | Profile | Build Windows 32bit VC6 Profile | Build Windows 32bit Profile |
 
 4. Wait for CMake to finish loading the selected profiles.
 
