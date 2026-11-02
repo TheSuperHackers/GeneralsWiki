@@ -12,7 +12,7 @@ Visual Studio 2022 and 2026 use the same steps.
 - [Visual Studio 2022 or 2026](https://visualstudio.microsoft.com/downloads/)
 - [Git](https://git-scm.com/downloads)
 
-In Visual Studio Installer, select **Desktop development with C++** and enable:
+In Visual Studio Installer, select **Desktop development with C++**, then open **Individual components** and enable:
 
 - **Windows 11 SDK (10.0.26100.x)**
 - **C++ CMake tools for Windows**
@@ -22,10 +22,14 @@ For Visual Studio 2022, also enable:
 - **MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)**
 - **C++ MFC for latest v143 build tools (x86 & x64)**
 
-For Visual Studio 2026, enable these v143 compatibility components:
+For Visual Studio 2026, also enable:
 
 - **MSVC v143 - VS 2022 C++ x64/x86 build tools (v14.44)**
 - **C++ v14.44 (17.14) MFC for v143 build tools (x86 & x64)**
+- **C++ MFC for x64/x86 (Latest MSVC)**
+
+CLion and Visual Studio's CMake integration may select the newer default compiler even when v143 is installed;
+v14.44 MFC only supplies headers and libraries for v14.44.
 
 Standalone CMake and Ninja installations are not required for the built-in CMake workflow below. Generating a
 traditional Visual Studio solution requires a standalone CMake installation.
@@ -114,9 +118,9 @@ under **Tools > Options > CMake > General**, close the folder, and open it again
 
 ### MFC headers or libraries are missing
 
-Open Visual Studio Installer, modify the installation, and add the MFC component matching your Visual Studio version
-from the [requirements](#requirements). In Visual Studio 2026, confirm that the v143 compatibility MFC component is
-enabled.
+For errors such as `C1083: Cannot open include file: 'afxwin.h'`, install the MFC component for the compiler shown in
+CMake's `CMAKE_CXX_COMPILER` path, using the [requirements](#requirements). After installation, restart the IDE and
+reload CMake.
 
 ### Configuration or dependency download fails
 
