@@ -47,10 +47,14 @@ cmake --list-presets=all
 
 ### VC6 Debug runtime
 
-VC6 Debug builds require these Microsoft debug runtime libraries in the same directory as the built executable:
+For both Generals and Zero Hour, VC6 Debug builds require all three Microsoft debug runtime libraries beside the
+executable you launch:
 
 - `MSVCP60D.DLL`
 - `MSVCRTD.DLL`
+- `MSVCIRTD.DLL`
+
+Exit code `0xC0000135` indicates a missing DLL dependency. Check that all three files are present.
 
 The project and this wiki cannot distribute these files. Users must obtain them independently through legitimate means.
 
