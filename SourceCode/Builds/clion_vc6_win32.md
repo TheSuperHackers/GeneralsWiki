@@ -82,22 +82,14 @@ Configure both `g_generals` and `z_generals` separately:
 
 1. Select the game target from the **Run/Debug Configurations** dropdown, open the dropdown again, and choose **Edit
    Configurations**.
-2. Set optional **Program arguments**, such as `-win` or `-quickstart`.
-3. Set **Executable** to the installed game executable:
-
-   ```text
-   C:\Path\To\Generals\generalsv.exe
-   C:\Path\To\Zero Hour\generalszh.exe
-   ```
-
-4. Set **Working directory** to the corresponding game directory.
-5. Under **Before launch**, remove the **Build** step and add the top-level `install` target instead.
-6. Enable **Run as administrator** if the install target is in a protected directory such as `Program Files`.
+2. Add `-useCwd` to **Program arguments**. Optional arguments include `-win` or `-quickstart`.
+3. Set **Working directory** to the corresponding game directory containing the game data.
+4. Under **Before launch**, replace **Build** with the top-level `install` target.
 
 ## Build and run
 
 Select a CMake profile and the `g_generals` or `z_generals` configuration, then click **Run**. The `install` step copies
-the built executable into the game directory before CLion launches it.
+the built executables into the configured game directories before CLion launches the selected target.
 
 See [Install](cmake_guide#install) to set the game directories manually.
 
